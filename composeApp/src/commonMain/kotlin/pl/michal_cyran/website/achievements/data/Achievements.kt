@@ -1,12 +1,16 @@
 package pl.michal_cyran.website.achievements.data
 
 import kotlinx.datetime.LocalDate
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.achievements.domain.Achievement
 import pl.michal_cyran.website.achievements.domain.AchievementCategory
 import pl.michal_cyran.website.achievements.domain.AchievementLevel
+import website.composeapp.generated.resources.Res
+import website.composeapp.generated.resources.project_details
 
 val achievements = listOf(
     Achievement(
+//        name = stringResource(Res.string.project_details),
         name = "1st Place in the Independence Dictation Contest",
         organization = "Zespół Szkół Zawodowych w Przeworsku",
         date = LocalDate(2021, 11, 1),

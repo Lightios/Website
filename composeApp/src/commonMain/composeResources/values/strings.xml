@@ -7,4 +7,271 @@
     <string name="project_details">Project Details</string>
     <string name="social_media">Social Media</string>
     <string name="achievements">Achievements</string>
+
+    <string name="homepage_description">I'm passionate about tech and focused on Android app development.</string>
+    <string name="homepage_tutor_website">My tutoring website</string>
+
+<!--    <string name="Skills">Skills</string>-->
+<!--    <string name="Projects">Projects</string>-->
+<!--    <string name="Experience">Experience</string>-->
+<!--    <string name="Education">Education</string>-->
+<!--    <string name="Achievements">Achievements</string>-->
+<!--    <string name="Resume">Resumé</string>-->
+<!--    <string name="NoResults">Could not find anything...</string>-->
+<!--    <string name="SearchPlaceholder">Search...</string>-->
+<!--    <string name="Search">Search</string>-->
+
+<!--    <string name="Programming Languages">Programming Languages</string>-->
+<!--    <string name="Frameworks">Frameworks</string>-->
+<!--    <string name="Markup Style">Markup &amp; Style</string>-->
+<!--    <string name="Libraries">Libraries</string>-->
+<!--    <string name="Languages">Languages</string>-->
+<!--    <string name="Commercial">Commercial</string>-->
+<!--    <string name="Academic">Academic</string>-->
+<!--    <string name="Tools">Tools</string>-->
+<!--    <string name="Projects for practice">Projects for practice</string>-->
+<!--    <string name="Home">Home</string>-->
+<!--    <string name="Self-employed">Self-employed</string>-->
+<!--    <string name="Freelance">Freelance</string>-->
+<!--    <string name="projects.master-system.description">This tournament management application was developed on commission to facilitate competitive match play according to a client-specific algorithm. The app provides a user-friendly interface for entering match results, automatically pairs teams for the next round based on the algorithm, calculates points, and generates comprehensive PDF summaries of the tournament's progress. Additionally, it creates graphs to visually represent the algorithm's logic and outcomes. The application is translated into four languages using Python's gettext module, ensuring accessibility for a diverse user base. This project showcases my ability to deliver tailored, multilingual software solutions that meet specific client requirements and enhance the management of complex tournament structures.</string>-->
+<!--    <string name="projects.master-system.shortDescription">Tournament management app with custom algorithm with many features</string>-->
+<!--    <string name="projects.vl.description">Valorant Lineups is a comprehensive mobile application tailored for Valorant players to enhance their in-game strategies. The app offers a vast collection of lineups, enabling players to execute advanced techniques without the need for extensive memorization. By providing real-time guidance and detailed instructions, Valorant Lineups streamlines the learning process and empowers players to perform at their best, improving both individual and team performance.</string>-->
+<!--    <string name="projects.vl.shortDescription">Mobile app for Valorant players to use in-game lineups</string>-->
+<!--    <string name="projects.demiurg.shortDescription">Text-based game creator and interpreter enabling users to design and play interactive narratives.</string>-->
+<!--    <string name="projects.demiurg.description">Demiurg is a comprehensive application developed as part of a Software Engineering course, created by a team of five. The project includes a robust game creator and interpreter for text-based games, allowing users to design intricate game worlds with advanced mechanics such as non-linear quests and dynamic storylines. The creator empowers users to craft detailed interactive narratives, while the interpreter provides an immersive experience for playing these games. This project showcases our collaborative effort and proficiency in software development, highlighting our ability to deliver sophisticated tools for creative expression.</string>-->
+<!--    <string name="projects.daymath.description">DayMath is a comprehensive educational application I developed independently during my university studies, targeting students in Polish primary and secondary schools. The app is designed to enhance mathematical learning through a variety of interactive features, including math quizzes, detailed textual explanations of various topics, and animations that visualize and clarify complex problems. These tools work together to provide an engaging and effective learning experience. Although the app is still a work in progress and has not been officially released, it represents my commitment to improving education through technology and my ongoing efforts to refine and expand its capabilities.</string>-->
+<!--    <string name="projects.daymath.shortDescription">Educational app for Polish students, featuring math quizzes, explanations, and animations.</string>-->
+<!--    <string name="projects.movie-ai.shortDescription">Desktop app recommending movies based on user ratings</string>-->
+<!--    <string name="projects.movie-ai.description">The Movie Recommendation System is a desktop application created in collaboration with a colleague as part of a Fundamentals of Artificial Intelligence course. This app enables users to rate movies they have watched, and employs AI algorithms to recommend new movies tailored to their preferences. By analyzing user ratings and employing sophisticated recommendation techniques, the system provides personalized movie suggestions, enhancing the user’s viewing experience. This project highlights our practical application of AI principles and our ability to develop user-centric, intelligent software solutions.</string>-->
+<!--    <string name="projects.generator-tabliczek.shortDescription">Application generating room number and name plates</string>-->
+<!--    <string name="projects.generator-tabliczek.description">This application was created in collaboration with a colleague for a programming course in C#. It generates room number and name plates that can be printed and hung next to room doors. The application allows users to choose the font, logo, and text color. It also enables saving the project between sessions.</string>-->
+<!--    <string name="projects.scheduler.shortDescription">Application for generating lesson schedules integrated with Discord.</string>-->
+<!--    <string name="projects.scheduler.description">This application was created to facilitate the organization of my tutoring sessions. It allows me to easily add new lessons to the schedule. The application is integrated with Discord, enabling me to automatically send notifications about new lessons to my server. It also automatically retrieves the current day of the year and generates a schedule for the upcoming week, allowing the user to set the starting day (e.g., today or tomorrow). It also allows: <br/>-setting the start and end time <br/>-choosing a theme <br/>-classifying individual lessons (exercises, lectures, tutoring sessions (remote or in-person), one-time events, etc.) <br/>-listing dates.</string>-->
+<!--    <string name="projects.binary-clock.shortDescription">Binary clock made using Compose Multiplatform</string>-->
+<!--    <string name="projects.binary-clock.description">Binary clock made using Compose Multiplatform</string>-->
+<!--    <string name="projects.subtitles-shifter.shortDescription">Simple script allowing to shift subtitles in .srt files</string>-->
+<!--    <string name="projects.subtitles-shifter.description">Simple script allowing to shift subtitles in .srt files. It was created for my individual need to shift subtitles that did not match the movie version (were delayed by a few seconds forward or backward).</string>-->
+<!--    <string name="projects.youtube-downloader.shortDescription">Multithreaded script allowing to download songs from YouTube</string>-->
+<!--    <string name="projects.youtube-downloader.description">This application allows you to download a playlist from Spotify, via YouTube. It requires the user to export the playlist to a .csv file using the Exportify application, and then downloads the songs from YouTube in separate threads, searching for them by name and artist, and saving them in an organized way - creating folders with artists, and naming each song with its title.</string>-->
+<!--    <string name="projects.tic-tac-toe.shortDescription">Simple Tic-Tac-Toe game that can be played with a friend on Discord</string>-->
+<!--    <string name="projects.tic-tac-toe.description">Simple Tic-Tac-Toe game that can be played with a friend on Discord</string>-->
+<!--    <string name="projects.crypto-tracker.shortDescription">App tracking cryptocurrency prices</string>-->
+<!--    <string name="projects.crypto-tracker.description">App tracking cryptocurrency prices. It allows adding cryptocurrencies to track, and displays their current prices along with a chart of changes over the last 24 hours.</string>-->
+<!--    <string name="experience.tutor.name">Math Tutor</string>-->
+<!--    <string name="experience.tutor.description">Teaching mathematics to students</string>-->
+<!--    <string name="experience.tutor.shortDescription">Teaching mathematics to students</string>-->
+<!--    <string name="experience.freelancer.name">Freelancer</string>-->
+<!--    <string name="experience.freelancer.description">Creating applications for clients</string>-->
+<!--    <string name="experience.freelancer.shortDescription">Creating applications for clients</string>-->
+<!--    <string name="education.uj.degree">Bachelor degree of Computer Science</string>-->
+<!--    <string name="education.uj.organization">Jagiellonian University</string>-->
+<!--    <string name="education.zsz.degree">IT Technician</string>-->
+<!--    <string name="education.zsz.organization">Zespół Szkół Zawodowych w Przeworsku</string>-->
+<!--    <string name="education.location">Poland</string>-->
+<!--    <string name="Algebra">Algebra</string>-->
+<!--    <string name="Computer Organization and Architecture">Computer Organization and Architecture</string>-->
+<!--    <string name="Programming">Programming</string>-->
+<!--    <string name="Logic and Set Theory">Logic and Set Theory</string>-->
+<!--    <string name="Mathematical Analysis">Mathematical Analysis</string>-->
+<!--    <string name="Programming Methods">Programming Methods</string>-->
+<!--    <string name="Operating Systems">Operating Systems</string>-->
+<!--    <string name="Algorithms and Data Structures">Algorithms and Data Structures</string>-->
+
+<!--    <string name="Discrete Mathematics">Discrete Mathematics</string>-->
+<!--    <string name="Databases">Databases</string>-->
+<!--    <string name="Software Engineering">Software Engineering</string>-->
+<!--    <string name="Probability and Statistics">Probability and Statistics</string>-->
+<!--    <string name="Computer Networks">Computer Networks</string>-->
+<!--    <string name="Formal Languages and Automata">Formal Languages and Automata</string>-->
+<!--    <string name="Numerical Methods">Numerical Methods</string>-->
+<!--    <string name="Functional Programming">Functional Programming</string>-->
+<!--    <string name="Android Programming">Android Programming</string>-->
+<!--    <string name="Design Patterns">Design Patterns</string>-->
+<!--    <string name="C# Programming">C# Programming</string>-->
+<!--    <string name="Cognitive Systems">Cognitive Systems</string>-->
+<!--    <string name="Cognitive Science">Cognitive Science</string>-->
+<!--    <string name="Web Programming">Web Programming</string>-->
+<!--    <string name="Fundamentals of AI">Fundamentals of AI</string>-->
+<!--    <string name="English">English</string>-->
+<!--    <string name="Networking">Networking</string>-->
+<!--    <string name="Hardware Maintenance">Hardware Maintenance</string>-->
+<!--    <string name="Certificate CCNA Routing and Switching Introduction to Networks">Certificate: CCNA Routing and Switching: Introduction to Networks</string>-->
+<!--    <string name="Certificate PCAP Programming Essentials in Python">Certificate: PCAP: Programming Essentials in Python</string>-->
+<!--    <string name="Certificate NDG Linux Unhatched">Certificate: NDG Linux Unhatched</string>-->
+<!--    <string name="Certificate Introduction to Cybersecurity">Certificate: Introduction to Cybersecurity</string>-->
+<!--    <string name="Certificate Cybersecurity Essentials">Certificate: Cybersecurity Essentials</string>-->
+<!--    <string name="Certificate Be Your Own Boss">Certificate: Be Your Own Boss</string>-->
+<!--    <string name="Certificate Get Connected">Certificate: Get Connected</string>-->
+<!--    <string name="Certificate Introduction to the Internet of Everything">Certificate: Introduction to the Internet of Everything</string>-->
+<!--    <string name="Certificate 3ds Max Animation">Certificate: 3ds Max Animation</string>-->
+<!--    <string name="Certificate 3ds Max Visualisation">Certificate: 3ds Max Visualisation</string>-->
+<!--    <string name="Certificate 3ds Max Modeling">Certificate: 3ds Max Modeling</string>-->
+<!--    <string name="Certificate EU Code Week">Certificate: EU Code Week</string>-->
+<!--    <string name="Certificate CPA Programming Essentials in C++">Certificate: CPA: Programming Essentials in C++</string>-->
+<!--    <string name="1st Place in the Independence Dictation Contest">1st Place in the Independence Dictation Contest</string>-->
+<!--    <string name="Przeworsk County Scholarship">Przeworsk County Scholarship</string>-->
+<!--    <string name="1st Place in the EXPERT Group at the PIX 2019 Contest - National School Programming Championship">1st Place in the EXPERT Group at the PIX 2019 Contest - National School Programming Championship</string>-->
+<!--    <string name="Qualification to the Semi-Finals of the Polish Edition of the International Pix Programming Challenge">Qualification to the Semi-Finals of the Polish Edition of the International Pix Programming Challenge</string>-->
+<!--    <string name="Honorable Mention in the National History Contest 'Krag'">Honorable Mention in the National History Contest "Krą"</string>-->
+<!--    <string name="2nd Place in the 24th Prof Jan Marszal Mathematics Contest for Middle Schools">2nd Place in the 24th Prof. Jan Marszał Mathematics Contest for Middle Schools</string>-->
+<!--    <string name="1st Place in the School Programming Contest">1st Place in the School Programming Contest</string>-->
+<!--    <string name="Honorable Mention in the 15th District Math Contest 'Procent'">Honorable Mention in the 15th District Math Contest "Procent"</string>-->
+<!--    <string name="1st Place in the 14th District Math Contest for Second-Year Middle School Students">1st Place in the 14th District Math Contest for Second-Year Middle School Students</string>-->
+<!--    <string name="2nd Place in the School English Contest">2nd Place in the School English Contest</string>-->
+<!--    <string name="Honorable Mention in the International Math Contest 'Kangur Matematyczny'">Honorable Mention in the International Math Contest "Kangur Matematyczny"</string>-->
+<!--    <string name="View">View</string>-->
+<!--    <string name="month">month</string>-->
+<!--    <string name="months">months</string>-->
+<!--    <string name="year">year</string>-->
+<!--    <string name="years">years</string>-->
+<!--    <string name="Present">Present</string>-->
+<!--    <string name="month_plural">months</string>-->
+<!--    <string name="year_plural">years</string>-->
+<!--    <string name="month_singular">month</string>-->
+<!--    <string name="year_singular">year</string>-->
+
 </resources>
+
+
+    <!--    "homepage.description": "I'm passionate about tech and focused on Android app development.",-->
+    <!--    "homepage.tutor_website": "My tutoring website",-->
+
+    <!--    "Skills": "Skills",-->
+    <!--    "Projects": "Projects",-->
+    <!--    "Experience": "Experience",-->
+    <!--    "Education": "Education",-->
+    <!--    "Achievements": "Achievements",-->
+    <!--    "Resume": "Resumé",-->
+
+    <!--    "NoResults": "Could not find anything...",-->
+    <!--    "SearchPlaceholder": "Search...",-->
+    <!--    "Search": "Search",-->
+
+    <!--    "Programming Languages": "Programming Languages",-->
+    <!--    "Frameworks": "Frameworks",-->
+    <!--    "Markup Style": "Markup & Style",-->
+    <!--    "Libraries": "Libraries",-->
+    <!--    "Languages": "Languages",-->
+
+    <!--    "Commercial": "Commercial",-->
+    <!--    "Academic": "Academic",-->
+    <!--    "Tools": "Tools",-->
+    <!--    "Projects for practice": "Projects for practice",-->
+
+    <!--    "Home": "Home",-->
+    <!--    "Self-employed": "Self-employed",-->
+    <!--    "Freelance": "Freelance",-->
+
+    <!--    "projects.master-system.description": "This tournament management application was developed on commission to facilitate competitive match play according to a client-specific algorithm. The app provides a user-friendly interface for entering match results, automatically pairs teams for the next round based on the algorithm, calculates points, and generates comprehensive PDF summaries of the tournament's progress. Additionally, it creates graphs to visually represent the algorithm's logic and outcomes. The application is translated into four languages using Python's gettext module, ensuring accessibility for a diverse user base. This project showcases my ability to deliver tailored, multilingual software solutions that meet specific client requirements and enhance the management of complex tournament structures.",-->
+    <!--    "projects.master-system.shortDescription": "Tournament management app with custom algorithm with many features",-->
+
+    <!--    "projects.vl.description": "Valorant Lineups is a comprehensive mobile application tailored for Valorant players to enhance their in-game strategies. The app offers a vast collection of lineups, enabling players to execute advanced techniques without the need for extensive memorization. By providing real-time guidance and detailed instructions, Valorant Lineups streamlines the learning process and empowers players to perform at their best, improving both individual and team performance.",-->
+    <!--    "projects.vl.shortDescription": "Mobile app for Valorant players to use in-game lineups",-->
+
+    <!--    "projects.demiurg.shortDescription": "Text-based game creator and interpreter enabling users to design and play interactive narratives.",-->
+    <!--    "projects.demiurg.description": "Demiurg is a comprehensive application developed as part of a Software Engineering course, created by a team of five. The project includes a robust game creator and interpreter for text-based games, allowing users to design intricate game worlds with advanced mechanics such as non-linear quests and dynamic storylines. The creator empowers users to craft detailed interactive narratives, while the interpreter provides an immersive experience for playing these games. This project showcases our collaborative effort and proficiency in software development, highlighting our ability to deliver sophisticated tools for creative expression.",-->
+
+    <!--    "projects.daymath.description": "DayMath is a comprehensive educational application I developed independently during my university studies, targeting students in Polish primary and secondary schools. The app is designed to enhance mathematical learning through a variety of interactive features, including math quizzes, detailed textual explanations of various topics, and animations that visualize and clarify complex problems. These tools work together to provide an engaging and effective learning experience. Although the app is still a work in progress and has not been officially released, it represents my commitment to improving education through technology and my ongoing efforts to refine and expand its capabilities.",-->
+    <!--    "projects.daymath.shortDescription": "Educational app for Polish students, featuring math quizzes, explanations, and animations.",-->
+
+    <!--    "projects.movie-ai.shortDescription": "Desktop app recommending movies based on user ratings",-->
+    <!--    "projects.movie-ai.description": "The Movie Recommendation System is a desktop application created in collaboration with a colleague as part of a Fundamentals of Artificial Intelligence course. This app enables users to rate movies they have watched, and employs AI algorithms to recommend new movies tailored to their preferences. By analyzing user ratings and employing sophisticated recommendation techniques, the system provides personalized movie suggestions, enhancing the user’s viewing experience. This project highlights our practical application of AI principles and our ability to develop user-centric, intelligent software solutions.",-->
+
+    <!--    'projects.generator-tabliczek.shortDescription': 'Application generating room number and name plates',-->
+    <!--    'projects.generator-tabliczek.description': 'This application was created in collaboration with a colleague for a programming course in C#. It generates room number and name plates that can be printed and hung next to room doors. The application allows users to choose the font, logo, and text color. It also enables saving the project between sessions.',-->
+
+    <!--    'projects.scheduler.shortDescription': 'Application for generating lesson schedules integrated with Discord.',-->
+    <!--    'projects.scheduler.description': 'This application was created to facilitate the organization of my tutoring sessions. It allows me to easily add new lessons to the schedule. The application is integrated with Discord, enabling me to automatically send notifications about new lessons to my server. It also automatically retrieves the current day of the year and generates a schedule for the upcoming week, allowing the user to set the starting day (e.g., today or tomorrow). It also allows: <br/>-setting the start and end time <br/>-choosing a theme <br/>-classifying individual lessons (exercises, lectures, tutoring sessions (remote or in-person), one-time events, etc.) <br/>-listing dates.',-->
+
+    <!--    'projects.binary-clock.shortDescription': 'Binary clock made using Compose Multiplatform',-->
+    <!--    'projects.binary-clock.description': 'Binary clock made using Compose Multiplatform',-->
+
+    <!--    'projects.subtitles-shifter.shortDescription': 'Simple script allowing to shift subtitles in .srt files',-->
+    <!--    'projects.subtitles-shifter.description': 'Simple script allowing to shift subtitles in .srt files. It was created for my individual need to shift subtitles that did not match the movie version (were delayed by a few seconds forward or backward).',-->
+
+    <!--    'projects.youtube-downloader.shortDescription': 'Multithreaded script allowing to download songs from YouTube',-->
+    <!--    'projects.youtube-downloader.description': 'This application allows you to download a playlist from Spotify, via YouTube. It requires the user to export the playlist to a .csv file using the Exportify application, and then downloads the songs from YouTube in separate threads, searching for them by name and artist, and saving them in an organized way - creating folders with artists, and naming each song with its title.',-->
+
+    <!--    'projects.tic-tac-toe.shortDescription': 'Simple Tic-Tac-Toe game that can be played with a friend on Discord',-->
+    <!--    'projects.tic-tac-toe.description': 'Simple Tic-Tac-Toe game that can be played with a friend on Discord',-->
+
+    <!--    'projects.crypto-tracker.shortDescription': 'App tracking cryptocurrency prices',-->
+    <!--    'projects.crypto-tracker.description': 'App tracking cryptocurrency prices. It allows adding cryptocurrencies to track, and displays their current prices along with a chart of changes over the last 24 hours.',-->
+
+    <!--    'experience.tutor.name': 'Math Tutor',-->
+    <!--    'experience.tutor.description': 'Teaching mathematics to students',-->
+    <!--    'experience.tutor.shortDescription': 'Teaching mathematics to students',-->
+
+    <!--    'experience.freelancer.name': 'Freelancer',-->
+    <!--    'experience.freelancer.description': 'Creating applications for clients',-->
+    <!--    'experience.freelancer.shortDescription': 'Creating applications for clients',-->
+
+    <!--    'education.uj.degree': "Bachelor degree of Computer Science",-->
+    <!--    'education.uj.organization': "Jagiellonian University",-->
+
+    <!--    'education.zsz.degree': "IT Technician",-->
+    <!--    'education.zsz.organization': "Zespół Szkół Zawodowych w Przeworsku",-->
+    <!--    'education.location': "Poland",-->
+
+    <!--    'Algebra': 'Algebra',-->
+    <!--    'Computer Organization and Architecture': 'Computer Organization and Architecture',-->
+    <!--    'Programming': 'Programming',-->
+    <!--    'Logic and Set Theory': 'Logic and Set Theory',-->
+    <!--    'Mathematical Analysis': 'Mathematical Analysis',-->
+    <!--    'Programming Methods': 'Programming Methods',-->
+    <!--    'Operating Systems': 'Operating Systems',-->
+    <!--    'Algorithms and Data Structures': 'Algorithms and Data Structures',-->
+    <!--    'Discrete Mathematics': 'Discrete Mathematics',-->
+    <!--    'Databases': 'Databases',-->
+    <!--    'Software Engineering': 'Software Engineering',-->
+    <!--    'Probability and Statistics': 'Probability and Statistics',-->
+    <!--    'Computer Networks': 'Computer Networks',-->
+    <!--    'Formal Languages and Automata': 'Formal Languages and Automata',-->
+    <!--    'Numerical Methods': 'Numerical Methods',-->
+    <!--    'Functional Programming': 'Functional Programming',-->
+    <!--    'Android Programming': 'Android Programming',-->
+    <!--    'Design Patterns': 'Design Patterns',-->
+    <!--    'C# Programming': 'C# Programming',-->
+    <!--    'Cognitive Systems': 'Cognitive Systems',-->
+    <!--    'Cognitive Science': 'Cognitive Science',-->
+    <!--    'Web Programming': 'Web Programming',-->
+    <!--    'Fundamentals of AI': 'Fundamentals of AI',-->
+    <!--    'English': 'English',-->
+
+    <!--    'Networking': 'Networking',-->
+    <!--    'Hardware Maintenance': 'Hardware Maintenance',-->
+    <!--    'Certificate: CCNA Routing and Switching: Introduction to Networks': 'Certificate: CCNA Routing and Switching: Introduction to Networks',-->
+    <!--    'Certificate: PCAP: Programming Essentials in Python': 'Certificate: PCAP: Programming Essentials in Python',-->
+    <!--    'Certificate: NDG Linux Unhatched': 'Certificate: NDG Linux Unhatched',-->
+    <!--    'Certificate: Introduction to Cybersecurity': 'Certificate: Introduction to Cybersecurity',-->
+    <!--    'Certificate: Cybersecurity Essentials': 'Certificate: Cybersecurity Essentials',-->
+    <!--    'Certificate: Be Your Own Boss': 'Certificate: Be Your Own Boss',-->
+    <!--    'Certificate: Get Connected': 'Certificate: Get Connected',-->
+    <!--    'Certificate: Introduction to the Internet of Everything': 'Certificate: Introduction to the Internet of Everything',-->
+    <!--    'Certificate: 3ds Max Animation': 'Certificate: 3ds Max Animation',-->
+    <!--    'Certificate: 3ds Max Visualisation': 'Certificate: 3ds Max Visualisation',-->
+    <!--    'Certificate: 3ds Max Modeling': 'Certificate: 3ds Max Modeling',-->
+    <!--    'Certificate: EU Code Week': 'Certificate: EU Code Week',-->
+    <!--    'Certificate: CPA: Programming Essentials in C++': 'Certificate: CPA: Programming Essentials in C++',-->
+
+    <!--    '1st Place in the Independence Dictation Contest': '1st Place in the Independence Dictation Contest',-->
+    <!--    'Przeworsk County Scholarship': 'Przeworsk County Scholarship',-->
+    <!--    '1st Place in the EXPERT Group at the PIX 2019 Contest - National School Programming Championship': '1st Place in the EXPERT Group at the PIX 2019 Contest - National School Programming Championship',-->
+    <!--    'Qualification to the Semi-Finals of the Polish Edition of the International Pix Programming Challenge': 'Qualification to the Semi-Finals of the Polish Edition of the International Pix Programming Challenge',-->
+    <!--    'Honorable Mention in the National History Contest "Krag"': 'Honorable Mention in the National History Contest "Krąg"',-->
+    <!--    '2nd Place in the 24th Prof. Jan Marszal Mathematics Contest for Middle Schools': '2nd Place in the 24th Prof. Jan Marszał Mathematics Contest for Middle Schools',-->
+    <!--    '1st Place in the School Programming Contest': '1st Place in the School Programming Contest',-->
+    <!--    'Honorable Mention in the 15th District Math Contest "Procent"': 'Honorable Mention in the 15th District Math Contest "Procent"',-->
+    <!--    '1st Place in the 14th District Math Contest for Second-Year Middle School Students': '1st Place in the 14th District Math Contest for Second-Year Middle School Students',-->
+    <!--    '2nd Place in the School English Contest': '2nd Place in the School English Contest',-->
+    <!--    'Honorable Mention in the International Math Contest "Kangur Matematyczny"': 'Honorable Mention in the International Math Contest "Kangur Matematyczny"',-->
+
+    <!--    "View": "View",-->
+
+    <!--    "month": "month",-->
+    <!--    "months": "months",-->
+    <!--    "year": "year",-->
+    <!--    "years": "years",-->
+
+    <!--    "Present": "Present",-->
+    <!--    },-->
