@@ -16,8 +16,14 @@ object AppTypography {
 
     val titleLarge = TextStyle(
         fontSize = 32.sp,
-        fontWeight = FontWeight.Bold,
+        fontWeight = FontWeight.ExtraBold,
         lineHeight = 36.sp,
+    )
+
+    val titleMedium = TextStyle(
+        fontSize = 24.sp,
+        fontWeight = FontWeight.Bold,
+        lineHeight = 28.sp,
     )
 
     val bodyLarge = TextStyle(
@@ -37,6 +43,12 @@ object AppTypography {
         fontWeight = FontWeight.Medium,
         lineHeight = 20.sp,
     )
+
+    val labelSmall = TextStyle(
+        fontSize = 16.sp,
+        fontWeight = FontWeight.Medium,
+        lineHeight = 16.sp,
+    )
 }
 
 // Usage in Compose
@@ -49,11 +61,11 @@ fun AppTypography() = Typography(
 //    headlineMedium = AppTypography2.heading2,
 //    headlineSmall = AppTypography2.heading3,
     titleLarge = AppTypography.titleLarge,
-//    titleMedium = AppTypography2.heading5,
+    titleMedium = AppTypography.titleMedium,
     bodyLarge = AppTypography.bodyLarge,
-//    bodyMedium = AppTypography2.bodyMedium,
+    bodyMedium = AppTypography.bodyMedium,
 //    bodySmall = AppTypography2.bodySmall,
 //    labelLarge = AppTypography2.buttonLarge,
     labelMedium = AppTypography.labelMedium,
-//    labelSmall = AppTypography2.bodySmall
+    labelSmall = AppTypography.labelSmall
 )

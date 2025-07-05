@@ -1,5 +1,6 @@
 package pl.michal_cyran.website.education.presentation
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -13,6 +14,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -33,9 +35,9 @@ fun EducationCard(
     modifier: Modifier = Modifier
 ) {
     Card(
-        modifier = modifier.fillMaxWidth(),
+        modifier = modifier,
         colors = CardDefaults.cardColors(
-            containerColor = Color(0xFF1E293B)
+            containerColor = MaterialTheme.colorScheme.surfaceContainer
         ),
         shape = RoundedCornerShape(16.dp)
     ) {
@@ -43,7 +45,6 @@ fun EducationCard(
             modifier = Modifier.padding(24.dp)
         ) {
             Row(
-                modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
@@ -61,18 +62,16 @@ fun EducationCard(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.padding(bottom = 8.dp)
             ) {
-                Icon(
-                    painter = painterResource(Res.drawable.light_mode),
+                Image(
+                    painter = painterResource(education.icon),
                     contentDescription = "Institution",
-                    tint = Color(0xFF06B6D4),
-                    modifier = Modifier.size(16.dp)
+                    modifier = Modifier.size(100.dp)
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
                     text = education.institution,
                     color = Color(0xFF06B6D4),
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.Medium
+                    style = MaterialTheme.typography.titleLarge,
                 )
             }
 
@@ -112,24 +111,6 @@ fun EducationCard(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Qualification description
-            Text(
-                text = "Qualification",
-                fontSize = 16.sp,
-                fontWeight = FontWeight.SemiBold,
-                color = Color.White,
-                modifier = Modifier.padding(bottom = 8.dp)
-            )
-
-            Text(
-                text = education.qualification,
-                color = Color(0xFF94A3B8),
-                fontSize = 14.sp,
-                lineHeight = 20.sp
-            )
-
-            Spacer(modifier = Modifier.height(24.dp))
-
             // Core Subjects
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -153,12 +134,17 @@ fun EducationCard(
             Spacer(modifier = Modifier.height(16.dp))
 
             // Subject list
-            education.subjects.forEach { subject ->
-                SubjectItem(subject = subject)
-                Spacer(modifier = Modifier.height(12.dp))
-            }
+            education.subjects
+                .groupBy { it.category }
+                .forEach { (category, subjects) ->
+                    CategorySection(
+                        category = category,
+                        subjects = subjects,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                    Spacer(modifier = Modifier.height(12.dp))
+                }
 
-            // Certificates section (only for IT Technician)
             if (education.certificates.isNotEmpty()) {
                 Spacer(modifier = Modifier.height(16.dp))
 
@@ -183,13 +169,11 @@ fun EducationCard(
 
                 Spacer(modifier = Modifier.height(16.dp))
 
-                education.certificates.take(3).forEach { certificate ->
+                education.certificates.forEach { certificate ->
                     CertificateItem(certificate = certificate)
                     Spacer(modifier = Modifier.height(8.dp))
                 }
             }
-
-            Spacer(modifier = Modifier.height(24.dp))
         }
     }
 }

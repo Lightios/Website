@@ -18,15 +18,17 @@ import pl.michal_cyran.website.skills.data.skills
 
 import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.light_mode
+import website.composeapp.generated.resources.search
 
 
 @Composable
-fun SkillsScreen() {
+fun SkillsScreen(
+    modifier: Modifier = Modifier
+) {
     var searchQuery by remember { mutableStateOf("") }
 
     Column(
-        modifier = Modifier
-            .fillMaxWidth(0.8f)
+        modifier = modifier
             .padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -63,13 +65,12 @@ fun SkillsScreen() {
             },
             leadingIcon = {
                 Icon(
-                    painter = painterResource(Res.drawable.light_mode),
+                    painter = painterResource(Res.drawable.search),
                     contentDescription = "Search",
                     tint = Color(0xFF6B7280)
                 )
             },
             modifier = Modifier
-                .fillMaxWidth()
                 .clip(RoundedCornerShape(12.dp)),
             colors = OutlinedTextFieldDefaults.colors(
                 focusedBorderColor = Color(0xFF374151),
@@ -83,7 +84,7 @@ fun SkillsScreen() {
 
         Spacer(modifier = Modifier.height(48.dp))
 
-        LazyColumn(
+        Column(
             verticalArrangement = Arrangement.spacedBy(32.dp)
         ) {
             skills
@@ -92,14 +93,12 @@ fun SkillsScreen() {
                     (category, skillsList) ->
 
                     if (skillsList.isEmpty()) return@forEach
-                    item {
                         SkillSection(
                             title = category.title,
                             icon = category.icon,
                             skills = skillsList,
                             searchQuery = searchQuery
                         )
-                    }
                 }
 
         }

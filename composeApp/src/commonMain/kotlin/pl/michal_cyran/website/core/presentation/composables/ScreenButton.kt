@@ -1,30 +1,21 @@
-package pl.michal_cyran.website.core
+package pl.michal_cyran.website.core.presentation.composables
 
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import kotlinx.coroutines.launch
 
 @Composable
 fun ScreenButton(
-    index: Int,
     text: String,
-    listState: LazyListState,
+    onClick: () -> Unit,
 ) {
-    val coroutineScope = rememberCoroutineScope()
 
     TextButton(
-        onClick = {
-            coroutineScope.launch {
-                listState.animateScrollToItem(index)
-            }
-        },
+        onClick = onClick,
         modifier = Modifier.padding(start = 8.dp)
     ) {
         Text(

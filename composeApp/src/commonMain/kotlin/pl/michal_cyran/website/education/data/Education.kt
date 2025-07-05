@@ -4,6 +4,9 @@ import androidx.compose.ui.graphics.Color
 import pl.michal_cyran.website.education.domain.Education
 import pl.michal_cyran.website.education.domain.Subject
 import pl.michal_cyran.website.education.domain.SubjectCategory
+import website.composeapp.generated.resources.Res
+import website.composeapp.generated.resources.uj
+import website.composeapp.generated.resources.zsz
 
 val education = listOf(
     Education(
@@ -21,20 +24,21 @@ val education = listOf(
             Subject("Web Programming", SubjectCategory.ProgrammingAndSoftwareEngineering),
         ),
         certificates = listOf(
-            "Certificate: CCNA Routing and Switching: Introduction to Networks",
-            "Certificate: PCAP: Programming Essentials in Python",
-            "Certificate: NDG Linux Unhatched",
-            "Certificate: Introduction to Cybersecurity",
-            "Certificate: Cybersecurity Essentials",
-            "Certificate: Be Your Own Boss",
-            "Certificate: Get Connected",
-            "Certificate: Introduction to the Internet of Everything",
-            "Certificate: 3ds Max Animation",
-            "Certificate: 3ds Max Visualisation",
-            "Certificate: 3ds Max Modeling",
-            "Certificate: EU Code Week",
-            "Certificate: CPA: Programming Essentials in C++",
+            "CCNA Routing and Switching: Introduction to Networks",
+            "PCAP: Programming Essentials in Python",
+            "NDG Linux Unhatched",
+            "Introduction to Cybersecurity",
+            "Cybersecurity Essentials",
+            "Be Your Own Boss",
+            "Get Connected",
+            "Introduction to the Internet of Everything",
+            "3ds Max Animation",
+            "3ds Max Visualisation",
+            "3ds Max Modeling",
+            "EU Code Week",
+            "CPA: Programming Essentials in C++",
         ),
+        icon = Res.drawable.zsz
     ),
     Education(
         title = "Bachelor of Computer Science",
@@ -69,5 +73,6 @@ val education = listOf(
             Subject("English", SubjectCategory.Other)
         ),
         certificates = emptyList(),
+        icon = Res.drawable.uj
     )
 )

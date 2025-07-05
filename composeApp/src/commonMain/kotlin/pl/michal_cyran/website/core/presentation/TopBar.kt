@@ -1,6 +1,5 @@
-package pl.michal_cyran.website.core
+package pl.michal_cyran.website.core.presentation
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -17,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.resources.painterResource
+import pl.michal_cyran.website.core.presentation.composables.ScreenButton
 import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.dark_mode
 import website.composeapp.generated.resources.light_mode
@@ -26,6 +26,14 @@ fun TopBar(
     darkTheme: Boolean,
     onToggleTheme: () -> Unit,
     listState: LazyListState,
+    onHomeNavigate: () -> Unit,
+    onSkillsNavigate: () -> Unit,
+    onEducationNavigate: () -> Unit,
+    onExperienceNavigate: () -> Unit,
+    onProjectsNavigate: () -> Unit,
+    onAchievementsNavigate: () -> Unit,
+    onSocialMediaNavigate: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     Row(
         modifier = Modifier
@@ -59,11 +67,12 @@ fun TopBar(
             modifier = Modifier.weight(1f)
         )
 
-        ScreenButton(0, "Strona główna", listState)
-        ScreenButton(1, "O mnie", listState)
-        ScreenButton(2, "Oferta", listState)
-        ScreenButton(3, "O zajęciach", listState)
-        ScreenButton(4, "Opinie", listState)
-        ScreenButton(5, "Kontakt", listState)
+        ScreenButton("Home", onHomeNavigate)
+        ScreenButton("Skills", onSkillsNavigate)
+        ScreenButton("Education", onEducationNavigate)
+        ScreenButton("Experience", onExperienceNavigate)
+        ScreenButton("Projects", onProjectsNavigate)
+        ScreenButton("Achievements", onAchievementsNavigate)
+        ScreenButton("Social Media", onSocialMediaNavigate)
     }
 }

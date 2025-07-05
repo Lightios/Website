@@ -21,19 +21,23 @@ import website.composeapp.generated.resources.light_mode
 
 @Composable
 fun EducationScreen() {
-    Row(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Color(0xFF0F172A))
-            .padding(16.dp),
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(20.dp)
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        for (education in education) {
-            EducationCard(
-                education = education,
-                modifier = Modifier.weight(1f).fillMaxHeight()
-            )
+        Row(
+            modifier = Modifier
+                .fillMaxWidth(0.8f)
+                .background(MaterialTheme.colorScheme.background)
+                .padding(16.dp),
+            horizontalArrangement = Arrangement.spacedBy(60.dp)
+        ) {
+            for (education in education) {
+                EducationCard(
+                    education = education,
+                    modifier = Modifier.weight(1f).fillMaxHeight()
+                )
+            }
         }
     }
 }

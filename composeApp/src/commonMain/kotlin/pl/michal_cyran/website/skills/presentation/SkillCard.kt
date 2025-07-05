@@ -41,7 +41,7 @@ fun SkillCard(
         shape = RoundedCornerShape(16.dp)
     ) {
         Row(
-            modifier = Modifier.fillMaxWidth().padding(20.dp),
+            modifier = Modifier.padding(20.dp),
             horizontalArrangement = Arrangement.spacedBy(10.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
