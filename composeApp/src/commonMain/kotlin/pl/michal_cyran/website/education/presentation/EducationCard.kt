@@ -24,9 +24,18 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.pluralStringResource
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.education.domain.Education
 import website.composeapp.generated.resources.Res
+import website.composeapp.generated.resources.calendar_month
+import website.composeapp.generated.resources.courses
 import website.composeapp.generated.resources.light_mode
+import website.composeapp.generated.resources.location
+import website.composeapp.generated.resources.n_certificates
+import website.composeapp.generated.resources.n_courses
+import website.composeapp.generated.resources.n_years
+import website.composeapp.generated.resources.professional_certificates
 
 
 @Composable
@@ -39,7 +48,8 @@ fun EducationCard(
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceContainer
         ),
-        shape = RoundedCornerShape(16.dp)
+        shape = RoundedCornerShape(16.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
     ) {
         Column(
             modifier = Modifier.padding(24.dp)
@@ -49,7 +59,7 @@ fun EducationCard(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = education.title,
+                    text = stringResource(education.title),
                     fontSize = 24.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.White
@@ -69,7 +79,7 @@ fun EducationCard(
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = education.institution,
+                    text = stringResource(education.institution),
                     color = Color(0xFF06B6D4),
                     style = MaterialTheme.typography.titleLarge,
                 )
@@ -81,14 +91,14 @@ fun EducationCard(
                 modifier = Modifier.padding(bottom = 8.dp)
             ) {
                 Icon(
-                    painter = painterResource(Res.drawable.light_mode),
+                    painter = painterResource(Res.drawable.calendar_month),
                     contentDescription = "Duration",
                     tint = Color(0xFF64748B),
                     modifier = Modifier.size(16.dp)
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = education.duration,
+                    text = pluralStringResource(Res.plurals.n_years, education.durationInYears, education.durationInYears),
                     color = Color(0xFF64748B),
                     fontSize = 14.sp
                 )
@@ -96,14 +106,14 @@ fun EducationCard(
                 Spacer(modifier = Modifier.width(16.dp))
 
                 Icon(
-                    painter = painterResource(Res.drawable.light_mode),
+                    painter = painterResource(Res.drawable.location),
                     contentDescription = "Location",
                     tint = Color(0xFF64748B),
                     modifier = Modifier.size(16.dp)
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = education.location,
+                    text = stringResource(education.location),
                     color = Color(0xFF64748B),
                     fontSize = 14.sp
                 )
@@ -118,14 +128,18 @@ fun EducationCard(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = if (education.certificates.isNotEmpty()) "Core Subjects" else "Course Curriculum",
+                    text = stringResource(Res.string.courses),
                     fontSize = 16.sp,
                     fontWeight = FontWeight.SemiBold,
                     color = Color.White
                 )
 
                 Text(
-                    text = "${education.subjects.size} ${if (education.certificates.isNotEmpty()) "Subjects" else "Courses"}",
+                    text = pluralStringResource(
+                        Res.plurals.n_courses,
+                        education.subjects.size,
+                        education.subjects.size
+                    ),
                     fontSize = 14.sp,
                     color = Color(0xFF64748B)
                 )
@@ -154,14 +168,18 @@ fun EducationCard(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = "Professional Certificates",
+                        text = stringResource(Res.string.professional_certificates),
                         fontSize = 16.sp,
                         fontWeight = FontWeight.SemiBold,
                         color = Color.White
                     )
 
                     Text(
-                        text = "${education.certificates.size} Certificates",
+                        text = pluralStringResource(
+                            Res.plurals.n_certificates,
+                            education.certificates.size,
+                            education.certificates.size
+                        ),
                         fontSize = 14.sp,
                         color = Color(0xFF64748B)
                     )

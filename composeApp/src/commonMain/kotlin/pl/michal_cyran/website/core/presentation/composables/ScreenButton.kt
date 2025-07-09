@@ -7,10 +7,12 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import org.jetbrains.compose.resources.StringResource
+import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun ScreenButton(
-    text: String,
+    text: StringResource,
     onClick: () -> Unit,
 ) {
 
@@ -19,7 +21,7 @@ fun ScreenButton(
         modifier = Modifier.padding(start = 8.dp)
     ) {
         Text(
-            text = text,
+            text = stringResource(text),
             style = MaterialTheme.typography.bodyMedium
         )
     }

@@ -1,314 +1,249 @@
 <resources>
-    <string name="selected_language">Hejka</string>
-    <string name="app_name">Strona PL</string>
+    <string name="welcome_p1">Witaj w moim</string>
+    <string name="welcome_p2">cyfrowym portfolio!</string>
+
 
     <string name="homepage_description">Pasjonuję się informatyką i rozwijam się w tworzeniu aplikacji na Androida</string>
     <string name="homepage_tutor_website">Moja strona korepetycji</string>
-<!--    <string name="Skills">Umiejętności</string>-->
-<!--    <string name="Projects">Projekty</string>-->
-<!--    <string name="Experience">Doświadczenie</string>-->
-<!--    <string name="Education">Edukacja</string>-->
-<!--    <string name="Achievements">Osiągnięcia</string>-->
-<!--    <string name="Resume">CV</string>-->
-<!--    <string name="NoResults">Nie udało się niczego znaleźć...</string>-->
-<!--    <string name="SearchPlaceholder">Wyszukaj...</string>-->
-<!--    <string name="Search">Szukaj</string>-->
-<!--    <string name="Programming Languages">Języki Programowania</string>-->
-<!--    <string name="Frameworks">Frameworki</string>-->
-<!--    <string name="Markup Style">Markup &amp; Style</string>-->
-<!--    <string name="Libraries">Biblioteki</string>-->
-<!--    <string name="Languages">Języki</string>-->
-<!--    <string name="Commercial">Komercyjne</string>-->
-<!--    <string name="Academic">Akademickie</string>-->
-<!--    <string name="Tools">Narzędzia</string>-->
-<!--    <string name="Projects for practice">Projekty dla praktyki</string>-->
-<!--    <string name="Home">Z domu</string>-->
-<!--    <string name="Self-employed">Samozatrudnienie</string>-->
-<!--    <string name="Freelance">Freelance</string>-->
 
-<!--    <string name="projects.master-system.description">Ta aplikacja do zarządzania turniejami została opracowana na zlecenie, aby ułatwić rozgrywki według algorytmu specyficznego dla klienta. Aplikacja zapewnia przyjazny interfejs do wprowadzania wyników meczów, automatycznie paruje drużyny na kolejną rundę na podstawie algorytmu, oblicza punkty i generuje kompleksowe podsumowania PDF postępów turnieju. Dodatkowo tworzy wykresy, aby wizualnie przedstawić logikę i wyniki algorytmu. Aplikacja jest przetłumaczona na cztery języki za pomocą modułu gettext w Pythonie, co zapewnia dostępność dla zróżnicowanej grupy użytkowników. Ten projekt pokazuje moją zdolność do dostarczania dostosowanych, wielojęzycznych rozwiązań programowych, które spełniają specyficzne wymagania klienta i usprawniają zarządzanie złożonymi strukturami turniejowymi.</string>-->
-<!--    <string name="projects.master-system.shortDescription">Aplikacja do zarządzania turniejami z niestandardowym algorytmem z wieloma funkcjami</string>-->
+    <!-- COMMON -->
+    <string name="main">Strona główna</string>
+    <string name="skills">Umiejętności</string>
+    <string name="projects">Projekty</string>
+    <string name="experience">Doświadczenie</string>
+    <string name="education">Edukacja</string>
+    <string name="social_media">Social Media</string>
+    <string name="achievements">Osiągnięcia</string>
+    <string name="resume">CV</string>
+    <string name="no_results">Nie udało się niczego znaleźć...</string>
+    <string name="search_placeholder">Wyszukaj...</string>
+    <string name="search">Szukaj</string>
 
-<!--    <string name="projects.vl.description">Valorant Lineups jest aplikacją mobilną stworzona dla graczy Valoranta, aby usprawnić ich strategie w grze. Aplikacja oferuje szeroką kolekcję lineupów, umożliwiając graczom wykonywanie zaawansowanych technik bez konieczności rozległego zapamiętywania. Dostarczając wskazówki w czasie rzeczywistym i szczegółowe instrukcje, Valorant Lineups usprawnia proces uczenia się i umożliwia graczom osiągnięcie najlepszych wyników, poprawiając zarówno wyniki indywidualne, jak i zespołowe.</string>-->
-<!--    <string name="projects.vl.shortDescription">Aplikacja mobilna dla graczy Valoranta do sprawdzania lineupów podczas gry</string>-->
-<!--    <string name="projects.demiurg.shortDescription">Kreator i interpretator gier tekstowych umożliwiający projektowanie i granie w interaktywne narracje.</string>-->
-<!--    <string name="projects.demiurg.description">Demiurg to kompleksowa aplikacja opracowana w ramach kursu Inżynierii Oprogramowania, stworzona przez zespół pięciu osób. Projekt obejmuje solidny kreator i interpretator gier tekstowych, pozwalający użytkownikom projektować złożone światy gier z zaawansowanymi mechanikami, takimi jak nieliniowe zadania i dynamiczne fabuły. Kreator umożliwia użytkownikom tworzenie szczegółowych interaktywnych narracji, podczas gdy interpretator zapewnia immersyjne doświadczenie podczas grania w te gry. Ten projekt pokazuje nasze wspólne wysiłki i biegłość w programowaniu, podkreślając naszą zdolność do dostarczania zaawansowanych narzędzi do wyrażania kreatywności.</string>-->
-<!--    <string name="projects.daymath.description">DayMath to kompleksowa aplikacja edukacyjna, którą opracowałem samodzielnie podczas studiów na uniwersytecie, skierowana do uczniów polskich szkół</string>-->
-<!--    <string name="projects.daymath.shortDescription">Aplikacja edukacyjna dla polskich uczniów, zawierająca quizy matematyczne, wyjaśnienia i animacje.</string>-->
-<!--    <string name="projects.movie-ai.shortDescription">Aplikacja desktopowa rekomendująca filmy na podstawie ocen użytkownika, rozwijana na kursie podstaw sztucznej inteligencji z kolegą.</string>-->
-<!--    <string name="projects.movie-ai.description">System Rekomendacji Filmów to aplikacja desktopowa stworzona we współpracy z kolegą w ramach kursu Podstaw Sztucznej Inteligencji. Ta aplikacja umożliwia użytkownikom ocenianie filmów, które obejrzeli, i wykorzystuje algorytmy AI do rekomendowania nowych filmów dostosowanych do ich preferencji. Analizując oceny użytkowników i stosując zaawansowane techniki rekomendacji, system dostarcza spersonalizowane propozycje filmów, poprawiając doświadczenie użytkownika związanego z oglądaniem. Ten projekt podkreśla nasze praktyczne zastosowanie zasad AI i naszą zdolność do tworzenia inteligentnych rozwiązań programowych zorientowanych na użytkownika.</string>-->
-<!--    <string name="projects.generator-tabliczek.shortDescription">Aplikacja generująca tabliczki z numerami pokoi oraz nazwiskami</string>-->
-<!--    <string name="projects.generator-tabliczek.description">Aplikacja ta została stworzona we współpracy z kolegą na zaliczenie ćwiczeń z programowania w C#. Generuje ona tabliczki z numerami pokoi oraz nazwiskami, które mogą być wydrukowane i zawieszone obok drzwi pokoi. Aplikacja umożliwia wybór czcionki, loga oraz koloru tekstu. Pozwala także na zapisywanie projektu między sesjami.</string>-->
-<!--    <string name="projects.scheduler.shortDescription">Aplikacja do generowania grafiku zajęć zintegrowana z Discordem.</string>-->
-<!--    <string name="projects.scheduler.description">Aplikacja ta została stworzona dla ułatwienia organizacji moich korepetycji. W prosty sposób umożliwia mi dopisywanie nowych zajęć w grafiku. Aplikacja jest zintegrowana z Discordem, dzięki czemu mogę automatycznie wysyłać powiadomienia o nowych zajęciach na mój serwer. Automatycznie też pobiera obecny dzień roku i generuje grafik na najbliższy tydzień, dając możliwość ustawienia dnia, od którego będzie się zaczynał (np. dzisiaj lub jutro). Umożliwia także: <br/>-ustawienie godziny początkowej i końcowej <br/>-wybór motywu <br/>-klasyfikację poszczególnych zajęć (ćwiczenia, wykłady, korepetycje (zdalne lub stacjonarne), zdarzenia jednorazowe itp.<br/>-wypisywanie dat.</string>-->
-<!--    <string name="projects.binary-clock.shortDescription">Zegar binarny z wykorzystaniem Compose Multiplatform</string>-->
-<!--    <string name="projects.binary-clock.description">Zegar binarny z wykorzystaniem Compose Multiplatform</string>-->
-<!--    <string name="projects.subtitles-shifter.shortDescription">Prosty skrypt umożliwiający przesunięcie napisów w plikach .srt</string>-->
-<!--    <string name="projects.subtitles-shifter.description">Prosty skrypt umożliwiający przesunięcie napisów w plikach .srt. Został stworzony na moją indywidualną potrzebę, bym mógł przesunąć napisy, które nie pasowały do wersji filmu (były opóźnione o kilka sekund w przód lub tył).</string>-->
-<!--    <string name="projects.youtube-downloader.shortDescription">Wielowątkowy skrypt, który umożliwia pobranie piosenek z serwisu YouTube</string>-->
-<!--    <string name="projects.youtube-downloader.description">Dzięki tej aplikacji można pobrać playlistę ze Spotify, za pośrednictwem YouTube'a. Wymaga od użytkownika wyeksportowania playlisty do pliku .csv za pośrednictwem aplikacji Exportify, a następnie pobiera w osobnych wątkach piosenki z YouTube'a, wyszukując je po nazwie i autorze oraz zapisuje je w przejrzysty sposób - tworzy foldery z wykonawcami, a każdą piosenkę podpisuje jej tytułem.</string>-->
-<!--    <string name="projects.tic-tac-toe.shortDescription">Prosta gra w kółko i krzyżyk, którą można zagrać ze znajomym na Discordzie</string>-->
-<!--    <string name="projects.tic-tac-toe.description">Prosta gra w kółko i krzyżyk, którą można zagrać ze znajomym na Discordzie</string>-->
-<!--    <string name="projects.crypto-tracker.shortDescription">Aplikacja śledząca kursy kryptowalut</string>-->
-<!--    <string name="projects.crypto-tracker.description">Aplikacja śledząca kursy kryptowalut. Umożliwia dodawanie kryptowalut do śledzenia, a także wyświetla ich aktualne kursy wraz z wykresem zmian w ciągu ostatnich 24 godzin.</string>-->
-<!--    <string name="experience.tutor.name">Korepetytor matematyki</string>-->
-<!--    <string name="experience.tutor.description">Nauczanie matematyki</string>-->
-<!--    <string name="experience.tutor.shortDescription">Nauczanie matematyki</string>-->
-<!--    <string name="experience.freelancer.name">Freelancer</string>-->
-<!--    <string name="experience.freelancer.description">Tworzenie aplikacji dla klientów</string>-->
-<!--    <string name="experience.freelancer.shortDescription">Tworzenie aplikacji dla klientów</string>-->
-<!--    <string name="education.uj.degree">Licencjat Informatyki</string>-->
-<!--    <string name="education.uj.organization">Uniwersytet Jagielloński</string>-->
-<!--    <string name="education.zsz.degree">Technik Informatyk</string>-->
-<!--    <string name="education.zsz.organization">Zespół Szkół Zawodowych w Przeworsku</string>-->
-<!--    <string name="education.location">Polska</string>-->
-<!--    <string name="Algebra">Algebra</string>-->
-<!--    <string name="Computer Organization and Architecture">Organizacja i Architektura Komputerów</string>-->
-<!--    <string name="Programming">Programowanie</string>-->
-<!--    <string name="Logic and Set Theory">Logika i Teoria Mnogości</string>-->
-<!--    <string name="Mathematical Analysis">Analiza Matematyczna</string>-->
-<!--    <string name="Programming Methods">Metody Programowania</string>-->
-<!--    <string name="Operating Systems">Systemy Operacyjne</string>-->
-<!--    <string name="Algorithms and Data Structures">Algorytmy i Struktury Danych</string>-->
-<!--    <string name="Discrete Mathematics">Matematyka Dyskretna</string>-->
-<!--    <string name="Databases">Bazy Danych</string>-->
-<!--    <string name="Software Engineering">Inżynieria Oprogramowania</string>-->
-<!--    <string name="Probability and Statistics">Prawdopodobieństwo i Statystyka</string>-->
-<!--    <string name="Computer Networks">Sieci Komputerowe</string>-->
-<!--    <string name="Formal Languages and Automata">Języki Formalne i Automaty</string>-->
-<!--    <string name="Numerical Methods">Metody Numeryczne</string>-->
-<!--    <string name="Functional Programming">Programowanie Funkcyjne</string>-->
-<!--    <string name="Android Programming">Programowanie urządzeń mobilnych - Android</string>-->
-<!--    <string name="Design Patterns">Wzorce Projektowe</string>-->
-<!--    <string name="C# Programming">Programowanie w C#</string>-->
-<!--    <string name="Cognitive Systems">Cognitive Systems</string>-->
-<!--    <string name="Cognitive Science">Kognitywistyka</string>-->
-<!--    <string name="Web Programming">Programowanie Webowe</string>-->
-<!--    <string name="Fundamentals of AI">Podstawy Sztucznej Inteligencji</string>-->
-<!--    <string name="English">Język Angielski</string>-->
-<!--    <string name="Networking">Sieci Komputerowe</string>-->
-<!--    <string name="Hardware Maintenance">Urządzenia Komputerowe</string>-->
-<!--    <string name="Certificate CCNA Routing and Switching Introduction to Networks">Certyfikat: CCNA Routing and Switching: Introduction to Networks</string>-->
-<!--    <string name="Certificate PCAP Programming Essentials in Python">Certyfikat: PCAP: Programming Essentials in Python</string>-->
-<!--    <string name="Certificate NDG Linux Unhatched">Certyfikat: NDG Linux Unhatched</string>-->
-<!--    <string name="Certificate Introduction to Cybersecurity">Certyfikat: Introduction to Cybersecurity</string>-->
-<!--    <string name="Certificate Cybersecurity Essentials">Certyfikat: Cybersecurity Essentials</string>-->
-<!--    <string name="Certificate Be Your Own Boss">Certyfikat: Be Your Own Boss</string>-->
-<!--    <string name="Certificate Get Connected">Certyfikat: Get Connected</string>-->
-<!--    <string name="Certificate Introduction to the Internet of Everything">Certyfikat: Introduction to the Internet of Everything</string>-->
-<!--    <string name="Certificate 3ds Max Animation">Certyfikat: 3ds Max Animation</string>-->
-<!--    <string name="Certificate 3ds Max Visualisation">Certyfikat: 3ds Max Visualisation</string>-->
-<!--    <string name="Certificate 3ds Max Modeling">Certyfikat: 3ds Max Modeling</string>-->
-<!--    <string name="Certificate EU Code Week">Certyfikat: EU Code Week</string>-->
-<!--    <string name="Certificate CPA Programming Essentials in C++">Certyfikat: CPA: Programming Essentials in C++</string>-->
-<!--    <string name="1st Place in the Independence Dictation Contest">1. miejsce w Dyktandzie Niepodległościowym</string>-->
-<!--    <string name="Przeworsk County Scholarship">Stypendium Starosty Przeworskiego</string>-->
-<!--    <string name="1st Place in the EXPERT Group at the PIX 2019 Contest - National School Programming Championship">1. miejsce w grupie EXPERT w Konkursie PIX 2019 - Ogólnopolskie Mistrzostwa Programowania Szkolnego</string>-->
-<!--    <string name="Qualification to the Semi-Finals of the Polish Edition of the International Pix Programming Challenge">Kwalifikacja do półfinałów Polskiej Edycji Międzynarodowego Wyzwania Programowania Pix</string>-->
-<!--    <string name="Honorable Mention in the National History Contest 'Krag'">Wyróżnienie w Ogólnopolskim Konkursie Historycznym "Krąg"</string>-->
-<!--    <string name="2nd Place in the 24th Prof Jan Marszal Mathematics Contest for Middle Schools">2. miejsce w 24. Konkursie Matematycznym dla Gimnazjów im. Prof. Jana Marszała</string>-->
-<!--    <string name="1st Place in the School Programming Contest">1. miejsce w Szkolnym Konkursie Programistycznym</string>-->
-<!--    <string name="Honorable Mention in the 15th District Math Contest 'Procent'">Wyróżnienie w 15. Powiatowym Konkursie Matematycznym "Procent"</string>-->
-<!--    <string name="1st Place in the 14th District Math Contest for Second-Year Middle School Students">1. miejsce w 14. Powiatowym Konkursie Matematycznym dla Uczniów II Gimnazjum</string>-->
-<!--    <string name="2nd Place in the School English Contest">2. miejsce w Szkolnym Konkursie Języka Angielskiego</string>-->
-<!--    <string name="Honorable Mention in the International Math Contest 'Kangur Matematyczny'">Wyróżnienie w Międzynarodowym Konkursie Matematycznym "Kangur"</string>-->
-<!--    <string name="View">Wyświetl</string>-->
-<!--    <string name="month">miesiąc</string>-->
-<!--    <string name="months">miesiące</string>-->
-<!--    <string name="year">rok</string>-->
-<!--    <string name="years">lata</string>-->
-<!--    <string name="Present">Obecnie</string>-->
-<!--    <string name="month.plural">miesiące</string>-->
-<!--    <string name="year.plural">lata</string>-->
-<!--    <string name="month.singular">miesiąc</string>-->
-<!--    <string name="year.singular">rok</string>-->
-<!--    <string name="month.plural.genitive">miesięcy</string>-->
-<!--    <string name="year.plural.genitive">lat</string>-->
-<!--    <string name="month.singular.genitive">miesiąca</string>-->
-<!--    <string name="year.singular.genitive">roku</string>-->
-<!--    <string name="month.plural.accusative">miesiące</string>-->
-<!--    <string name="year.plural.accusative">lata</string>-->
-<!--    <string name="month.singular.accusative">miesiąc</string>-->
-<!--    <string name="year.singular.accusative">rok</string>-->
-<!--    <string name="month.plural.dative">miesiącom</string>-->
-<!--    <string name="year.plural.dative">latom</string>-->
-<!--    <string name="month.singular.dative">miesiącowi</string>-->
-<!--    <string name="year.singular.dative">rokowi</string>-->
-<!--    <string name="month.plural.instrumental">miesiącami</string>-->
-<!--    <string name="year.plural.instrumental">latami</string>-->
-<!--    <string name="month.singular.instrumental">miesiącem</string>-->
-<!--    <string name="year.singular.instrumental">rokiem</string>-->
-<!--    <string name="month.plural.locative">miesiącach</string>-->
-<!--    <string name="year.plural.locative">latach</string>-->
-<!--    <string name="month.singular.locative">miesiącu</string>-->
-<!--    <string name="year.singular.locative">roku</string>-->
-<!--    <string name="month.plural.vocative">miesiące</string>-->
-<!--    <string name="year.plural.vocative">lata</string>-->
-<!--    <string name="month.singular.vocative">miesiącu</string>-->
-<!--    <string name="year.singular.vocative">roku</string>-->
-<!--    <string name="month.plural.genitive.vocative">miesięcy</string>-->
-<!--    <string name="year.plural.genitive.vocative">lat</string>-->
-<!--    <string name="month.singular.genitive.vocative">miesiąca</string>-->
-<!--    <string name="year.singular.genitive.vocative">roku</string>-->
-<!--    <string name="month.plural.accusative.vocative">miesiące</string>-->
-<!--    <string name="year.plural.accusative.vocative">lata</string>-->
-<!--    <string name="month.singular.accusative.vocative">miesiąc</string>-->
-<!--    <string name="year.singular.accusative.vocative">rok</string>-->
-<!--    <string name="month.plural.dative.vocative">miesiącom</string>-->
-<!--    <string name="year.plural.dative.vocative">latom</string>-->
-<!--    <string name="month.singular.dative.vocative">miesiącowi</string>-->
-<!--    <string name="year.singular.dative.vocative">rokowi</string>-->
+    <!-- HOME -->
+    <string name="home_description">Jestem pasjonatem programowania, w szczególności aplikacji na Androida. Na tej stronie możesz przejrzeć moje umiejętności, projekty i osiągnięcia.</string>
+    <string name="skills_description">Posiadam różnorodne umiejętności programistyczne, od aplikacji, przez tworzenie obrazów i dokumentów, po tworzenie animacji.</string>
+    <string name="projects_description">Pracowałem nad wieloma projektami, od aplikacji mobilnych po gry komputerowe.</string>
+    <string name="experience_description">Mam doświadczenie w pracy jako korepetytor matematyki oraz w tworzeniu aplikacji.</string>
+    <string name="education_description">Ukończyłem studia licencjackie z informatyki na Uniwersytecie Jagiellońskim oraz technikum informatyczne.</string>
+    <string name="social_media_description">Możesz mnie znaleźć na różnych platformach społecznościowych, gdzie dzielę się moimi animacjami matematycznymi.</string>
+    <string name="achievements_description">Osiągnąłem wiele sukcesów w konkursach programistycznych, matematycznych i nie tylko, a także zdobyłem stypendia za moje osiągnięcia.</string>
+
+    <string name="skills_button">Skills</string>
+    <string name="projects_button">Projects</string>
+    <string name="experience_button">Experience</string>
+    <string name="education_button">Education</string>
+    <string name="social_media_button">Social Media</string>
+    <string name="achievements_button">Achievements</string>
+
+    <string name="view_more">Zobacz więcej</string>
+
+    <!-- SKILLS -->
+    <string name="skills_title">Umiejętności techniczne</string>
+    <string name="skills_subtitle">Zbiór moich języków programowania, frameworków i innych umiejętności technicznych.</string>
+
+    <string name="programming_languages">Języki programowania</string>
+    <string name="frameworks">Frameworki</string>
+    <string name="markup_style">Języki znaczników</string>
+    <string name="libraries">Biblioteki</string>
+    <string name="languages">Języki</string>
+
+    <string name="beginner">Początkujący</string>
+    <string name="competent">Kompetentny</string>
+    <string name="proficient">Biegły</string>
+    <string name="advanced">Zaawansowany</string>
+    <string name="expert">Ekspert</string>
+    <string name="native">Ojczysty</string>
+    <string name="c1">C1</string>
+
+    <!-- PROJECTS -->
+    <string name="projects_title">Projekty programistyczne</string>
+    <string name="projects_subtitle">Zbiór moich projektów programistycznych, które pokazują moje umiejętności i doświadczenie w tworzeniu oprogramowania.</string>
+
+    <string name="mobile_application">Aplikacja mobilna</string>
+    <string name="web_application">Aplikacja webowa</string>
+    <string name="desktop_application">Aplikacja desktopowa</string>
+    <string name="multiplatform_application">Aplikacja wieloplatformowa</string>
+    <string name="library">Biblioteka</string>
+    <string name="console_application">Aplikacja konsolowa</string>
+    <string name="game">Gra</string>
+    <string name="other">Inne</string>
+
+    <string name="commercial_project">Komercyjne</string>
+    <string name="academic_project">Akademickie</string>
+    <string name="tools_project">Narzędzia</string>
+    <string name="practice_project">Projekty dla praktyki</string>
+    <string name="project_overview">Opis projektu</string>
+
+    <string name="screenshots">Zrzuty ekranu</string>
+
+    <string name="projects_master-system_description">Ta aplikacja do zarządzania turniejami została opracowana na zlecenie, aby ułatwić rozgrywki według algorytmu specyficznego dla klienta. Aplikacja zapewnia przyjazny interfejs do wprowadzania wyników meczów, automatycznie paruje drużyny na kolejną rundę na podstawie algorytmu, oblicza punkty i generuje kompleksowe podsumowania PDF postępów turnieju. Dodatkowo tworzy wykresy, aby wizualnie przedstawić logikę i wyniki algorytmu. Aplikacja jest przetłumaczona na cztery języki za pomocą modułu gettext w Pythonie, co zapewnia dostępność dla zróżnicowanej grupy użytkowników. Ten projekt pokazuje moją zdolność do dostarczania dostosowanych, wielojęzycznych rozwiązań programowych, które spełniają specyficzne wymagania klienta i usprawniają zarządzanie złożonymi strukturami turniejowymi.</string>
+    <string name="projects_master-system_shortDescription">Aplikacja do zarządzania turniejami z niestandardowym algorytmem z wieloma funkcjami</string>
+    <string name="projects_vl_description">Valorant Lineups jest aplikacją mobilną stworzona dla graczy Valoranta, aby usprawnić ich strategie w grze. Aplikacja oferuje szeroką kolekcję lineupów, umożliwiając graczom wykonywanie zaawansowanych technik bez konieczności rozległego zapamiętywania. Dostarczając wskazówki w czasie rzeczywistym i szczegółowe instrukcje, Valorant Lineups usprawnia proces uczenia się i umożliwia graczom osiągnięcie najlepszych wyników, poprawiając zarówno wyniki indywidualne, jak i zespołowe.</string>
+    <string name="projects_vl_shortDescription">Aplikacja mobilna dla graczy Valoranta do sprawdzania lineupów podczas gry</string>
+    <string name="projects_demiurg_shortDescription">Kreator i interpretator gier tekstowych umożliwiający projektowanie i granie w interaktywne narracje.</string>
+    <string name="projects_demiurg_description">Demiurg to kompleksowa aplikacja opracowana w ramach kursu Inżynierii Oprogramowania, stworzona przez zespół pięciu osób. Projekt obejmuje solidny kreator i interpretator gier tekstowych, pozwalający użytkownikom projektować złożone światy gier z zaawansowanymi mechanikami, takimi jak nieliniowe zadania i dynamiczne fabuły. Kreator umożliwia użytkownikom tworzenie szczegółowych interaktywnych narracji, podczas gdy interpretator zapewnia immersyjne doświadczenie podczas grania w te gry. Ten projekt pokazuje nasze wspólne wysiłki i biegłość w programowaniu, podkreślając naszą zdolność do dostarczania zaawansowanych narzędzi do wyrażania kreatywności.</string>
+    <string name="projects_daymath_description">DayMath to kompleksowa aplikacja edukacyjna, którą opracowałem samodzielnie podczas studiów na uniwersytecie, skierowana do uczniów polskich szkół podstawowych i średnich. Aplikacja ma na celu poprawę nauki matematyki poprzez różnorodne interaktywne funkcje, w tym quizy matematyczne, szczegółowe tekstowe wyjaśnienia różnych tematów oraz animacje wizualizujące i wyjaśniające złożone problemy. Te narzędzia współpracują ze sobą, aby zapewnić angażujące i skuteczne doświadczenie edukacyjne. Chociaż aplikacja jest nadal w fazie rozwoju i nie została oficjalnie wydana, reprezentuje moje zaangażowanie w poprawę edukacji poprzez technologię oraz moje ciągłe wysiłki w celu udoskonalenia i rozszerzenia jej możliwości.</string>
+    <string name="projects_daymath_shortDescription">Aplikacja edukacyjna dla polskich uczniów, zawierająca quizy matematyczne, wyjaśnienia i animacje.</string>
+    <string name="projects_movie-ai_shortDescription">Aplikacja desktopowa rekomendująca filmy na podstawie ocen użytkownika, rozwijana na kursie podstaw sztucznej inteligencji z kolegą.</string>
+    <string name="projects_movie-ai_description">System Rekomendacji Filmów to aplikacja desktopowa stworzona we współpracy z kolegą w ramach kursu Podstaw Sztucznej Inteligencji. Ta aplikacja umożliwia użytkownikom ocenianie filmów, które obejrzeli, i wykorzystuje algorytmy AI do rekomendowania nowych filmów dostosowanych do ich preferencji. Analizując oceny użytkowników i stosując zaawansowane techniki rekomendacji, system dostarcza spersonalizowane propozycje filmów, poprawiając doświadczenie użytkownika związanego z oglądaniem. Ten projekt podkreśla nasze praktyczne zastosowanie zasad AI i naszą zdolność do tworzenia inteligentnych rozwiązań programowych zorientowanych na użytkownika.</string>
+    <string name="projects_generator-tabliczek_shortDescription">Aplikacja generująca tabliczki z numerami pokoi oraz nazwiskami</string>
+    <string name="projects_generator-tabliczek_description">Aplikacja ta została stworzona we współpracy z kolegą na zaliczenie ćwiczeń z programowania w C#. Generuje ona tabliczki z numerami pokoi oraz nazwiskami, które mogą być wydrukowane i zawieszone obok drzwi pokoi. Aplikacja umożliwia wybór czcionki, loga oraz koloru tekstu. Pozwala także na zapisywanie projektu między sesjami.</string>
+    <string name="projects_scheduler_shortDescription">Aplikacja do generowania grafiku zajęć zintegrowana z Discordem.</string>
+    <string name="projects_scheduler_description">Aplikacja ta została stworzona dla ułatwienia organizacji moich korepetycji. W prosty sposób umożliwia mi dopisywanie nowych zajęć w grafiku. Aplikacja jest zintegrowana z Discordem, dzięki czemu mogę automatycznie wysyłać powiadomienia o nowych zajęciach na mój serwer. Automatycznie też pobiera obecny dzień roku i generuje grafik na najbliższy tydzień, dając możliwość ustawienia dnia, od którego będzie się zaczynał (np. dzisiaj lub jutro). Umożliwia także: <br/>-ustawienie godziny początkowej i końcowej <br/>-wybór motywu <br/>-klasyfikację poszczególnych zajęć (ćwiczenia, wykłady, korepetycje (zdalne lub stacjonarne), zdarzenia jednorazowe itp.<br/>-wypisywanie dat.</string>
+    <string name="projects_binary-clock_shortDescription">Zegar binarny z wykorzystaniem Compose Multiplatform</string>
+    <string name="projects_binary-clock_description">Zegar binarny z wykorzystaniem Compose Multiplatform</string>
+    <string name="projects_subtitles-shifter_shortDescription">Prosty skrypt umożliwiający przesunięcie napisów w plikach .srt</string>
+    <string name="projects_subtitles-shifter_description">Prosty skrypt umożliwiający przesunięcie napisów w plikach .srt. Został stworzony na moją indywidualną potrzebę, bym mógł przesunąć napisy, które nie pasowały do wersji filmu (były opóźnione o kilka sekund w przód lub tył).</string>
+    <string name="projects_youtube-downloader_shortDescription">Wielowątkowy skrypt, który umożliwia pobranie piosenek z serwisu YouTube</string>
+    <string name="projects_youtube-downloader_description">Dzięki tej aplikacji można pobrać playlistę ze Spotify, za pośrednictwem YouTube'a. Wymaga od użytkownika wyeksportowania playlisty do pliku .csv za pośrednictwem aplikacji Exportify, a następnie pobiera w osobnych wątkach piosenki z YouTube'a, wyszukując je po nazwie i autorze oraz zapisuje je w przejrzysty sposób - tworzy foldery z wykonawcami, a każdą piosenkę podpisuje jej tytułem.</string>
+    <string name="projects_tic-tac-toe_shortDescription">Prosta gra w kółko i krzyżyk, którą można zagrać ze znajomym na Discordzie</string>
+    <string name="projects_tic-tac-toe_description">Prosta gra w kółko i krzyżyk, którą można zagrać ze znajomym na Discordzie</string>
+    <string name="projects_crypto-tracker_shortDescription">Aplikacja śledząca kursy kryptowalut</string>
+    <string name="projects_crypto-tracker_description">Aplikacja śledząca kursy kryptowalut. Umożliwia dodawanie kryptowalut do śledzenia, a także wyświetla ich aktualne kursy wraz z wykresem zmian w ciągu ostatnich 24 godzin.</string>
+
+    <!-- EXPERIENCE -->
+    <string name="experience_title">Doświadczenie zawodowe</string>
+    <string name="experience_subtitle">Zbiór moich doświadczeń zawodowych, w tym korepetycji i tworzenia aplikacji.</string>
+
+    <string name="experience_tutor_title">Korepetytor matematyki</string>
+    <string name="experience_tutor_description">Teaching mathematics to students</string>
+    <string name="experience_app_developer_title">Developer aplikacji</string>
+    <string name="experience_app_developer_description">Tworzenie własnych komercyjncych aplikacji</string>
+
+    <string name="students_taught">Uczniowie</string>
+    <string name="rating">Ocena</string>
+    <string name="reviews">Opinie</string>
+    <string name="apps_published">Opublikowane aplikacje</string>
+    <string name="total_downloads">Pobrania</string>
+
+    <string name="home">Praca z domu</string>
+    <string name="self-employed">Samozatrudnienie</string>
+    <string name="commercial">Komercyjne</string>
+
+    <string name="primary_technologies">Główne technologie</string>
+
+    <!-- EDUCATION -->
+    <string name="education_title">Edukacja</string>
+    <string name="education_subtitle">Moje wykszałcenie informatyczne, w tym studia licencjackie i technikum.</string>
+
+    <string name="education_uj_degree">Licencjat Informatyki</string>
+    <string name="education_uj_organization">Uniwersytet Jagielloński</string>
+    <string name="education_zsz_degree">Technik Informatyk</string>
+    <string name="education_zsz_organization">Zespół Szkół Zawodowych w Przeworsku</string>
+    <string name="Poland">Polska</string>
+
+    <string name="Algebra">Algebra</string>
+    <string name="Computer Organization and Architecture">Organizacja i Architektura Komputerów</string>
+    <string name="Programming">Programowanie</string>
+    <string name="Logic and Set Theory">Logika i Teoria Mnogości</string>
+    <string name="Mathematical Analysis">Analiza Matematyczna</string>
+    <string name="Programming Methods">Metody Programowania</string>
+    <string name="Operating Systems">Systemy Operacyjne</string>
+    <string name="Algorithms and Data Structures">Algorytmy i Struktury Danych</string>
+    <string name="Discrete Mathematics">Matematyka Dyskretna</string>
+    <string name="Databases">Bazy Danych</string>
+    <string name="Software Engineering">Inżynieria Oprogramowania</string>
+    <string name="Probability and Statistics">Prawdopodobieństwo i Statystyka</string>
+    <string name="Computer Networks">Sieci Komputerowe</string>
+    <string name="Formal Languages and Automata">Języki Formalne i Automaty</string>
+    <string name="Numerical Methods">Metody Numeryczne</string>
+    <string name="Functional Programming">Programowanie Funkcyjne</string>
+    <string name="Android Programming">Programowanie urządzeń mobilnych - Android</string>
+    <string name="Design Patterns">Wzorce Projektowe</string>
+    <string name="C# Programming">Programowanie w C#</string>
+    <string name="Cognitive Systems">Cognitive Systems</string>
+    <string name="Cognitive Science">Kognitywistyka</string>
+    <string name="Web Programming">Programowanie Webowe</string>
+    <string name="Fundamentals of AI">Podstawy Sztucznej Inteligencji</string>
+    <string name="English">Język Angielski</string>
+    <string name="Networking">Sieci Komputerowe</string>
+    <string name="Hardware Maintenance">Urządzenia Komputerowe</string>
+
+    <string name="Certificate CCNA Routing and Switching Introduction to Networks">Certyfikat: CCNA Routing and Switching: Introduction to Networks</string>
+    <string name="Certificate PCAP Programming Essentials in Python">Certyfikat: PCAP: Programming Essentials in Python</string>
+    <string name="Certificate NDG Linux Unhatched">Certyfikat: NDG Linux Unhatched</string>
+    <string name="Certificate Introduction to Cybersecurity">Certyfikat: Introduction to Cybersecurity</string>
+    <string name="Certificate Cybersecurity Essentials">Certyfikat: Cybersecurity Essentials</string>
+    <string name="Certificate Be Your Own Boss">Certyfikat: Be Your Own Boss</string>
+    <string name="Certificate Get Connected">Certyfikat: Get Connected</string>
+    <string name="Certificate Introduction to the Internet of Everything">Certyfikat: Introduction to the Internet of Everything</string>
+    <string name="Certificate 3ds Max Animation">Certyfikat: 3ds Max Animation</string>
+    <string name="Certificate 3ds Max Visualisation">Certyfikat: 3ds Max Visualisation</string>
+    <string name="Certificate 3ds Max Modeling">Certyfikat: 3ds Max Modeling</string>
+    <string name="Certificate EU Code Week">Certyfikat: EU Code Week</string>
+    <string name="Certificate CPA Programming Essentials in C++">Certyfikat: CPA: Programming Essentials in C++</string>
 
 
+    <string name="programming_and_software_engineering">Programowanie i inżynieria oprogramowania</string>
+    <string name="mathematics">Matematyka</string>
+    <string name="systems_and_computer_technology">Systemy i technologie komputerowe</string>
+    <string name="ai_and_cognitive_science">SI i nauki kognitywistyczne</string>
 
+    <string name="courses">Kursy</string>
+    <string name="professional_certificates">Profesjonalne certyfikaty</string>
+
+    <plurals name="n_courses">
+        <item quantity="one">%1$d kurs</item>
+        <item quantity="few">%1$d kursy</item>
+        <item quantity="other">%1$d kursów</item>
+    </plurals>
+
+    <plurals name="n_certificates">
+        <item quantity="one">%1$d certyfikat</item>
+        <item quantity="few">%1$d certyfikaty</item>
+        <item quantity="other">%1$d certyfikatów</item>
+    </plurals>
+
+    <!-- ACHIEVEMENTS -->
+    <string name="achievements_title">Osiągnięcia</string>
+    <string name="achievements_subtitle">Zbiór moich osiągnięć, w tym nagród i wyróżnień w konkursach z różnych dziedzin.</string>
+
+    <string name="programming_competitions">Konkursy programistyczne</string>
+    <string name="math_competitions">Konkursy matematyczne</string>
+    <string name="scholarships">Stypendia</string>
+    <string name="other_achievements">Inne osiągnięcia</string>
+    <string name="1st_place">1st place</string>
+
+
+    <string name="1st Place in the Independence Dictation Contest">1. miejsce w Dyktandzie Niepodległościowym</string>
+    <string name="Przeworsk County Scholarship">Stypendium Starosty Przeworskiego</string>
+    <string name="1st Place in the EXPERT Group at the PIX 2019 Contest - National School Programming Championship">1. miejsce w grupie EXPERT w Konkursie PIX 2019 - Ogólnopolskie Mistrzostwa Programowania Szkolnego</string>
+    <string name="Qualification to the Semi-Finals of the Polish Edition of the International Pix Programming Challenge">Kwalifikacja do półfinałów Polskiej Edycji Międzynarodowego Wyzwania Programowania Pix</string>
+    <string name="Honorable Mention in the National History Contest 'Krag'">Wyróżnienie w Ogólnopolskim Konkursie Historycznym "Krąg"</string>
+    <string name="2nd Place in the 24th Prof Jan Marszal Mathematics Contest for Middle Schools">2. miejsce w 24. Konkursie Matematycznym dla Gimnazjów im. Prof. Jana Marszała</string>
+    <string name="1st Place in the School Programming Contest">1. miejsce w Szkolnym Konkursie Programistycznym</string>
+    <string name="Honorable Mention in the 15th District Math Contest 'Procent'">Wyróżnienie w 15. Powiatowym Konkursie Matematycznym "Procent"</string>
+    <string name="1st Place in the 14th District Math Contest for Second-Year Middle School Students">1. miejsce w 14. Powiatowym Konkursie Matematycznym dla Uczniów II Gimnazjum</string>
+    <string name="2nd Place in the School English Contest">2. miejsce w Szkolnym Konkursie Języka Angielskiego</string>
+    <string name="Honorable Mention in the International Math Contest 'Kangur Matematyczny'">Wyróżnienie w Międzynarodowym Konkursie Matematycznym "Kangur"</string>
+
+    <string name="1st place">1. miejsce</string>
+    <string name="school">Szkolny</string>
+    <string name="regional">Regionalny</string>
+    <string name="national">Ogólnopolski</string>
+    <string name="international">Międzynarodowy</string>
+    <string name="district">Powiatowy</string>
+
+    <string name="n_achievements">Osiągnięcia: %1$s</string>
+
+    <!-- Time -->
+    <string name="january">Styczeń</string>
+    <string name="february">Luty</string>
+    <string name="march">Marzec</string>
+    <string name="april">Kwiecień</string>
+    <string name="may">Maj</string>
+    <string name="june">Czerwiec</string>
+    <string name="july">Lipiec</string>
+    <string name="august">Sierpień</string>
+    <string name="september">Wrzesień</string>
+    <string name="october">Październik</string>
+    <string name="november">Listopad</string>
+    <string name="december">Grudzień</string>
+
+    <string name="now">Teraz</string>
+    <plurals name="n_years">
+        <item quantity="one">%1$d rok</item>
+        <item quantity="few">%1$d lata</item>
+        <item quantity="other">%1$d lat</item>
+    </plurals>
 </resources>
-
-
-<!--    en: {-->
-
-<!--    pl: {-->
-<!--    "homepage.title": "¡Hola Mundo!",-->
-<!--    "homepage.description": "Pasjonuję się informatyką i rozwijam się w tworzeniu aplikacji na Androida",-->
-<!--    "homepage.tutor_website": "Moja strona korepetycji",-->
-
-<!--    "NoResults": "Nie udało się niczego znaleźć...",-->
-<!--    "SearchPlaceholder": "Wyszukaj...",-->
-<!--    "Search": "Szukaj",-->
-
-<!--    "Skills": "Umiejętności",-->
-<!--    "Projects": "Projekty",-->
-<!--    "Experience": "Doświadczenie",-->
-<!--    "Education": "Edukacja",-->
-<!--    "Achievements": "Osiągnięcia",-->
-<!--    "Resume": "CV",-->
-
-<!--    "Programming Languages": "Języki Programowania",-->
-<!--    "Frameworks": "Frameworki",-->
-<!--    "Markup Style": "Markup & Style",-->
-<!--    "Libraries": "Biblioteki",-->
-<!--    "Languages": "Języki",-->
-
-<!--    "Commercial": "Komercyjne",-->
-<!--    "Academic": "Akademickie",-->
-<!--    "Tools": "Narzędzia",-->
-<!--    "Projects for practice": "Projekty dla praktyki",-->
-
-<!--    "Home": "Z domu",-->
-<!--    "Self-employed": "Samozatrudnienie",-->
-<!--    "Freelance": "Freelance",-->
-
-<!--    "projects.master-system.description": "Ta aplikacja do zarządzania turniejami została opracowana na zlecenie, aby ułatwić rozgrywki według algorytmu specyficznego dla klienta. Aplikacja zapewnia przyjazny interfejs do wprowadzania wyników meczów, automatycznie paruje drużyny na kolejną rundę na podstawie algorytmu, oblicza punkty i generuje kompleksowe podsumowania PDF postępów turnieju. Dodatkowo tworzy wykresy, aby wizualnie przedstawić logikę i wyniki algorytmu. Aplikacja jest przetłumaczona na cztery języki za pomocą modułu gettext w Pythonie, co zapewnia dostępność dla zróżnicowanej grupy użytkowników. Ten projekt pokazuje moją zdolność do dostarczania dostosowanych, wielojęzycznych rozwiązań programowych, które spełniają specyficzne wymagania klienta i usprawniają zarządzanie złożonymi strukturami turniejowymi.",-->
-<!--    "projects.master-system.shortDescription": "Aplikacja do zarządzania turniejami z niestandardowym algorytmem z wieloma funkcjami",-->
-
-<!--    "projects.vl.description": "Valorant Lineups jest aplikacją mobilną stworzona dla graczy Valoranta, aby usprawnić ich strategie w grze. Aplikacja oferuje szeroką kolekcję lineupów, umożliwiając graczom wykonywanie zaawansowanych technik bez konieczności rozległego zapamiętywania. Dostarczając wskazówki w czasie rzeczywistym i szczegółowe instrukcje, Valorant Lineups usprawnia proces uczenia się i umożliwia graczom osiągnięcie najlepszych wyników, poprawiając zarówno wyniki indywidualne, jak i zespołowe.",-->
-<!--    "projects.vl.shortDescription": "Aplikacja mobilna dla graczy Valoranta do sprawdzania lineupów podczas gry",-->
-
-<!--    "projects.demiurg.shortDescription": "Kreator i interpretator gier tekstowych umożliwiający projektowanie i granie w interaktywne narracje.",-->
-<!--    "projects.demiurg.description": "Demiurg to kompleksowa aplikacja opracowana w ramach kursu Inżynierii Oprogramowania, stworzona przez zespół pięciu osób. Projekt obejmuje solidny kreator i interpretator gier tekstowych, pozwalający użytkownikom projektować złożone światy gier z zaawansowanymi mechanikami, takimi jak nieliniowe zadania i dynamiczne fabuły. Kreator umożliwia użytkownikom tworzenie szczegółowych interaktywnych narracji, podczas gdy interpretator zapewnia immersyjne doświadczenie podczas grania w te gry. Ten projekt pokazuje nasze wspólne wysiłki i biegłość w programowaniu, podkreślając naszą zdolność do dostarczania zaawansowanych narzędzi do wyrażania kreatywności.",-->
-
-<!--    "projects.daymath.description": "DayMath to kompleksowa aplikacja edukacyjna, którą opracowałem samodzielnie podczas studiów na uniwersytecie, skierowana do uczniów polskich szkół",-->
-<!--    "projects.daymath.shortDescription": "Aplikacja edukacyjna dla polskich uczniów, zawierająca quizy matematyczne, wyjaśnienia i animacje.",-->
-
-<!--    "projects.movie-ai.shortDescription": "Aplikacja desktopowa rekomendująca filmy na podstawie ocen użytkownika, rozwijana na kursie podstaw sztucznej inteligencji z kolegą.",-->
-<!--    "projects.movie-ai.description": "System Rekomendacji Filmów to aplikacja desktopowa stworzona we współpracy z kolegą w ramach kursu Podstaw Sztucznej Inteligencji. Ta aplikacja umożliwia użytkownikom ocenianie filmów, które obejrzeli, i wykorzystuje algorytmy AI do rekomendowania nowych filmów dostosowanych do ich preferencji. Analizując oceny użytkowników i stosując zaawansowane techniki rekomendacji, system dostarcza spersonalizowane propozycje filmów, poprawiając doświadczenie użytkownika związanego z oglądaniem. Ten projekt podkreśla nasze praktyczne zastosowanie zasad AI i naszą zdolność do tworzenia inteligentnych rozwiązań programowych zorientowanych na użytkownika.",-->
-
-<!--    'projects.generator-tabliczek.shortDescription': 'Aplikacja generująca tabliczki z numerami pokoi oraz nazwiskami',-->
-<!--    'projects.generator-tabliczek.description': 'Aplikacja ta została stworzona we współpracy z kolegą na zaliczenie ćwiczeń z programowania w C#. Generuje ona tabliczki z numerami pokoi oraz nazwiskami, które mogą być wydrukowane i zawieszone obok drzwi pokoi. Aplikacja umożliwia wybór czcionki, loga oraz koloru tekstu. Pozwala także na zapisywanie projektu między sesjami.',-->
-
-<!--    'projects.scheduler.shortDescription': 'Aplikacja do generowania grafiku zajęć zintegrowana z Discordem.',-->
-<!--    'projects.scheduler.description': 'Aplikacja ta została stworzona dla ułatwienia organizacji moich korepetycji. W prosty sposób umożliwia mi dopisywanie nowych zajęć w grafiku. Aplikacja jest zintegrowana z Discordem, dzięki czemu mogę automatycznie wysyłać powiadomienia o nowych zajęciach na mój serwer. Automatycznie też pobiera obecny dzień roku i generuje grafik na najbliższy tydzień, dając możliwość ustawienia dnia, od którego będzie się zaczynał (np. dzisiaj lub jutro). Umożliwia także: <br/>-ustawienie godziny początkowej i końcowej <br/>-wybór motywu <br/>-klasyfikację poszczególnych zajęć (ćwiczenia, wykłady, korepetycje (zdalne lub stacjonarne), zdarzenia jednorazowe itp.<br/>-wypisywanie dat.',-->
-
-<!--    'projects.binary-clock.shortDescription': 'Zegar binarny z wykorzystaniem Compose Multiplatform',-->
-<!--    'projects.binary-clock.description': 'Zegar binarny z wykorzystaniem Compose Multiplatform',-->
-
-<!--    'projects.subtitles-shifter.shortDescription': 'Prosty skrypt umożliwiający przesunięcie napisów w plikach .srt',-->
-<!--    'projects.subtitles-shifter.description': 'Prosty skrypt umożliwiający przesunięcie napisów w plikach .srt. Został stworzony na moją indywidualną potrzebę, bym mógł przesunąć napisy, które nie pasowały do wersji filmu (były opóźnione o kilka sekund w przód lub tył).',-->
-
-<!--    'projects.youtube-downloader.shortDescription': 'Wielowątkowy skrypt, który umożliwia pobranie piosenek z serwisu YouTube',-->
-<!--    'projects.youtube-downloader.description': 'Dzięki tej aplikacji można pobrać playlistę ze Spotify, za pośrednictwem YouTube\'a. Wymaga od użytkownika wyeksportowania playlisty do pliku .csv za pośrednictwem aplikacji Exportify, a następnie pobiera w osobnych wątkach piosenki z YouTube\'a, wyszukując je po nazwie i autorze oraz zapisuje je w przejrzysty sposób - tworzy foldery z wykonawcami, a każdą piosenkę podpisuje jej tytułem.',-->
-
-<!--    'projects.tic-tac-toe.shortDescription': 'Prosta gra w kółko i krzyżyk, którą można zagrać ze znajomym na Discordzie',-->
-<!--    'projects.tic-tac-toe.description': 'Prosta gra w kółko i krzyżyk, którą można zagrać ze znajomym na Discordzie',-->
-
-<!--    'projects.crypto-tracker.shortDescription': 'Aplikacja śledząca kursy kryptowalut',-->
-<!--    'projects.crypto-tracker.description': 'Aplikacja śledząca kursy kryptowalut. Umożliwia dodawanie kryptowalut do śledzenia, a także wyświetla ich aktualne kursy wraz z wykresem zmian w ciągu ostatnich 24 godzin.',-->
-
-<!--    'experience.tutor.name': 'Korepetytor matematyki',-->
-<!--    'experience.tutor.description': 'Nauczanie matematyki',-->
-<!--    'experience.tutor.shortDescription': 'Nauczanie matematyki',-->
-
-<!--    'experience.freelancer.name': 'Freelancer',-->
-<!--    'experience.freelancer.description': 'Tworzenie aplikacji dla klientów',-->
-<!--    'experience.freelancer.shortDescription': 'Tworzenie aplikacji dla klientów',-->
-
-<!--    'education.uj.degree': "Licencjat Informatyki",-->
-<!--    'education.uj.organization': "Uniwersytet Jagielloński",-->
-
-<!--    'education.zsz.degree': "Technik Informatyk",-->
-<!--    'education.zsz.organization': "Zespół Szkół Zawodowych w Przeworsku",-->
-
-<!--    'education.location': "Polska",-->
-
-<!--    'Algebra': 'Algebra',-->
-<!--    'Computer Organization and Architecture': 'Organizacja i Architektura Komputerów',-->
-<!--    'Programming': 'Programowanie',-->
-<!--    'Logic and Set Theory': 'Logika i Teoria Mnogości',-->
-<!--    'Mathematical Analysis': 'Analiza Matematyczna',-->
-<!--    'Programming Methods': 'Metody Programowania',-->
-<!--    'Operating Systems': 'Systemy Operacyjne',-->
-<!--    'Algorithms and Data Structures': 'Algorytmy i Struktury Danych',-->
-<!--    'Discrete Mathematics': 'Matematyka Dyskretna',-->
-<!--    'Databases': 'Bazy Danych',-->
-<!--    'Software Engineering': 'Inżynieria Oprogramowania',-->
-<!--    'Probability and Statistics': 'Prawdopodobieństwo i Statystyka',-->
-<!--    'Computer Networks': 'Sieci Komputerowe',-->
-<!--    'Formal Languages and Automata': 'Języki Formalne i Automaty',-->
-<!--    'Numerical Methods': 'Metody Numeryczne',-->
-<!--    'Functional Programming': 'Programowanie Funkcyjne',-->
-<!--    'Android Programming': 'Programowanie urządzeń mobilnych - Android',-->
-<!--    'Design Patterns': 'Wzorce Projektowe',-->
-<!--    'C# Programming': 'Programowanie w C#',-->
-<!--    'Cognitive Systems': 'Cognitive Systems',-->
-<!--    'Cognitive Science': 'Kognitywistyka',-->
-<!--    'Web Programming': 'Programowanie Webowe',-->
-<!--    'Fundamentals of AI': 'Podstawy Sztucznej Inteligencji',-->
-<!--    'English': 'Język Angielski',-->
-
-<!--    'Networking': 'Sieci Komputerowe',-->
-<!--    'Hardware Maintenance': 'Urządzenia Komputerowe',-->
-<!--    'Certificate: CCNA Routing and Switching: Introduction to Networks': 'Certyfikat: CCNA Routing and Switching: Introduction to Networks',-->
-<!--    'Certificate: PCAP: Programming Essentials in Python': 'Certyfikat: PCAP: Programming Essentials in Python',-->
-<!--    'Certificate: NDG Linux Unhatched': 'Certyfikat: NDG Linux Unhatched',-->
-<!--    'Certificate: Introduction to Cybersecurity': 'Certyfikat: Introduction to Cybersecurity',-->
-<!--    'Certificate: Cybersecurity Essentials': 'Certyfikat: Cybersecurity Essentials',-->
-<!--    'Certificate: Be Your Own Boss': 'Certyfikat: Be Your Own Boss',-->
-<!--    'Certificate: Get Connected': 'Certyfikat: Get Connected',-->
-<!--    'Certificate: Introduction to the Internet of Everything': 'Certyfikat: Introduction to the Internet of Everything',-->
-<!--    'Certificate: 3ds Max Animation': 'Certyfikat: 3ds Max Animation',-->
-<!--    'Certificate: 3ds Max Visualisation': 'Certyfikat: 3ds Max Visualisation',-->
-<!--    'Certificate: 3ds Max Modeling': 'Certyfikat: 3ds Max Modeling',-->
-<!--    'Certificate: EU Code Week': 'Certyfikat: EU Code Week',-->
-<!--    'Certificate: CPA: Programming Essentials in C++': 'Certyfikat: CPA: Programming Essentials in C++',-->
-
-<!--    '1st Place in the Independence Dictation Contest': '1. miejsce w Dyktandzie Niepodległościowym',-->
-<!--    'Przeworsk County Scholarship': 'Stypedium Starosty Przeworskiego',-->
-<!--    '1st Place in the EXPERT Group at the PIX 2019 Contest - National School Programming Championship': '1. miejsce w grupie EXPERT w Konkursie PIX 2019 - Ogólnopolskie Mistrzostwa Programowania Szkolnego',-->
-<!--    'Qualification to the Semi-Finals of the Polish Edition of the International Pix Programming Challenge': 'Kwalifikacja do półfinałów Polskiej Edycji Międzynarodowego Wyzwania Programowania Pix',-->
-<!--    'Honorable Mention in the National History Contest "Krag"': 'Wyróżnienie w Ogólnopolskim Konkursie Historycznym "Krąg"',-->
-<!--    '2nd Place in the 24th Prof. Jan Marszal Mathematics Contest for Middle Schools': '2. miejsce w 24. Konkursie Matematycznym dla Gimnazjów im. Prof. Jana Marszała',-->
-<!--    '1st Place in the School Programming Contest': '1. miejsce w Szkolnym Konkursie Programistycznym',-->
-<!--    'Honorable Mention in the 15th District Math Contest "Procent"': 'Wyróżnienie w 15. Powiatowym Konkursie Matematycznym "Procent"',-->
-<!--    '1st Place in the 14th District Math Contest for Second-Year Middle School Students': '1. miejsce w 14. Powiatowym Konkursie Matematycznym dla Uczniów II Gimnazjum',-->
-<!--    '2nd Place in the School English Contest': '2. miejsce w Szkolnym Konkursie Języka Angielskiego',-->
-<!--    'Honorable Mention in the International Math Contest "Kangur Matematyczny"': 'Wyróżnienie w Międzynarodowym Konkursie Matematycznym "Kangur"',-->
-
-
-<!--    "View": "Wyświetl",-->
-<!--    "month": "miesiąc",-->
-<!--    "months": "miesiące",-->
-<!--    "year": "rok",-->
-<!--    "years": "lata",-->
-
-<!--    "Present": "Obecnie",-->
-<!--    },-->
-<!--    };-->

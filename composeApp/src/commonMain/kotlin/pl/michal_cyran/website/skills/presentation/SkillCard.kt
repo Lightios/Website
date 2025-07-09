@@ -26,6 +26,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.skills.domain.Skill
 
 @Composable
@@ -38,18 +39,19 @@ fun SkillCard(
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceContainer
         ),
-        shape = RoundedCornerShape(16.dp)
+        shape = RoundedCornerShape(16.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
     ) {
         Row(
             modifier = Modifier.padding(20.dp),
-            horizontalArrangement = Arrangement.spacedBy(10.dp),
+            horizontalArrangement = Arrangement.spacedBy(20.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Box(
                 modifier = Modifier
                     .size(64.dp)
                     .background(MaterialTheme.colorScheme.surfaceContainerLow, CircleShape)
-                    .border(color = skill.color, width = 2.dp, shape = CircleShape),
+                    .border(color = skill.level.toColor(), width = 2.dp, shape = CircleShape),
                 contentAlignment = Alignment.Center
             ) {
                 Image(
@@ -59,38 +61,52 @@ fun SkillCard(
                 )
             }
 
-            Spacer(modifier = Modifier.width(5.dp))
-
             Text(
                 text = skill.name,
                 style = MaterialTheme.typography.titleMedium,
-                color = Color.White
+                color = Color.White,
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(end = 8.dp)
+            )
+
+            SkillLevelIndicator(
+                filled = skill.level.ordinal + 1,
+                filledColor = skill.level.toColor()
             )
 
 
-            val color = when (skill.level) {
-                "Advanced" -> Color(0xFF10B981)
-                "Intermediate" -> Color(0xFF3B82F6)
-                else -> Color(0xFF6B7280)
-            }
-
-            Spacer(
-                modifier = Modifier.weight(1f)
+            SkillLevelBadge(
+                skill.level,
+                modifier = Modifier
+                    .weight(1f)
             )
 
-            Surface(
-                shape = RoundedCornerShape(12.dp),
-                color = MaterialTheme.colorScheme.surfaceContainerLow
-            ) {
-                Text(
-                    text = skill.level,
-                    color = color,
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Medium,
-                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
-                )
-            }
+        }
+    }
+}
 
+@Composable
+fun SkillLevelIndicator(
+    filled: Int,
+    total: Int = 5,
+    filledColor: Color,
+    emptyColor: Color = Color.Gray,
+    modifier: Modifier = Modifier
+) {
+    Row(
+        horizontalArrangement = Arrangement.spacedBy(4.dp),
+        modifier = modifier
+    ) {
+        repeat(total) { index ->
+            Box(
+                modifier = Modifier
+                    .size(width = 16.dp, height = 6.dp)
+                    .background(
+                        color = if (index < filled) filledColor else emptyColor,
+                        shape = RoundedCornerShape(3.dp)
+                    )
+            )
         }
     }
 }

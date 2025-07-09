@@ -25,8 +25,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.pluralStringResource
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.core.presentation.composables.StatusBadge
 import pl.michal_cyran.website.experience.domain.Experience
+import website.composeapp.generated.resources.Res
+import website.composeapp.generated.resources.n_years
+import website.composeapp.generated.resources.primary_technologies
 
 
 @Composable
@@ -40,7 +45,7 @@ fun ExperienceCard(
             containerColor = MaterialTheme.colorScheme.surfaceContainer
         ),
         shape = RoundedCornerShape(16.dp),
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
     ) {
         Column(
             modifier = Modifier.padding(24.dp)
@@ -60,7 +65,7 @@ fun ExperienceCard(
                 ) {
                     Icon(
                         painter = painterResource(experience.icon),
-                        contentDescription = experience.title,
+                        contentDescription = stringResource(experience.title),
                         tint = MaterialTheme.colorScheme.primary,
                         modifier = Modifier.size(42.dp)
                     )
@@ -70,7 +75,7 @@ fun ExperienceCard(
 
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = experience.title,
+                        text = stringResource(experience.title),
                         color = MaterialTheme.colorScheme.onBackground,
                         style = MaterialTheme.typography.titleMedium,
                     )
@@ -88,7 +93,11 @@ fun ExperienceCard(
                     Spacer(modifier = Modifier.height(4.dp))
 
                     Text(
-                        text = experience.duration,
+                        text = pluralStringResource(
+                            Res.plurals.n_years,
+                            experience.durationInYears,
+                            experience.durationInYears
+                        ),
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Medium,
                         color = Color(0xFF06B6D4)
@@ -100,7 +109,7 @@ fun ExperienceCard(
 
             // Description
             Text(
-                text = experience.description,
+                text = stringResource(experience.description),
                 fontSize = 16.sp,
                 color = Color(0xFF94A3B8),
                 lineHeight = 24.sp
@@ -110,7 +119,7 @@ fun ExperienceCard(
                 Spacer(modifier = Modifier.height(20.dp))
 
                 Text(
-                    text = "Primary Technologies",
+                    text = stringResource(Res.string.primary_technologies),
                     fontSize = 16.sp,
                     fontWeight = FontWeight.SemiBold,
                     color = Color.White,

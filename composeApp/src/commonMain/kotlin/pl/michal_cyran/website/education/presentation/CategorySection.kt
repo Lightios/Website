@@ -9,19 +9,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.education.domain.Subject
 import pl.michal_cyran.website.education.domain.SubjectCategory
 
-
-fun SubjectCategory.getDisplayName(): String {
-    return when (this) {
-        SubjectCategory.ProgrammingAndSoftwareEngineering -> "Programming & Software Engineering"
-        SubjectCategory.Mathematics -> "Mathematics"
-        SubjectCategory.SystemsAndComputerTechnology -> "Systems & Computer Technology"
-        SubjectCategory.AIAndCognitiveScience -> "AI & Cognitive Science"
-        SubjectCategory.Other -> "Other"
-    }
-}
 
 @Composable
 fun CategorySection(
@@ -41,7 +32,7 @@ fun CategorySection(
             )
         ) {
             Text(
-                text = category.getDisplayName(),
+                text = stringResource(category.displayName),
                 modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp),
                 style = MaterialTheme.typography.labelSmall
             )

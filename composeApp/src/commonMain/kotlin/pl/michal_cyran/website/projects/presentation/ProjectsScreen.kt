@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
@@ -26,12 +25,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.projects.data.projects
-import pl.michal_cyran.website.projects.domain.Project
-import pl.michal_cyran.website.skills.data.skills
-import pl.michal_cyran.website.skills.presentation.SkillSection
 import website.composeapp.generated.resources.Res
+import website.composeapp.generated.resources.projects_subtitle
+import website.composeapp.generated.resources.projects_title
 import website.composeapp.generated.resources.search
+import website.composeapp.generated.resources.search_placeholder
 import kotlin.collections.component1
 import kotlin.collections.component2
 
@@ -50,7 +50,7 @@ fun ProjectsScreen(
     ) {
         // Header
         Text(
-            text = "My Projects",
+            text = stringResource(Res.string.projects_title),
             fontSize = 48.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White,
@@ -60,7 +60,7 @@ fun ProjectsScreen(
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
-            text = "A showcase of educational tools, content creation projects, and\ninnovative solutions I've developed.",
+            text = stringResource(Res.string.projects_subtitle),
             fontSize = 16.sp,
             color = Color(0xFF9CA3AF),
             textAlign = TextAlign.Center,
@@ -75,7 +75,7 @@ fun ProjectsScreen(
             onValueChange = { searchQuery = it },
             placeholder = {
                 Text(
-                    "Search skills...",
+                    stringResource(Res.string.search_placeholder),
                     color = Color(0xFF6B7280)
                 )
             },
@@ -110,7 +110,7 @@ fun ProjectsScreen(
 
                     ProjectsSection(
                         title = category.displayName,
-                        skills = projectsList,
+                        projects = projectsList,
                         searchQuery = searchQuery,
                         onProjectClick = onProjectClick,
                     )

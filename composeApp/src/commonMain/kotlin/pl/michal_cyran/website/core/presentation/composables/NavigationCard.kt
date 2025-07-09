@@ -1,6 +1,7 @@
 package pl.michal_cyran.website.core.presentation.composables
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -18,30 +19,36 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.resources.DrawableResource
+import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 import pl.michal_cyran.website.ui.theme.AppThemeM3
 import website.composeapp.generated.resources.Res
+import website.composeapp.generated.resources.arrow_forward
 import website.composeapp.generated.resources.light_mode
+import website.composeapp.generated.resources.view_more
 
 @Composable
 fun NavigationCard(
     icon: DrawableResource,
-    title: String,
-    content: String,
-    buttonText: String,
+    title: StringResource,
+    content: StringResource,
+    buttonText: StringResource,
     onClick: () -> Unit,
     color: Color = MaterialTheme.colorScheme.primary,
     modifier: Modifier = Modifier,
 ) {
     Card(
-        modifier = modifier.height(200.dp),
+        modifier = modifier.height(250.dp),
         shape = MaterialTheme.shapes.large,
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceContainer
-        )
+        ),
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
     ) {
         Column(
             modifier = Modifier.padding(16.dp),
@@ -59,33 +66,34 @@ fun NavigationCard(
                 )
 
                 Text(
-                    text = title,
+                    text = stringResource(title),
                     style = MaterialTheme.typography.titleLarge,
                     color = MaterialTheme.colorScheme.onSurface
                 )
             }
 
-            Text(
-                text = content,
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
-            )
-
-            Spacer(
-                modifier = Modifier.weight(1f)
-            )
+            Box(
+                modifier = Modifier.weight(1f),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = stringResource(content),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
+                )
+            }
 
             TextButton(
                 onClick = onClick,
             ) {
                 Text(
-                    text = buttonText,
+                    text = stringResource(Res.string.view_more),
                     style = MaterialTheme.typography.labelMedium,
                     color = color
                 )
 
                 Icon(
-                    painter = painterResource(Res.drawable.light_mode),
+                    painter = painterResource(Res.drawable.arrow_forward),
                     contentDescription = "button icon",
                     tint = color,
                     modifier = Modifier.padding(start = 8.dp)
@@ -95,21 +103,3 @@ fun NavigationCard(
     }
 }
 
-
-@Preview
-@Composable
-fun NavigationCardPreview() {
-    AppThemeM3(
-        darkTheme = true,
-    ) {
-        NavigationCard(
-            icon = Res.drawable.light_mode,
-            title = "Title",
-            content = "Learn about my background, education, and what drives my passion for teaching and technology.",
-            buttonText = "Click Me",
-            onClick = {},
-            color = MaterialTheme.colorScheme.primary,
-            modifier = Modifier.width(200.dp)
-        )
-    }
-}

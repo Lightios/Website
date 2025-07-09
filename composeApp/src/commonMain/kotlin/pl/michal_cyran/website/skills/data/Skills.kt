@@ -3,6 +3,7 @@ package pl.michal_cyran.website.skills.data
 import androidx.compose.ui.graphics.Color
 import pl.michal_cyran.website.skills.domain.Skill
 import pl.michal_cyran.website.skills.domain.SkillCategory
+import pl.michal_cyran.website.skills.domain.SkillLevel
 import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.csharp
 import website.composeapp.generated.resources.css
@@ -10,7 +11,6 @@ import website.composeapp.generated.resources.en
 import website.composeapp.generated.resources.fpdf2
 import website.composeapp.generated.resources.html
 import website.composeapp.generated.resources.jetpack_compose
-import website.composeapp.generated.resources.kivy
 import website.composeapp.generated.resources.kivymd
 import website.composeapp.generated.resources.kotlin
 import website.composeapp.generated.resources.latex_white
@@ -24,8 +24,7 @@ val skills = listOf(
     Skill(
         slug = "python",
         name = "Python",
-        level = "Advanced",
-        color = Color(0xFF4A90E2),
+        level = SkillLevel.ADVANCED,
         category = SkillCategory.PROGRAMMING_LANGUAGES,
         icon = Res.drawable.python
     ),
@@ -33,8 +32,7 @@ val skills = listOf(
     Skill(
         slug = "kotlin",
         name = "Kotlin",
-        level = "Advanced",
-        color = Color(0xFFE94B3C),
+        level = SkillLevel.ADVANCED,
         category = SkillCategory.PROGRAMMING_LANGUAGES,
         icon = Res.drawable.kotlin
     ),
@@ -42,8 +40,7 @@ val skills = listOf(
     Skill(
         slug = "c#",
         name = "C#",
-        level = "Intermediate",
-        color = Color(0xFF7B68EE),
+        level = SkillLevel.COMPETENT,
         category = SkillCategory.PROGRAMMING_LANGUAGES,
         icon = Res.drawable.csharp
     ),
@@ -51,8 +48,7 @@ val skills = listOf(
     Skill(
         slug = "latex",
         name = "LaTeX",
-        level = "Advanced",
-        color = Color(0xFF50E3C2),
+        level = SkillLevel.PROFICIENT,
         category = SkillCategory.MARKUP_AND_STYLE,
         icon = Res.drawable.latex_white
     ),
@@ -60,8 +56,7 @@ val skills = listOf(
     Skill(
         slug = "html",
         name = "HTML",
-        level = "Intermediate",
-        color = Color(0xFFFF5722),
+        level = SkillLevel.COMPETENT,
         category = SkillCategory.MARKUP_AND_STYLE,
         icon = Res.drawable.html
     ),
@@ -69,8 +64,7 @@ val skills = listOf(
     Skill(
         slug = "css",
         name = "CSS",
-        level = "Intermediate",
-        color = Color(0xFF7B68EE),
+        level = SkillLevel.COMPETENT,
         category = SkillCategory.MARKUP_AND_STYLE,
         icon = Res.drawable.css
     ),
@@ -78,17 +72,15 @@ val skills = listOf(
     Skill(
         slug = "kivy",
         name = "KivyMD",
-        level = "Intermediate",
-        color = Color.Cyan,
+        level = SkillLevel.PROFICIENT,
         category = SkillCategory.FRAMEWORKS,
         icon = Res.drawable.kivymd
     ),
 
     Skill(
         slug = "jetpack_compose",
-        name = "Jetpack\nCompose",
-        level = "Intermediate",
-        color = Color.Blue,
+        name = "Jetpack Compose",
+        level = SkillLevel.PROFICIENT,
         category = SkillCategory.FRAMEWORKS,
         icon = Res.drawable.jetpack_compose
     ),
@@ -96,8 +88,7 @@ val skills = listOf(
     Skill(
         slug = "manim",
         name = "Manim",
-        level = "Intermediate",
-        color = Color.Yellow,
+        level = SkillLevel.ADVANCED,
         category = SkillCategory.FRAMEWORKS,
         icon = Res.drawable.manim
     ),
@@ -105,8 +96,7 @@ val skills = listOf(
     Skill(
         slug = "spring_boot",
         name = "Spring Boot",
-        level = "Beginner",
-        color = Color(0xFF4CAF50),
+        level = SkillLevel.BEGINNER,
         category = SkillCategory.FRAMEWORKS,
         icon = Res.drawable.spring_boot
     ),
@@ -114,8 +104,7 @@ val skills = listOf(
     Skill(
         slug = "pillow",
         name = "Pillow",
-        level = "Intermediate",
-        color = Color(0xFF6A1B9A),
+        level = SkillLevel.COMPETENT,
         category = SkillCategory.TOOLS_AND_LIBRARIES,
         icon = Res.drawable.pillow
     ),
@@ -123,8 +112,7 @@ val skills = listOf(
     Skill(
         slug = "fpdf2",
         name = "FPDF2",
-        level = "Intermediate",
-        color = Color(0xFF8E24AA),
+        level = SkillLevel.COMPETENT,
         category = SkillCategory.TOOLS_AND_LIBRARIES,
         icon = Res.drawable.fpdf2
     ),
@@ -132,8 +120,7 @@ val skills = listOf(
     Skill(
         slug = "polish",
         name = "Polish",
-        level = "Native",
-        color = Color(0xFFB71C1C),
+        level = SkillLevel.NATIVE,
         category = SkillCategory.NATURAL_LANGUAGES,
         icon = Res.drawable.pl
     ),
@@ -141,8 +128,7 @@ val skills = listOf(
     Skill(
         slug = "english",
         name = "English",
-        level = "C1",
-        color = Color(0xFF0D47A1),
+        level = SkillLevel.C1,
         category = SkillCategory.NATURAL_LANGUAGES,
         icon = Res.drawable.en
     )

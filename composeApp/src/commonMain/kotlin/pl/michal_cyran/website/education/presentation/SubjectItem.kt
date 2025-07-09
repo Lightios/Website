@@ -18,6 +18,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.education.domain.Subject
 
 
@@ -37,7 +38,7 @@ fun SubjectItem(
         shape = RoundedCornerShape(16.dp)
     ) {
         Text(
-            text = subject.name,
+            text = stringResource(subject.name),
             style = MaterialTheme.typography.bodySmall,
             modifier = Modifier
                 .padding(vertical = 10.dp, horizontal = 16.dp)

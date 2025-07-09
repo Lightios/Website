@@ -46,6 +46,9 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation("org.jetbrains.androidx.navigation:navigation-compose:2.9.0-beta03")
             implementation(libs.kotlinx.datetime)
+
+//            implementation("io.coil-kt.coil3:coil-compose:3.0.0-alpha06")
+//            implementation("io.coil-kt.coil3:coil-network-ktor:3.0.0-alpha06")
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -53,7 +56,11 @@ kotlin {
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutinesSwing)
+//            implementation(libs.ktor.client.java)
         }
+//        wasmJsMain.dependencies {
+//            implementation("io.ktor:ktor-client-js:3.0.0-wasm2")
+//        }
     }
 }
 

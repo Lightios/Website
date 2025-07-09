@@ -9,27 +9,31 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.core.domain.Badge
 
 
 @Composable
 fun StatusBadge(
-    badge: Badge
+    badge: Badge,
+    modifier: Modifier = Modifier
 ) {
     Surface(
-        color = badge.backgroundColor.copy(alpha = 0.15f),
+        color = badge.color.copy(alpha = 0.15f),
         shape = RoundedCornerShape(8.dp),
-        border = BorderStroke(1.dp, badge.backgroundColor.copy(alpha = 0.3f)),
-        modifier = Modifier.clip(RoundedCornerShape(8.dp))
+        border = BorderStroke(1.dp, badge.color.copy(alpha = 0.3f)),
+        modifier = modifier.clip(RoundedCornerShape(8.dp))
     ) {
         Text(
-            text = badge.text,
-            color = badge.backgroundColor,
+            text = stringResource(badge.text),
+            color = badge.color,
             fontSize = 12.sp,
             fontWeight = FontWeight.Medium,
-            modifier = Modifier.padding(horizontal = 10.dp, vertical = 2.dp)
+            modifier = Modifier.padding(horizontal = 10.dp, vertical = 2.dp),
+            textAlign = TextAlign.Center
         )
     }
 }

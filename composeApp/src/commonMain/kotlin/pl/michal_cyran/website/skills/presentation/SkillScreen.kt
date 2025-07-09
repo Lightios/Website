@@ -14,11 +14,15 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.skills.data.skills
 
 import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.light_mode
 import website.composeapp.generated.resources.search
+import website.composeapp.generated.resources.search_placeholder
+import website.composeapp.generated.resources.skills_subtitle
+import website.composeapp.generated.resources.skills_title
 
 
 @Composable
@@ -34,7 +38,7 @@ fun SkillsScreen(
     ) {
         // Header
         Text(
-            text = "Technical Skills",
+            text = stringResource(Res.string.skills_title),
             fontSize = 48.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White,
@@ -44,7 +48,7 @@ fun SkillsScreen(
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
-            text = "A comprehensive overview of my programming languages,\nframeworks, and technical expertise.",
+            text = stringResource(Res.string.skills_subtitle),
             fontSize = 16.sp,
             color = Color(0xFF9CA3AF),
             textAlign = TextAlign.Center,
@@ -59,7 +63,7 @@ fun SkillsScreen(
             onValueChange = { searchQuery = it },
             placeholder = {
                 Text(
-                    "Search skills...",
+                    stringResource(Res.string.search_placeholder),
                     color = Color(0xFF6B7280)
                 )
             },

@@ -1,8 +1,8 @@
 package pl.michal_cyran.website.education.domain
 
-import androidx.compose.ui.graphics.Color
+import org.jetbrains.compose.resources.StringResource
 
 data class Subject(
-    val name: String,
+    val name: StringResource,
     val category: SubjectCategory
 )

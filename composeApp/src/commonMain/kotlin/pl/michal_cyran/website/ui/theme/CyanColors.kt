@@ -27,8 +27,8 @@ object AppColors {
         val primary = CyanColors.Cyan500
         val primaryVariant = CyanColors.Cyan600
         val secondary = CyanColors.Cyan400
-        val background = Color.White
-        val surface = Color(0xFFF9FAFB)  // gray-50
+        val background = Color(0xFFf2f3f4)
+        val surface = Color(0xFFf0f0f0)  // gray-50
         val onPrimary = Color.White
         val onSecondary = Color.White
         val onBackground = Color(0xFF111827)  // gray-900
@@ -74,15 +74,15 @@ fun AppThemeM3(
     } else {
         lightColorScheme(
             primary = AppColors.Light.primary,
-            secondary = AppColors.Light.secondary,
-            background = AppColors.Light.background,
-            surface = AppColors.Light.surface,
+//            secondary = AppColors.Light.secondary,
+//            background = AppColors.Light.background,
+//            surface = AppColors.Light.surface,
             onPrimary = AppColors.Light.onPrimary,
-            onSecondary = AppColors.Light.onSecondary,
-            onBackground = AppColors.Light.onBackground,
-            onSurface = AppColors.Light.onSurface,
+//            onSecondary = AppColors.Light.onSecondary,
+//            onBackground = AppColors.Light.onBackground,
+//            onSurface = AppColors.Light.onSurface,
             primaryContainer = Color(233, 253, 255),
-            secondaryContainer = Color(187, 238, 245)
+//            secondaryContainer = Color(187, 238, 245)
         )
     }
 

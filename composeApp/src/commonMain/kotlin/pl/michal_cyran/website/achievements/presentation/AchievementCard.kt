@@ -24,13 +24,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.achievements.domain.Achievement
 import pl.michal_cyran.website.core.domain.Badge
 import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.calculate
 import website.composeapp.generated.resources.calendar_month
 import website.composeapp.generated.resources.csharp
+import website.composeapp.generated.resources.groups
 import website.composeapp.generated.resources.location
+import website.composeapp.generated.resources.source_environment
 
 @Composable
 fun AchievementCard(achievement: Achievement) {
@@ -40,14 +43,14 @@ fun AchievementCard(achievement: Achievement) {
             containerColor = MaterialTheme.colorScheme.surfaceContainer
         ),
         shape = RoundedCornerShape(16.dp),
-        border = BorderStroke(1.dp, Color(0xFF334155))
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
     ) {
         Column(
             modifier = Modifier.padding(24.dp)
         ) {
             // Achievement Title
             Text(
-                text = achievement.name,
+                text = stringResource(achievement.name),
                 color = MaterialTheme.colorScheme.onSurface,
                 style = MaterialTheme.typography.titleMedium,
             )
@@ -66,7 +69,7 @@ fun AchievementCard(achievement: Achievement) {
                         painter = painterResource(Res.drawable.calendar_month),
                         contentDescription = "Date",
                         tint = Color(0xFF06B6D4),
-                        modifier = Modifier.size(16.dp)
+                        modifier = Modifier.size(24.dp)
                     )
                     Spacer(modifier = Modifier.width(8.dp))
                     Text(
@@ -97,10 +100,10 @@ fun AchievementCard(achievement: Achievement) {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Icon(
-                    painter = painterResource(Res.drawable.location),
+                    painter = painterResource(Res.drawable.source_environment),
                     contentDescription = "Organization",
                     tint = Color(0xFF64748B),
-                    modifier = Modifier.size(16.dp)
+                    modifier = Modifier.size(24.dp)
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(

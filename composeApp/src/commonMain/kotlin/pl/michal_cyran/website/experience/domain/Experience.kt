@@ -10,12 +10,13 @@ import kotlinx.datetime.minus
 import kotlinx.datetime.toLocalDateTime
 import kotlinx.datetime.todayIn
 import org.jetbrains.compose.resources.DrawableResource
+import org.jetbrains.compose.resources.StringResource
 import pl.michal_cyran.website.core.domain.Badge
 import kotlin.time.TimeMark
 
 data class Experience(
-    val title: String,
-    val description: String,
+    val title: StringResource,
+    val description: StringResource,
     val icon: DrawableResource,
     val iconColor: Color,
     val iconBackground: Color,
@@ -25,17 +26,11 @@ data class Experience(
     val endDate: LocalDate? = null,
     val technologies: List<Technology> = emptyList(),
 ) {
-    val duration: String
-
-    get () = if (endDate != null) {
-        val difference = endDate - startDate
-        "${difference.years} years"
-    } else {
-        val now: Instant = Clock.System.now()
-        val today: LocalDate = now.toLocalDateTime(TimeZone.currentSystemDefault()).date
-        val difference = today - startDate
-
-        "${difference.years} years"
-    }
+    val durationInYears: Int
+        get() {
+            val today = Clock.System.todayIn(TimeZone.currentSystemDefault())
+            val end = endDate ?: today
+            return (end.year - startDate.year) - if (end.month < startDate.month || (end.month == startDate.month && end.dayOfMonth < startDate.dayOfMonth)) 1 else 0
+        }
 }
 

@@ -18,8 +18,15 @@ import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.resources.painterResource
 import pl.michal_cyran.website.core.presentation.composables.ScreenButton
 import website.composeapp.generated.resources.Res
+import website.composeapp.generated.resources.achievements
 import website.composeapp.generated.resources.dark_mode
+import website.composeapp.generated.resources.education
+import website.composeapp.generated.resources.experience
 import website.composeapp.generated.resources.light_mode
+import website.composeapp.generated.resources.main
+import website.composeapp.generated.resources.projects
+import website.composeapp.generated.resources.skills
+import website.composeapp.generated.resources.social_media
 
 @Composable
 fun TopBar(
@@ -67,12 +74,12 @@ fun TopBar(
             modifier = Modifier.weight(1f)
         )
 
-        ScreenButton("Home", onHomeNavigate)
-        ScreenButton("Skills", onSkillsNavigate)
-        ScreenButton("Education", onEducationNavigate)
-        ScreenButton("Experience", onExperienceNavigate)
-        ScreenButton("Projects", onProjectsNavigate)
-        ScreenButton("Achievements", onAchievementsNavigate)
-        ScreenButton("Social Media", onSocialMediaNavigate)
+        ScreenButton(Res.string.main, onHomeNavigate)
+        ScreenButton(Res.string.skills, onSkillsNavigate)
+        ScreenButton(Res.string.education, onEducationNavigate)
+        ScreenButton(Res.string.experience, onExperienceNavigate)
+        ScreenButton(Res.string.projects, onProjectsNavigate)
+        ScreenButton(Res.string.achievements, onAchievementsNavigate)
+        ScreenButton(Res.string.social_media, onSocialMediaNavigate)
     }
 }

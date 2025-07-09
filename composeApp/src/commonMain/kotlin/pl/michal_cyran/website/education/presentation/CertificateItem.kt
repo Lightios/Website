@@ -14,9 +14,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import org.jetbrains.compose.resources.StringResource
+import org.jetbrains.compose.resources.stringResource
 
 @Composable
-fun CertificateItem(certificate: String) {
+fun CertificateItem(certificate: StringResource) {
     Row(
         verticalAlignment = Alignment.CenterVertically
     ) {
@@ -29,7 +31,7 @@ fun CertificateItem(certificate: String) {
         Spacer(modifier = Modifier.width(12.dp))
 
         Text(
-            text = certificate,
+            text = stringResource(certificate),
             color = Color(0xFF94A3B8),
             fontSize = 14.sp
         )

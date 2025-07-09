@@ -12,6 +12,30 @@ import website.composeapp.generated.resources.daymath
 import website.composeapp.generated.resources.demiurg
 import website.composeapp.generated.resources.generator_tabliczek
 import website.composeapp.generated.resources.master_system
+import website.composeapp.generated.resources.projects_binary_clock_description
+import website.composeapp.generated.resources.projects_binary_clock_shortDescription
+import website.composeapp.generated.resources.projects_crypto_tracker_description
+import website.composeapp.generated.resources.projects_crypto_tracker_shortDescription
+import website.composeapp.generated.resources.projects_daymath_description
+import website.composeapp.generated.resources.projects_daymath_shortDescription
+import website.composeapp.generated.resources.projects_demiurg_description
+import website.composeapp.generated.resources.projects_demiurg_shortDescription
+import website.composeapp.generated.resources.projects_generator_tabliczek_description
+import website.composeapp.generated.resources.projects_generator_tabliczek_shortDescription
+import website.composeapp.generated.resources.projects_master_system_description
+import website.composeapp.generated.resources.projects_master_system_shortDescription
+import website.composeapp.generated.resources.projects_movie_ai_description
+import website.composeapp.generated.resources.projects_movie_ai_shortDescription
+import website.composeapp.generated.resources.projects_scheduler_description
+import website.composeapp.generated.resources.projects_scheduler_shortDescription
+import website.composeapp.generated.resources.projects_subtitles_shifter_description
+import website.composeapp.generated.resources.projects_subtitles_shifter_shortDescription
+import website.composeapp.generated.resources.projects_tic_tac_toe_description
+import website.composeapp.generated.resources.projects_tic_tac_toe_shortDescription
+import website.composeapp.generated.resources.projects_vl_description
+import website.composeapp.generated.resources.projects_vl_shortDescription
+import website.composeapp.generated.resources.projects_youtube_downloader_description
+import website.composeapp.generated.resources.projects_youtube_downloader_shortDescription
 import website.composeapp.generated.resources.recommendation
 import website.composeapp.generated.resources.scheduler
 import website.composeapp.generated.resources.subtitles_shifter
@@ -22,8 +46,8 @@ import website.composeapp.generated.resources.youtube_downloader
 val projects = listOf(
     Project(
         name = "Master System",
-        description = "projects.master-system.description",
-        shortDescription = "projects.master-system.shortDescription",
+        description = Res.string.projects_master_system_description,
+        shortDescription = Res.string.projects_master_system_shortDescription,
         logo = Res.drawable.master_system,
         skills = listOf("python", "kivy", "pillow", "fpdf2"),
         type = ProjectType.DESKTOP_APPLICATION,
@@ -58,8 +82,8 @@ val projects = listOf(
     ),
     Project(
         name = "Valorant Lineups",
-        description = "projects.valorant-lineups.description",
-        shortDescription = "projects.valorant-lineups.shortDescription",
+        description = Res.string.projects_vl_description,
+        shortDescription = Res.string.projects_vl_shortDescription,
         logo = Res.drawable.valorant_lineups,
         skills = listOf("python", "kivy", "kotlin", "jetpack_compose"),
         type = ProjectType.MOBILE_APPLICATION,
@@ -74,8 +98,8 @@ val projects = listOf(
     ),
     Project(
         name = "DayMath",
-        description = "projects.daymath.description",
-        shortDescription = "projects.daymath.shortDescription",
+        description = Res.string.projects_daymath_description,
+        shortDescription = Res.string.projects_daymath_shortDescription,
         logo = Res.drawable.daymath,
         skills = listOf("kotlin", "jetpack_compose", "python", "manim", "latex"),
         type = ProjectType.MOBILE_APPLICATION,
@@ -90,8 +114,8 @@ val projects = listOf(
     ),
     Project(
         name = "Demiurg",
-        description = "projects.demiurg.description",
-        shortDescription = "projects.demiurg.shortDescription",
+        description = Res.string.projects_demiurg_description,
+        shortDescription = Res.string.projects_demiurg_shortDescription,
         logo = Res.drawable.demiurg,
         skills = listOf("python", "kivy"),
         type = ProjectType.DESKTOP_APPLICATION,
@@ -115,8 +139,8 @@ val projects = listOf(
     ),
     Project(
         name = "Movie Recommendation System",
-        description = "projects.movie-ai.description",
-        shortDescription = "projects.movie-ai.shortDescription",
+        description = Res.string.projects_movie_ai_description,
+        shortDescription = Res.string.projects_movie_ai_shortDescription,
         logo = Res.drawable.recommendation,
         skills = listOf("python", "kivy"),
         type = ProjectType.DESKTOP_APPLICATION,
@@ -131,8 +155,8 @@ val projects = listOf(
     ),
     Project(
         name = "Generator tabliczek",
-        description = "projects.generator-tabliczek.description",
-        shortDescription = "projects.generator-tabliczek.shortDescription",
+        description = Res.string.projects_generator_tabliczek_description,
+        shortDescription = Res.string.projects_generator_tabliczek_shortDescription,
         logo = Res.drawable.generator_tabliczek,
         skills = listOf("c#"),
         type = ProjectType.DESKTOP_APPLICATION,
@@ -164,8 +188,8 @@ val projects = listOf(
     ),
     Project(
         name = "Scheduler",
-        description = "projects.scheduler.description",
-        shortDescription = "projects.scheduler.shortDescription",
+        description = Res.string.projects_scheduler_description,
+        shortDescription = Res.string.projects_scheduler_shortDescription,
         logo = Res.drawable.scheduler,
         skills = listOf("python", "pillow"),
         type = ProjectType.OTHER,
@@ -201,8 +225,8 @@ val projects = listOf(
     ),
     Project(
         name = "Binary Clock",
-        description = "projects.binary-clock.description",
-        shortDescription = "projects.binary-clock.shortDescription",
+        description = Res.string.projects_binary_clock_description,
+        shortDescription = Res.string.projects_binary_clock_shortDescription,
         logo = Res.drawable.binary_clock,
         skills = listOf("kotlin", "jetpack_compose"),
         type = ProjectType.MULTIPLATFORM_APPLICATION,
@@ -223,8 +247,8 @@ val projects = listOf(
 
     Project(
         name = "Subtitles Shifter",
-        description = "projects.subtitles-shifter.description",
-        shortDescription = "projects.subtitles-shifter.shortDescription",
+        description = Res.string.projects_subtitles_shifter_description,
+        shortDescription = Res.string.projects_subtitles_shifter_shortDescription,
         logo = Res.drawable.subtitles_shifter,
         skills = listOf("python"),
         type = ProjectType.CONSOLE,
@@ -239,8 +263,8 @@ val projects = listOf(
     ),
     Project(
         name = "Subtitles Shifter",
-        description = "projects.subtitles-shifter.description",
-        shortDescription = "projects.subtitles-shifter.shortDescription",
+        description = Res.string.projects_subtitles_shifter_description,
+        shortDescription = Res.string.projects_subtitles_shifter_shortDescription,
         logo = Res.drawable.subtitles_shifter,
         skills = listOf("python"),
         type = ProjectType.CONSOLE,
@@ -256,8 +280,8 @@ val projects = listOf(
 
     Project(
         name = "YouTube Downloader",
-        description = "projects.youtube-downloader.description",
-        shortDescription = "projects.youtube-downloader.shortDescription",
+        description = Res.string.projects_youtube_downloader_description,
+        shortDescription = Res.string.projects_youtube_downloader_shortDescription,
         logo = Res.drawable.youtube_downloader,
         skills = listOf("python"),
         type = ProjectType.CONSOLE,
@@ -273,8 +297,8 @@ val projects = listOf(
 
     Project(
         name = "Tic Tac Toe Cog",
-        description = "projects.tic-tac-toe.description",
-        shortDescription = "projects.tic-tac-toe.shortDescription",
+        description = Res.string.projects_tic_tac_toe_description,
+        shortDescription = Res.string.projects_tic_tac_toe_shortDescription,
         logo = Res.drawable.tic_tac_toe,
         skills = listOf("python"),
         type = ProjectType.OTHER,
@@ -290,8 +314,8 @@ val projects = listOf(
 
     Project(
         name = "Crypto Tracker",
-        description = "projects.crypto-tracker.description",
-        shortDescription = "projects.crypto-tracker.shortDescription",
+        description = Res.string.projects_crypto_tracker_description,
+        shortDescription = Res.string.projects_crypto_tracker_shortDescription,
         logo = Res.drawable.tic_tac_toe,
         skills = listOf("kotlin", "jetpack_compose"),
         type = ProjectType.MOBILE_APPLICATION,

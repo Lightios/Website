@@ -13,7 +13,7 @@ fun TypeBadge(
     StatusBadge(
         Badge(
             text = type.displayName,
-            backgroundColor = type.toColor(),
+            color = type.toColor(),
         )
     )
 }
@@ -26,7 +26,7 @@ fun CategoryBadge(
     StatusBadge(
         Badge(
             text = category.displayName,
-            backgroundColor = category.toColor(),
+            color = category.toColor(),
         )
     )
 }

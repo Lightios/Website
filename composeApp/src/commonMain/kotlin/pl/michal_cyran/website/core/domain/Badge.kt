@@ -1,9 +1,9 @@
 package pl.michal_cyran.website.core.domain
 
 import androidx.compose.ui.graphics.Color
+import org.jetbrains.compose.resources.StringResource
 
 data class Badge(
-    val text: String,
-    val backgroundColor: Color,
-    val textColor: Color = Color.Companion.White
+    val text: StringResource,
+    val color: Color,
 )

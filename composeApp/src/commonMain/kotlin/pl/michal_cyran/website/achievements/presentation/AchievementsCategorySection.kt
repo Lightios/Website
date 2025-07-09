@@ -18,10 +18,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.achievements.domain.Achievement
 import pl.michal_cyran.website.achievements.domain.AchievementCategory
 import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.csharp
+import website.composeapp.generated.resources.n_achievements
 
 @Composable
 fun AchievementCategorySection(
@@ -49,7 +51,7 @@ fun AchievementCategorySection(
             Spacer(modifier = Modifier.width(12.dp))
 
             Text(
-                text = category.displayName,
+                text = stringResource(category.displayName),
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.White
@@ -58,7 +60,7 @@ fun AchievementCategorySection(
             Spacer(modifier = Modifier.weight(1f))
 
             Text(
-                text = "${achievements.size} Achievements",
+                text = stringResource(Res.string.n_achievements, achievements.size),
                 fontSize = 16.sp,
                 color = Color(0xFF64748B)
             )

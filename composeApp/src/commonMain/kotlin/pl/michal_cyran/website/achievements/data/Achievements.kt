@@ -1,17 +1,25 @@
 package pl.michal_cyran.website.achievements.data
 
 import kotlinx.datetime.LocalDate
-import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.achievements.domain.Achievement
 import pl.michal_cyran.website.achievements.domain.AchievementCategory
 import pl.michal_cyran.website.achievements.domain.AchievementLevel
+import website.composeapp.generated.resources.`Honorable Mention in the 15th District Math Contest 'Procent'`
+import website.composeapp.generated.resources.`Honorable Mention in the International Math Contest 'Kangur Matematyczny'`
+import website.composeapp.generated.resources.`Honorable Mention in the National History Contest 'Krag'`
+import website.composeapp.generated.resources.`Przeworsk County Scholarship`
+import website.composeapp.generated.resources.`Qualification to the Semi_Finals of the Polish Edition of the International Pix Programming Challenge`
 import website.composeapp.generated.resources.Res
-import website.composeapp.generated.resources.project_details
+import website.composeapp.generated.resources.`_1st Place in the 14th District Math Contest for Second_Year Middle School Students`
+import website.composeapp.generated.resources.`_1st Place in the EXPERT Group at the PIX 2019 Contest _ National School Programming Championship`
+import website.composeapp.generated.resources.`_1st Place in the Independence Dictation Contest`
+import website.composeapp.generated.resources.`_1st Place in the School Programming Contest`
+import website.composeapp.generated.resources.`_2nd Place in the 24th Prof Jan Marszal Mathematics Contest for Middle Schools`
+import website.composeapp.generated.resources.`_2nd Place in the School English Contest`
 
 val achievements = listOf(
     Achievement(
-//        name = stringResource(Res.string.project_details),
-        name = "1st Place in the Independence Dictation Contest",
+        name = Res.string.`_1st Place in the Independence Dictation Contest`,
         organization = "Zespół Szkół Zawodowych w Przeworsku",
         date = LocalDate(2021, 11, 1),
         category = AchievementCategory.OTHER,
@@ -20,14 +28,14 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "Przeworsk County Scholarship",
+        name = Res.string.`Przeworsk County Scholarship`,
         organization = "Starosta Przeworski",
         date = LocalDate(2020, 12, 1),
         category = AchievementCategory.SCHOLARSHIP,
         level = AchievementLevel.REGIONAL
     ),
     Achievement(
-        name = "1st Place in the EXPERT Group at the PIX 2019 Contest - National School Programming Championship",
+        name = Res.string.`_1st Place in the EXPERT Group at the PIX 2019 Contest _ National School Programming Championship`,
         organization = "eduLAB",
         date = LocalDate(2019, 12, 1),
         category = AchievementCategory.PROGRAMMING,
@@ -36,7 +44,7 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "Qualification to the Semi-Finals of the Polish Edition of the International Pix Programming Challenge",
+        name = Res.string.`Qualification to the Semi_Finals of the Polish Edition of the International Pix Programming Challenge`,
         organization = "eduLAB",
         date = LocalDate(2019, 12, 13),
         category = AchievementCategory.PROGRAMMING,
@@ -44,7 +52,7 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "Honorable Mention in the National History Contest 'Krag'",
+        name = Res.string.`Honorable Mention in the National History Contest 'Krag'`,
         organization = "Stowarzyszenie Upowszechniania Wiedzy i Kultury Regionalnej 'Pokolenie'",
         date = LocalDate(2019, 12, 1),
         category = AchievementCategory.OTHER,
@@ -52,7 +60,7 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "Przeworsk County Scholarship",
+        name = Res.string.`Przeworsk County Scholarship`,
         organization = "Starosta Przeworski",
         date = LocalDate(2019, 12, 1),
         category = AchievementCategory.SCHOLARSHIP,
@@ -60,7 +68,7 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "Przeworsk County Scholarship",
+        name = Res.string.`Przeworsk County Scholarship`,
         organization = "Starosta Przeworski",
         date = LocalDate(2018, 11, 18),
         category = AchievementCategory.SCHOLARSHIP,
@@ -68,7 +76,7 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "Honorable Mention in the International Math Contest 'Kangur Matematyczny'",
+        name = Res.string.`Honorable Mention in the International Math Contest 'Kangur Matematyczny'`,
         organization = "Wydział Matematyki i Informatyki UMK w Toruniu",
         date = LocalDate(2017, 6, 26),
         category = AchievementCategory.MATH,
@@ -76,7 +84,7 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "2nd Place in the 24th Prof. Jan Marszal Mathematics Contest for Middle Schools",
+        name = Res.string.`_2nd Place in the 24th Prof Jan Marszal Mathematics Contest for Middle Schools`,
         organization = "I Liceum Ogólnokształcące w im. H. Sienkiewicza w Łańcucie",
         date = LocalDate(2017, 3, 10),
         category = AchievementCategory.MATH,
@@ -84,7 +92,7 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "1st Place in the School Programming Contest",
+        name = Res.string.`_1st Place in the School Programming Contest`,
         organization = "Zespół Szkół w Markowej",
         date = LocalDate(2017, 6, 12),
         category = AchievementCategory.PROGRAMMING,
@@ -93,7 +101,7 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "Honorable Mention in the 15th District Math Contest 'Procent'",
+        name = Res.string.`Honorable Mention in the 15th District Math Contest 'Procent'`,
         organization = "Zespół Szkół im. A. Mickiewicza w Żołyni",
         date = LocalDate(2017, 6, 5),
         category = AchievementCategory.MATH,
@@ -101,7 +109,7 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "1st Place in the School Programming Contest",
+        name = Res.string.`_1st Place in the School Programming Contest`,
         organization = "Zespół Szkół w Markowej",
         date = LocalDate(2016, 6, 12),
         category = AchievementCategory.PROGRAMMING,
@@ -110,7 +118,7 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "1st Place in the 14th District Math Contest for Second-Year Middle School Students",
+        name = Res.string.`_1st Place in the 14th District Math Contest for Second_Year Middle School Students`,
         organization = "Publiczne Gimnazjum nr 1 w Łańcucie",
         date = LocalDate(2016, 6, 9),
         category = AchievementCategory.MATH,
@@ -119,7 +127,7 @@ val achievements = listOf(
     ),
 
     Achievement(
-        name = "2nd Place in the School English Contest",
+        name = Res.string.`_2nd Place in the School English Contest`,
         organization = "Zespół Szkół w Markowej",
         date = LocalDate(2016, 6, 24),
         category = AchievementCategory.OTHER,
@@ -127,85 +135,3 @@ val achievements = listOf(
     )
 )
 
-
-//{
-//        name: '1st Place in the Independence Dictation Contest',
-//        organization: 'Zespół Szkół Zawodowych w Przeworsku',
-//        date: new Date(2021, 10, 1),
-//    },
-//
-//    {
-//        name: 'Przeworsk County Scholarship',
-//        organization: 'Starosta Przeworski',
-//        date: new Date(2020, 11, 1),
-//    },
-//    {
-//        name: '1st Place in the EXPERT Group at the PIX 2019 Contest - National School Programming Championship',
-//        organization: 'eduLAB',
-//        date: new Date(2019, 12, 1)
-//    },
-//
-//    {
-//        name: 'Qualification to the Semi-Finals of the Polish Edition of the International Pix Programming Challenge',
-//        organization: 'eduLAB',
-//        date: new Date(2019, 12, 13)
-//    },
-//    {
-//        name: 'Honorable Mention in the National History Contest "Krag"',
-//        organization: 'Stowarzyszenie Upowszechniania Wiedzy i Kultury Regionalnej „Pokolenie”',
-//        date: new Date(2019, 12, 1)
-//    },
-//
-//    {
-//        name: 'Przeworsk County Scholarship',
-//        organization: 'Starosta Przeworski',
-//        date: new Date(2019, 11, 1),
-//    },
-//
-//    {
-//        name: 'Przeworsk County Scholarship',
-//        organization: 'Starosta Przeworski',
-//        date: new Date(2018, 10, 18),
-//    },
-//
-//    {
-//        name: 'Honorable Mention in the International Math Contest "Kangur Matematyczny"',
-//        organization: 'Wydział Matematyki i Informatyki UMK w Toruniu',
-//        date: new Date(2017, 5, 26),
-//    },
-//
-//    {
-//        name: '2nd Place in the 24th Prof. Jan Marszal Mathematics Contest for Middle Schools',
-//        organization: 'I Liceum Ogólnokształcące w im. H. Sienkiewicza w Łańcucie',
-//        date: new Date(2017, 2, 10)
-//    },
-//
-//    {
-//        name: '1st Place in the School Programming Contest',
-//        organization: 'Zespół Szkół w Markowej',
-//        date: new Date(2017, 5, 12)
-//    },
-//
-//    {
-//        name: 'Honorable Mention in the 15th District Math Contest "Procent"',
-//        organization: 'Zespół Szkół im. A. Mickiewicza w Żołyni',
-//        date: new Date(2017, 6, 5)
-//    },
-//
-//    {
-//        name: '1st Place in the School Programming Contest',
-//        organization: 'Zespół Szkół w Markowej',
-//        date: new Date(2016, 5, 12)
-//    },
-//
-//    {
-//        name: '1st Place in the 14th District Math Contest for Second-Year Middle School Students',
-//        organization: 'Publiczne Gimnazjum nr 1 w Łańcucie',
-//        date: new Date(2016, 6, 9)
-//    },
-//
-//    {
-//        name: '2nd Place in the School English Contest',
-//        organization: 'Zespół Szkół w Markowej',
-//        date: new Date(2016, 6, 24)
-//    }

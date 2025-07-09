@@ -18,13 +18,35 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.core.presentation.composables.NavigationCard
 import website.composeapp.generated.resources.Res
+import website.composeapp.generated.resources.achievements
+import website.composeapp.generated.resources.achievements_button
+import website.composeapp.generated.resources.achievements_description
 import website.composeapp.generated.resources.deployed_code
+import website.composeapp.generated.resources.education
+import website.composeapp.generated.resources.education_button
+import website.composeapp.generated.resources.education_description
+import website.composeapp.generated.resources.experience
+import website.composeapp.generated.resources.experience_button
+import website.composeapp.generated.resources.experience_description
+import website.composeapp.generated.resources.home_description
 import website.composeapp.generated.resources.person_play
+import website.composeapp.generated.resources.projects
+import website.composeapp.generated.resources.projects_button
+import website.composeapp.generated.resources.projects_description
 import website.composeapp.generated.resources.school
+import website.composeapp.generated.resources.skills
+import website.composeapp.generated.resources.skills_button
+import website.composeapp.generated.resources.skills_description
 import website.composeapp.generated.resources.smart_display
+import website.composeapp.generated.resources.social_media
+import website.composeapp.generated.resources.social_media_button
+import website.composeapp.generated.resources.social_media_description
 import website.composeapp.generated.resources.trophy
+import website.composeapp.generated.resources.welcome_p1
+import website.composeapp.generated.resources.welcome_p2
 import website.composeapp.generated.resources.work_history
 
 @Composable
@@ -50,16 +72,16 @@ fun MainScreen(
     ) {
         Text(
             text = buildAnnotatedString {
-                append("Welcome to My\n")
+                append(stringResource(Res.string.welcome_p1) + "\n")
                 withStyle(SpanStyle(color = MaterialTheme.colorScheme.primary)) {
-                    append("Digital Portfolio")
+                    append(stringResource(Res.string.welcome_p2))
                 }
             },
             style = MaterialTheme.typography.headlineLarge
         )
 
         Text(
-            text = "Discover my journey, skills, projects, and achievements. From tutoring to content creation, explore what drives my passion for learning and teaching.",
+            text = stringResource(Res.string.home_description),
             style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.Center,
             color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
@@ -70,66 +92,66 @@ fun MainScreen(
         )
 
         Row(
-            modifier = Modifier.fillMaxWidth(0.6f).padding(16.dp),
+            modifier = Modifier.fillMaxWidth(0.7f).padding(16.dp),
             horizontalArrangement = Arrangement.spacedBy(20.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             NavigationCard(
                 icon = Res.drawable.person_play,
-                title = "Skills",
-                content = "Discover my programming languages, frameworks, and technical expertise across different domains.",
-                buttonText = "View skills",
+                title = Res.string.skills,
+                content = Res.string.skills_description,
+                buttonText = Res.string.skills_button,
                 onClick = onSkillsNavigate,
                 color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.weight(1f),
             )
             NavigationCard(
                 icon = Res.drawable.school,
-                title = "Education",
-                content = "Explore my academic journey from high school through university with detailed coursework and achievements.",
-                buttonText = "Learn More",
+                title = Res.string.education,
+                content = Res.string.education_description,
+                buttonText = Res.string.education_button,
                 onClick = onEducationNavigate,
                 color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.weight(1f),
             )
             NavigationCard(
                 icon = Res.drawable.work_history,
-                title = "Experience",
-                content = "Explore my professional journey, tutoring experience, and the skills I've developed along the way.",
-                buttonText = "Learn More",
+                title = Res.string.experience,
+                content = Res.string.experience_description,
+                buttonText = Res.string.experience_button,
                 onClick = onExperienceNavigate,
                 color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.weight(1f),
             )
         }
         Row(
-            modifier = Modifier.fillMaxWidth(0.6f).padding(16.dp),
+            modifier = Modifier.fillMaxWidth(0.7f).padding(16.dp),
             horizontalArrangement = Arrangement.spacedBy(20.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             NavigationCard(
                 icon = Res.drawable.deployed_code,
-                title = "Projects",
-                content = "Discover the projects I've worked on, from educational tools to creative endeavors.",
-                buttonText = "Learn More",
+                title = Res.string.projects,
+                content = Res.string.projects_description,
+                buttonText = Res.string.projects_button,
                 onClick = onProjectsNavigate,
                 color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.weight(1f),
             )
             NavigationCard(
                 icon = Res.drawable.trophy,
-                title = "Achievements",
-                content = "Check out my accomplishments, certifications, and milestones throughout my journey.",
-                buttonText = "Learn More",
+                title = Res.string.achievements,
+                content = Res.string.achievements_description,
+                buttonText = Res.string.achievements_button,
                 onClick = onAchievementsNavigate,
                 color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.weight(1f),
             )
             NavigationCard(
                 icon = Res.drawable.smart_display,
-                title = "Social Media",
-                content = "Follow my educational content on YouTube and TikTok for tutorials and study tips.",
-                buttonText = "Learn More",
+                title = Res.string.social_media,
+                content = Res.string.social_media_description,
+                buttonText = Res.string.social_media_button,
                 onClick = onSocialMediaNavigate,
                 color = Color.Red,
                 modifier = Modifier.weight(1f),

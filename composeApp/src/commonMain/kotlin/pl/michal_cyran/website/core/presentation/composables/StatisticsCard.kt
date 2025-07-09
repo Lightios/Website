@@ -22,6 +22,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.core.domain.Stat
 
 @Composable
@@ -35,7 +36,7 @@ fun StatisticCard(
             containerColor = MaterialTheme.colorScheme.surfaceContainer
         ),
         shape = RoundedCornerShape(16.dp),
-        border = BorderStroke(1.dp, Color(0xFF334155))
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
     ) {
         Column(
             modifier = Modifier
@@ -62,7 +63,7 @@ fun StatisticCard(
             )
 
             Text(
-                text = stat.label,
+                text = stringResource(stat.label),
                 fontSize = 14.sp,
                 color = Color(0xFF64748B),
                 textAlign = TextAlign.Center,

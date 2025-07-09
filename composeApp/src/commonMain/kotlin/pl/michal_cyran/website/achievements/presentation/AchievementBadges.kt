@@ -4,14 +4,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import pl.michal_cyran.website.achievements.domain.AchievementLevel
 import pl.michal_cyran.website.core.domain.Badge
+import pl.michal_cyran.website.core.presentation.BadgeColors
 import pl.michal_cyran.website.core.presentation.composables.StatusBadge
+import website.composeapp.generated.resources.Res
+import website.composeapp.generated.resources.`_1st place`
 
 @Composable
 fun FirstPlaceBadge() {
     StatusBadge(
         Badge(
-            text = "1st Place",
-            backgroundColor = Color(0xFFFFD700),
+            text = Res.string.`_1st place`,
+            color = BadgeColors.gold
         )
 
     )
@@ -23,17 +26,17 @@ fun LevelBadge(
     level: AchievementLevel
 ) {
     val backgroundColor = when (level) {
-        AchievementLevel.SCHOOL -> Color(0xFFfb923c)
-        AchievementLevel.INTERNATIONAL -> Color(0xFFf87171)
-        AchievementLevel.DISTRICT -> Color(0xFF22d3ee)
-        AchievementLevel.REGIONAL -> Color(0xFF4ade80)
-        AchievementLevel.NATIONAL -> Color(0xFFc084fc)
+        AchievementLevel.SCHOOL -> BadgeColors.gold
+        AchievementLevel.INTERNATIONAL -> BadgeColors.red
+        AchievementLevel.DISTRICT -> BadgeColors.cyan
+        AchievementLevel.REGIONAL -> BadgeColors.green
+        AchievementLevel.NATIONAL -> BadgeColors.pink
     }
 
     StatusBadge(
         Badge(
             text = level.displayName,
-            backgroundColor = backgroundColor,
+            color = backgroundColor,
         )
     )
 }

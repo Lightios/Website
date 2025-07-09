@@ -6,15 +6,16 @@ import pl.michal_cyran.website.core.domain.Stat
 import pl.michal_cyran.website.social_media.domain.SocialPlatform
 import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.calendar_month
+import website.composeapp.generated.resources.social_media
 
 val socialMedia = listOf(
     SocialPlatform(
         name = "YouTube Channel",
         icon = "📺",
-        badge = Badge("Educational Content", Color(0xFFDC2626)),
+        badge = Badge(Res.string.social_media, Color(0xFFDC2626)),
         description = "Join me on YouTube for in-depth educational tutorials, study tips, and comprehensive lessons across various subjects. New videos uploaded weekly!",
         stats = listOf(
-            Stat("25+", "Videos", Res.drawable.calendar_month, Color(0xFFDC2626)),
+            Stat("25+", Res.string.social_media, Res.drawable.calendar_month, Color(0xFFDC2626)),
 //            Stat("❤", "Growing Community")
         ),
         tags = listOf("Tutorial Videos", "Study Tips", "Subject Reviews", "Exam Prep"),
@@ -25,10 +26,10 @@ val socialMedia = listOf(
     SocialPlatform(
         name = "TikTok",
         icon = "🎵",
-        badge = Badge("Quick Learning", Color(0xFFEC4899)),
+        badge = Badge(Res.string.social_media, Color(0xFFEC4899)),
         description = "Follow me on TikTok for bite-sized educational content, study motivation, and creative ways to make learning fun and memorable!",
         stats = listOf(
-            Stat("25+", "Videos", Res.drawable.calendar_month, Color(0xFFDC2626)),
+            Stat("25+", Res.string.social_media, Res.drawable.calendar_month, Color(0xFFDC2626)),
 //        Stat("▶", "50+ Videos"),
 //        Stat("❤", "Engaging Content")
         ),

@@ -33,6 +33,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.projects.domain.Project
 import pl.michal_cyran.website.skills.data.skillsBySlug
 import kotlin.collections.forEach
@@ -49,11 +50,13 @@ fun ProjectCard(
             .clickable(
                 onClick = onProjectClick,
             )
+
         ,
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceContainer
         ),
-        shape = RoundedCornerShape(16.dp)
+        shape = RoundedCornerShape(16.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
     ) {
         Column(
             modifier = Modifier.padding(20.dp),
@@ -96,7 +99,7 @@ fun ProjectCard(
             )
 
             Text(
-                text = project.shortDescription,
+                text = stringResource(project.shortDescription),
                 style = MaterialTheme.typography.bodyMedium,
                 color = Color(0xFF9CA3AF),
                 modifier = Modifier.padding(horizontal = 10.dp)
@@ -132,21 +135,6 @@ fun ProjectCard(
                     )
                 }
             }
-
-
-//            Surface(
-//                shape = RoundedCornerShape(12.dp),
-//                color = MaterialTheme.colorScheme.surfaceContainerLow
-//            ) {
-//                Text(
-//                    text = skill.level,
-//                    color = color,
-//                    fontSize = 12.sp,
-//                    fontWeight = FontWeight.Medium,
-//                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp)
-//                )
-//            }
-
         }
     }
 }

@@ -17,10 +17,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.achievements.data.achievements
 import pl.michal_cyran.website.achievements.domain.AchievementCategory
 import pl.michal_cyran.website.core.domain.Stat
 import pl.michal_cyran.website.core.presentation.composables.StatisticCard
+import website.composeapp.generated.resources.Res
+import website.composeapp.generated.resources.achievements_subtitle
+import website.composeapp.generated.resources.achievements_title
 
 data class Badge(
     val text: String,
@@ -58,7 +62,7 @@ fun AchievementsScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Text(
-                text = "My Achievements",
+                text = stringResource(Res.string.achievements_title),
                 fontSize = 48.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.White,
@@ -68,7 +72,7 @@ fun AchievementsScreen(
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = "A comprehensive collection of awards, recognitions, and\naccomplishments spanning programming, mathematics, academics,\nand scholarships from 2016 to 2021.",
+                text = stringResource(Res.string.achievements_subtitle),
                 fontSize = 16.sp,
                 color = Color(0xFF94A3B8),
                 textAlign = TextAlign.Center,

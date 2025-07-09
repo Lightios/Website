@@ -35,26 +35,25 @@ import pl.michal_cyran.website.projects.presentation.ProjectsScreen
 import pl.michal_cyran.website.skills.presentation.SkillsScreen
 import pl.michal_cyran.website.social_media.presentation.SocialMediaScreen
 import website.composeapp.generated.resources.Res
-import website.composeapp.generated.resources.education
-import website.composeapp.generated.resources.skills
-import website.composeapp.generated.resources.achievements
-import website.composeapp.generated.resources.app_name
-import website.composeapp.generated.resources.experience
-import website.composeapp.generated.resources.project_details
-import website.composeapp.generated.resources.projects
-import website.composeapp.generated.resources.social_media
-
+import website.composeapp.generated.resources.home_screen
+import website.composeapp.generated.resources.achievements_screen
+import website.composeapp.generated.resources.education_screen
+import website.composeapp.generated.resources.experience_screen
+import website.composeapp.generated.resources.project_details_screen
+import website.composeapp.generated.resources.projects_screen
+import website.composeapp.generated.resources.skills_screen
+import website.composeapp.generated.resources.social_media_screen
 
 
 enum class Screen(val title: StringResource) {
-    Start(title = Res.string.app_name),
-    Skills(title = Res.string.skills),
-    Education(title = Res.string.education),
-    Experience(title = Res.string.experience),
-    Projects(title = Res.string.projects),
-    ProjectsDetails(title = Res.string.project_details),
-    Achievements(title = Res.string.achievements),
-    SocialMedia(title = Res.string.social_media),
+    Start(title = Res.string.home_screen),
+    Skills(title = Res.string.skills_screen),
+    Education(title = Res.string.education_screen),
+    Experience(title = Res.string.experience_screen),
+    Projects(title = Res.string.projects_screen),
+    ProjectsDetails(title = Res.string.project_details_screen),
+    Achievements(title = Res.string.achievements_screen),
+    SocialMedia(title = Res.string.social_media_screen),
 }
 
 
