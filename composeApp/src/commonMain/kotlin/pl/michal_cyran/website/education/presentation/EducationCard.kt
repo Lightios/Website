@@ -46,7 +46,8 @@ fun EducationCard(
     Card(
         modifier = modifier,
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceContainer
+            containerColor = MaterialTheme.colorScheme.surfaceContainer,
+            contentColor = MaterialTheme.colorScheme.onSurface,
         ),
         shape = RoundedCornerShape(16.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
@@ -62,7 +63,6 @@ fun EducationCard(
                     text = stringResource(education.title),
                     fontSize = 24.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.White
                 )
             }
 
@@ -131,7 +131,6 @@ fun EducationCard(
                     text = stringResource(Res.string.courses),
                     fontSize = 16.sp,
                     fontWeight = FontWeight.SemiBold,
-                    color = Color.White
                 )
 
                 Text(
@@ -171,7 +170,6 @@ fun EducationCard(
                         text = stringResource(Res.string.professional_certificates),
                         fontSize = 16.sp,
                         fontWeight = FontWeight.SemiBold,
-                        color = Color.White
                     )
 
                     Text(

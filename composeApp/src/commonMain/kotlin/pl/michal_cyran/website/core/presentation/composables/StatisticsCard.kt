@@ -33,7 +33,8 @@ fun StatisticCard(
     Card(
         modifier = modifier,
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceContainer
+            containerColor = MaterialTheme.colorScheme.surfaceContainer,
+            contentColor = MaterialTheme.colorScheme.onSurface,
         ),
         shape = RoundedCornerShape(16.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
@@ -59,7 +60,6 @@ fun StatisticCard(
                 text = stat.value,
                 fontSize = 32.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.White
             )
 
             Text(

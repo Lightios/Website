@@ -42,7 +42,8 @@ fun ExperienceCard(
     Card(
         modifier = modifier,
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceContainer
+            containerColor = MaterialTheme.colorScheme.surfaceContainer,
+            contentColor = MaterialTheme.colorScheme.onSurface
         ),
         shape = RoundedCornerShape(16.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
@@ -122,7 +123,6 @@ fun ExperienceCard(
                     text = stringResource(Res.string.primary_technologies),
                     fontSize = 16.sp,
                     fontWeight = FontWeight.SemiBold,
-                    color = Color.White,
                     modifier = Modifier.padding(bottom = 12.dp)
                 )
 

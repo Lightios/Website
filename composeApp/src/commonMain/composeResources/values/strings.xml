@@ -81,6 +81,7 @@
     <string name="academic_project">Academic</string>
     <string name="tools_project">Tools</string>
     <string name="practice_project">Practice</string>
+    <string name="personal_project">Personal</string>
     <string name="project_overview">Project Overview</string>
 
     <string name="screenshots">Screenshots</string>
@@ -109,6 +110,16 @@
     <string name="projects_tic-tac-toe_description">Simple Tic-Tac-Toe game that can be played with a friend on Discord</string>
     <string name="projects_crypto-tracker_shortDescription">App tracking cryptocurrency prices</string>
     <string name="projects_crypto-tracker_description">App tracking cryptocurrency prices. It allows adding cryptocurrencies to track, and displays their current prices along with a chart of changes over the last 24 hours.</string>
+    <string name="projects_tutor_website_shortDescription">Website with my tutoring offer</string>
+    <string name="projects_tutor_website_description">This website was developed by me to showcase my tutoring offer in mathematics and computer science. It contains all the details regarding lessons, rates, reviews, and contact information. The site was built entirely using Jetpack Compose.</string>
+    <string name="projects_mobile_remote_shortDescription">Mobile remote control for computer media player</string>
+    <string name="projects_mobile_remote_description">This project consists of two applications - a client and a server, which are useful for watching movies. The server application runs on the computer, while the client runs on the phone. This allows you to control movie playback from your phone, such as pausing, fast-forwarding or rewinding, adjusting volume, and muting sound, while being away from the computer.</string>
+    <string name="projects_todo_list_shortDescription">Classic mobile app that allows you to save your todos</string>
+    <string name="projects_todo_list_description">Classic mobile app that allows you to save your todos. It enables creating, editing, and deleting tasks. Tasks have their own priority and completion date. Everything is saved offline on the device.</string>
+    <string name="projects_screenshot_processor_shortDescription">Application facilitating my work on the Valorant Lineups app</string>
+    <string name="projects_screenshot_processor_description">This application facilitates my work on the Valorant Lineups app. It allows for quick saving of in-game screenshots in folders, according to my own data structure for this app. It has a list of skills for each agent, a map index, and types of screenshots.</string>
+    <string name="projects_website_title">My Portfolio Website</string>
+    <string name="projects_website_description">My portfolio website where you can find my projects, skills, and experience. It is a site built entirely using Jetpack Compose.</string>
 
     <!-- EXPERIENCE -->
     <string name="experience_title">Experience</string>
@@ -228,6 +239,11 @@
     <string name="district">District</string>
 
     <string name="n_achievements">%1$s achievements</string>
+
+    <!-- SOCIAL MEDIA -->
+    <string name="social_media_title">Social Media</string>
+    <string name="social_media_subtitle">Connect with me on social media to watch all my educational animations.</string>
+
 
 
     <!-- Time -->

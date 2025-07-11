@@ -30,5 +30,6 @@ fun ProjectCategory.toColor(): Color {
         ProjectCategory.ACADEMIC -> BadgeColors.blue
         ProjectCategory.TOOLS -> BadgeColors.magenta
         ProjectCategory.PRACTICE -> BadgeColors.red
+        ProjectCategory.PERSONAL -> BadgeColors.green
     }
 }

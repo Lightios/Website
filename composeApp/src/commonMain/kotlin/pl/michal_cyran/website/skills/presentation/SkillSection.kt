@@ -55,7 +55,7 @@ fun SkillSection(
                     text = stringResource(title),
                     fontSize = 28.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.White
+                    color = MaterialTheme.colorScheme.onSurface
                 )
             }
 

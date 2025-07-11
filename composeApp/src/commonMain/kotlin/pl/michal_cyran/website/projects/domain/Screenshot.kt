@@ -1,6 +1,8 @@
 package pl.michal_cyran.website.projects.domain
 
+import org.jetbrains.compose.resources.DrawableResource
+
 data class Screenshot(
-    val url: String,
+    val resource: DrawableResource,
     val label: String,
 )

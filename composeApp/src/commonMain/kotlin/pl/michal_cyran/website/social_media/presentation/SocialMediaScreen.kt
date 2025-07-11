@@ -25,54 +25,55 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.BorderStroke
 import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.social_media.data.socialMedia
 import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.calendar_month
+import website.composeapp.generated.resources.social_media
+import website.composeapp.generated.resources.social_media_subtitle
+import website.composeapp.generated.resources.social_media_title
 
 @Composable
 fun SocialMediaScreen(
     modifier: Modifier = Modifier
 ) {
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Color(0xFF0F172A))
-            .padding(24.dp)
+        modifier = modifier,
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(24.dp, Alignment.CenterVertically)
     ) {
-        // Header with back button
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier.padding(bottom = 48.dp)
-        ) {
-            IconButton(
-                onClick = { /* Navigate back */ }
-            ) {
-                Icon(
-                    painter = painterResource(Res.drawable.calendar_month),
-                    contentDescription = "Back to Home",
-                    tint = Color.White,
-                    modifier = Modifier.size(24.dp)
-                )
-            }
+//        Row(
+//            verticalAlignment = Alignment.CenterVertically,
+//            modifier = Modifier.padding(bottom = 48.dp)
+//        ) {
+//            IconButton(
+//                onClick = { /* Navigate back */ }
+//            ) {
+//                Icon(
+//                    painter = painterResource(Res.drawable.calendar_month),
+//                    contentDescription = "Back to Home",
+//                    tint = Color.White,
+//                    modifier = Modifier.size(24.dp)
+//                )
+//            }
+//
+//            Spacer(modifier = Modifier.width(8.dp))
+//
+//            Text(
+//                text = "Back to Home",
+//                color = Color.White,
+//                fontSize = 16.sp
+//            )
+//        }
 
-            Spacer(modifier = Modifier.width(8.dp))
-
-            Text(
-                text = "Back to Home",
-                color = Color.White,
-                fontSize = 16.sp
-            )
-        }
-
-        // Title and subtitle
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
-                .fillMaxWidth()
+//                .fillMaxWidth()
                 .padding(bottom = 48.dp)
         ) {
             Text(
-                text = "Connect With Me",
+                text = stringResource(Res.string.social_media_title),
                 fontSize = 48.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.White,
@@ -82,7 +83,7 @@ fun SocialMediaScreen(
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = "Follow my educational journey across different platforms and stay\nupdated with my latest content and insights.",
+                text = stringResource(Res.string.social_media_subtitle),
                 fontSize = 16.sp,
                 color = Color(0xFF94A3B8),
                 textAlign = TextAlign.Center,
@@ -92,7 +93,7 @@ fun SocialMediaScreen(
 
         // Platform cards
         Row(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth(0.6f),
             horizontalArrangement = Arrangement.spacedBy(24.dp)
         ) {
             socialMedia.forEach { platform ->

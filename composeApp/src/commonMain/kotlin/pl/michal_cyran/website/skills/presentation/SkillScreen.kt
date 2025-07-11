@@ -41,7 +41,7 @@ fun SkillsScreen(
             text = stringResource(Res.string.skills_title),
             fontSize = 48.sp,
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = MaterialTheme.colorScheme.onSurface,
             textAlign = TextAlign.Center
         )
 

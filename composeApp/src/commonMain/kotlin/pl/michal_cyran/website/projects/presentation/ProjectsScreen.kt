@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
@@ -27,6 +28,7 @@ import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 import pl.michal_cyran.website.projects.data.projects
+import pl.michal_cyran.website.projects.domain.ProjectCategory
 import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.projects_subtitle
 import website.composeapp.generated.resources.projects_title
@@ -53,7 +55,7 @@ fun ProjectsScreen(
             text = stringResource(Res.string.projects_title),
             fontSize = 48.sp,
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = MaterialTheme.colorScheme.onSurface,
             textAlign = TextAlign.Center
         )
 
@@ -103,18 +105,26 @@ fun ProjectsScreen(
         Column(
             verticalArrangement = Arrangement.spacedBy(32.dp)
         ) {
-            projects
-                .groupBy { it.category }
-                .forEach { (category, projectsList) ->
-                    if (projectsList.isEmpty()) return@forEach
-
-                    ProjectsSection(
-                        title = category.displayName,
-                        projects = projectsList,
-                        searchQuery = searchQuery,
-                        onProjectClick = onProjectClick,
-                    )
-                }
+            ProjectCategory.entries.forEach { projectCategory ->
+                ProjectsSection(
+                    title = projectCategory.displayName,
+                    projects = projects.filter { it.category == projectCategory },
+                    searchQuery = searchQuery,
+                    onProjectClick = onProjectClick
+                )
+            }
+//            projects
+//                .groupBy { it.category }
+//                .forEach { (category, projectsList) ->
+//                    if (projectsList.isEmpty()) return@forEach
+//
+//                    ProjectsSection(
+//                        title = category.displayName,
+//                        projects = projectsList,
+//                        searchQuery = searchQuery,
+//                        onProjectClick = onProjectClick,
+//                    )
+//                }
         }
     }
 }

@@ -35,7 +35,7 @@ fun EducationScreen() {
             text = stringResource(Res.string.education_title),
             fontSize = 48.sp,
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = MaterialTheme.colorScheme.onSurface,
             textAlign = TextAlign.Center
         )
 

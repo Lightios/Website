@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.resources.painterResource
 import pl.michal_cyran.website.projects.domain.ProjectLink
@@ -29,6 +30,8 @@ import website.composeapp.generated.resources.unknown
 fun ProjectLinkButton(
     link: ProjectLink
 ) {
+    val uriHandler = LocalUriHandler.current
+
     val icon = when (link.type) {
         ProjectLinkType.GITHUB -> Res.drawable.github
         ProjectLinkType.GOOGLE_PLAY -> Res.drawable.google_play
@@ -39,12 +42,12 @@ fun ProjectLinkButton(
 
     val color = when (link.type) {
         ProjectLinkType.WEBSITE -> MaterialTheme.colorScheme.primary
-        else -> Color.White.copy(alpha = 0.0f)
+        else -> MaterialTheme.colorScheme.primaryContainer
     }
 
     val contentColor = when (link.type) {
         ProjectLinkType.WEBSITE -> MaterialTheme.colorScheme.onPrimary
-        else -> Color.White
+        else -> MaterialTheme.colorScheme.onSurface
     }
 
     val text = when (link.type) {
@@ -56,16 +59,15 @@ fun ProjectLinkButton(
     }
 
     Card(
-        onClick = { /* Handle click action, e.g., open link in browser */ },
+        onClick = {
+            uriHandler.openUri(link.to)
+        },
         colors = CardDefaults.cardColors(
             containerColor = color,
             contentColor = contentColor
         ),
-        border = BorderStroke(
-            color = MaterialTheme.colorScheme.inverseSurface,
-            width = 1.dp
-        ),
-        shape = RoundedCornerShape(8.dp)
+        shape = RoundedCornerShape(8.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
     ) {
         Row {
             Icon(

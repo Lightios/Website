@@ -11,6 +11,7 @@ import website.composeapp.generated.resources.binary_clock
 import website.composeapp.generated.resources.daymath
 import website.composeapp.generated.resources.demiurg
 import website.composeapp.generated.resources.generator_tabliczek
+import website.composeapp.generated.resources.globe
 import website.composeapp.generated.resources.master_system
 import website.composeapp.generated.resources.projects_binary_clock_description
 import website.composeapp.generated.resources.projects_binary_clock_shortDescription
@@ -24,20 +25,31 @@ import website.composeapp.generated.resources.projects_generator_tabliczek_descr
 import website.composeapp.generated.resources.projects_generator_tabliczek_shortDescription
 import website.composeapp.generated.resources.projects_master_system_description
 import website.composeapp.generated.resources.projects_master_system_shortDescription
+import website.composeapp.generated.resources.projects_mobile_remote_description
+import website.composeapp.generated.resources.projects_mobile_remote_shortDescription
 import website.composeapp.generated.resources.projects_movie_ai_description
 import website.composeapp.generated.resources.projects_movie_ai_shortDescription
 import website.composeapp.generated.resources.projects_scheduler_description
 import website.composeapp.generated.resources.projects_scheduler_shortDescription
+import website.composeapp.generated.resources.projects_screenshot_processor_description
+import website.composeapp.generated.resources.projects_screenshot_processor_shortDescription
 import website.composeapp.generated.resources.projects_subtitles_shifter_description
 import website.composeapp.generated.resources.projects_subtitles_shifter_shortDescription
 import website.composeapp.generated.resources.projects_tic_tac_toe_description
 import website.composeapp.generated.resources.projects_tic_tac_toe_shortDescription
+import website.composeapp.generated.resources.projects_todo_list_description
+import website.composeapp.generated.resources.projects_todo_list_shortDescription
+import website.composeapp.generated.resources.projects_tutor_website_description
+import website.composeapp.generated.resources.projects_tutor_website_shortDescription
 import website.composeapp.generated.resources.projects_vl_description
 import website.composeapp.generated.resources.projects_vl_shortDescription
+import website.composeapp.generated.resources.projects_website_description
+import website.composeapp.generated.resources.projects_website_shortDescription
 import website.composeapp.generated.resources.projects_youtube_downloader_description
 import website.composeapp.generated.resources.projects_youtube_downloader_shortDescription
 import website.composeapp.generated.resources.recommendation
 import website.composeapp.generated.resources.scheduler
+import website.composeapp.generated.resources.ss_binary_clock
 import website.composeapp.generated.resources.subtitles_shifter
 import website.composeapp.generated.resources.tic_tac_toe
 import website.composeapp.generated.resources.valorant_lineups
@@ -53,32 +65,7 @@ val projects = listOf(
         type = ProjectType.DESKTOP_APPLICATION,
         links = listOf(),
         category = ProjectCategory.COMMERCIAL,
-        screenshots = listOf(
-            Screenshot(
-                label = "Main screen",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/master_system/1.png?raw=true"
-            ),
-            Screenshot(
-                label = "Contact",
-				url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/master_system/2.png?raw=true"
-            ),
-            Screenshot(
-                label = "Tournament screen - 8 teams version",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/master_system/3.png?raw=true"
-            ),
-            Screenshot(
-                label = "Tournament screen - 16 teams version",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/master_system/4.png?raw=true"
-            ),
-            Screenshot(
-                label = "Graph zoom",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/master_system/5.png?raw=true"
-            ),
-            Screenshot(
-                label = "PDF preview",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/master_system/6.png?raw=true"
-            ),
-        )
+        screenshots = masterSystemScreenshots,
     ),
     Project(
         name = "Valorant Lineups",
@@ -94,7 +81,7 @@ val projects = listOf(
             )
         ),
         category = ProjectCategory.COMMERCIAL,
-        screenshots = emptyList()
+        screenshots = valorantLineupsScreenshots,
     ),
     Project(
         name = "DayMath",
@@ -110,7 +97,7 @@ val projects = listOf(
             )
         ),
         category = ProjectCategory.COMMERCIAL,
-        screenshots = emptyList()
+        screenshots = daymathScreenshots
     ),
     Project(
         name = "Demiurg",
@@ -121,21 +108,16 @@ val projects = listOf(
         type = ProjectType.DESKTOP_APPLICATION,
         links = listOf(
             ProjectLink(
-                to = "",
+                to = "https://github.com/Lightios/Demiurg_Creator",
                 type = ProjectLinkType.GITHUB,
             ),
             ProjectLink(
-                to = "",
+                to = "https://github.com/ushka1/project-demiurg",
                 type = ProjectLinkType.GITHUB,
             )
         ),
         category = ProjectCategory.ACADEMIC,
-        screenshots = listOf(
-            Screenshot(
-                label = "Project selection",
-                url = "",
-            ),
-        ),
+        screenshots = demiurgScreenshots,
     ),
     Project(
         name = "Movie Recommendation System",
@@ -146,12 +128,11 @@ val projects = listOf(
         type = ProjectType.DESKTOP_APPLICATION,
         links = listOf(
             ProjectLink(
-                to = "",
+                to = "https://github.com/Lightios/MovieRecommendationSystem",
                 type = ProjectLinkType.GITHUB,
             ),
         ),
         category = ProjectCategory.ACADEMIC,
-        screenshots = emptyList()
     ),
     Project(
         name = "Generator tabliczek",
@@ -167,24 +148,7 @@ val projects = listOf(
             ),
         ),
         category = ProjectCategory.ACADEMIC,
-        screenshots = listOf(
-            Screenshot(
-                label = "Główne okno",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/generator_tabliczek/1.png?raw=true",
-            ),
-            Screenshot(
-                label = "Parametry napisu",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/generator_tabliczek/2.png?raw=true"
-            ),
-            Screenshot(
-                label = "Wybór kolorów",
-				url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/generator_tabliczek/3.png?raw=true"
-            ),
-			Screenshot(
-				label = "Eksport do PDF",
-				url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/generator_tabliczek/4.png?raw=true"
-            ),
-        ),
+        screenshots = generatorTabliczekScreenshots
     ),
     Project(
         name = "Scheduler",
@@ -199,29 +163,8 @@ val projects = listOf(
                 type = ProjectLinkType.GITHUB,
             ),
         ),
-        screenshots = listOf(
-            Screenshot(
-                label = "Example result 1",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/scheduler/1.png?raw=true",
-            ),
-            Screenshot(
-                label = "Example result 2",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/scheduler/2.png?raw=true",
-            ),
-            Screenshot(
-                label = "Data scheme",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/scheduler/5.png?raw=true",
-            ),
-            Screenshot(
-                label = "Parameters",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/scheduler/3.png?raw=true",
-            ),
-            Screenshot(
-                label = "Discord integration",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/scheduler/4.png?raw=true"
-            )
-        ),
         category = ProjectCategory.TOOLS,
+        screenshots = schedulerScreenshots,
     ),
     Project(
         name = "Binary Clock",
@@ -239,10 +182,10 @@ val projects = listOf(
         category = ProjectCategory.PRACTICE,
         screenshots = listOf(
             Screenshot(
-                label = "Result",
-                url = "https://github.com/Lightios/Lightios.github.io/blob/main/static/screenshots/binary_clock/1.png?raw=true",
+                resource = Res.drawable.ss_binary_clock,
+                label = "Preview"
             )
-        ),
+        )
     ),
 
     Project(
@@ -261,23 +204,6 @@ val projects = listOf(
         category = ProjectCategory.TOOLS,
         screenshots = emptyList()
     ),
-    Project(
-        name = "Subtitles Shifter",
-        description = Res.string.projects_subtitles_shifter_description,
-        shortDescription = Res.string.projects_subtitles_shifter_shortDescription,
-        logo = Res.drawable.subtitles_shifter,
-        skills = listOf("python"),
-        type = ProjectType.CONSOLE,
-        links = listOf(
-            ProjectLink(
-                to = "https://github.com/Lightios/SubtitlesShifter",
-                type = ProjectLinkType.GITHUB,
-            ),
-        ),
-        category = ProjectCategory.TOOLS,
-        screenshots = emptyList()
-    ),
-
     Project(
         name = "YouTube Downloader",
         description = Res.string.projects_youtube_downloader_description,
@@ -326,6 +252,94 @@ val projects = listOf(
             ),
         ),
         category = ProjectCategory.PRACTICE,
+        screenshots = emptyList()
+    ),
+    Project(
+        name = "Tutor Website",
+        description = Res.string.projects_tutor_website_description,
+        shortDescription = Res.string.projects_tutor_website_shortDescription,
+        logo = Res.drawable.globe,
+        skills = listOf("kotlin", "jetpack_compose"),
+        type = ProjectType.WEB_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "https://lightios.github.io/TutorWebsite/",
+                type = ProjectLinkType.WEBSITE,
+            ),
+            ProjectLink(
+                to = "https://github.com/Lightios/TutorWebsiteCode",
+                type = ProjectLinkType.GITHUB,
+            )
+        ),
+        category = ProjectCategory.PERSONAL,
+        screenshots = emptyList()
+    ),
+    Project(
+        name = "Mobile Remote",
+        description = Res.string.projects_mobile_remote_description,
+        shortDescription = Res.string.projects_mobile_remote_shortDescription,
+        logo = Res.drawable.globe,
+        skills = listOf("kotlin", "jetpack_compose", "spring_boot"),
+        type = ProjectType.OTHER,
+        links = listOf(
+            ProjectLink(
+                to = "",
+                type = ProjectLinkType.GITHUB,
+            ),
+            ProjectLink(
+                to = "",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PERSONAL,
+        screenshots = emptyList()
+    ),
+    Project(
+        name = "To Do List",
+        description = Res.string.projects_todo_list_description,
+        shortDescription = Res.string.projects_todo_list_shortDescription,
+        logo = Res.drawable.globe,
+        skills = listOf("kotlin", "jetpack_compose"),
+        type = ProjectType.MOBILE_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PRACTICE,
+        screenshots = emptyList()
+    ),
+    Project(
+        name = "Screenshot Processor",
+        description = Res.string.projects_screenshot_processor_description,
+        shortDescription = Res.string.projects_screenshot_processor_shortDescription,
+        logo = Res.drawable.globe,
+        skills = listOf("kotlin", "jetpack_compose"),
+        type = ProjectType.DESKTOP_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.TOOLS,
+        screenshots = emptyList()
+    ),
+    Project(
+        name = "Portfolio",
+        description = Res.string.projects_website_description,
+        shortDescription = Res.string.projects_website_shortDescription,
+        logo = Res.drawable.globe,
+        skills = listOf("kotlin", "jetpack_compose"),
+        type = ProjectType.WEB_APPLICATION,
+        links = listOf(
+            ProjectLink(
+                to = "",
+                type = ProjectLinkType.GITHUB,
+            ),
+        ),
+        category = ProjectCategory.PERSONAL,
         screenshots = emptyList()
     )
 )

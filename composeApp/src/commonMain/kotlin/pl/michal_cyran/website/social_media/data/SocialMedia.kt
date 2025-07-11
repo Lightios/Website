@@ -7,35 +7,35 @@ import pl.michal_cyran.website.social_media.domain.SocialPlatform
 import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.calendar_month
 import website.composeapp.generated.resources.social_media
+import website.composeapp.generated.resources.tiktok
+import website.composeapp.generated.resources.youtube
 
 val socialMedia = listOf(
     SocialPlatform(
         name = "YouTube Channel",
-        icon = "📺",
+        icon = Res.drawable.youtube,
         badge = Badge(Res.string.social_media, Color(0xFFDC2626)),
-        description = "Join me on YouTube for in-depth educational tutorials, study tips, and comprehensive lessons across various subjects. New videos uploaded weekly!",
+        description = "",
         stats = listOf(
             Stat("25+", Res.string.social_media, Res.drawable.calendar_month, Color(0xFFDC2626)),
 //            Stat("❤", "Growing Community")
         ),
-        tags = listOf("Tutorial Videos", "Study Tips", "Subject Reviews", "Exam Prep"),
         buttonText = "Subscribe to Channel",
         buttonColor = Color(0xFFDC2626),
-        iconColor = Color(0xFFDC2626)
+        url = "https://www.youtube.com/@cyran.michal/videos"
     ),
     SocialPlatform(
         name = "TikTok",
-        icon = "🎵",
+        icon = Res.drawable.tiktok,
         badge = Badge(Res.string.social_media, Color(0xFFEC4899)),
-        description = "Follow me on TikTok for bite-sized educational content, study motivation, and creative ways to make learning fun and memorable!",
+        description = "",
         stats = listOf(
             Stat("25+", Res.string.social_media, Res.drawable.calendar_month, Color(0xFFDC2626)),
 //        Stat("▶", "50+ Videos"),
 //        Stat("❤", "Engaging Content")
         ),
-        tags = listOf("Quick Tips", "Study Hacks", "Motivation", "Fun Learning"),
         buttonText = "Follow on TikTok",
         buttonColor = Color(0xFFEC4899),
-        iconColor = Color(0xFFEC4899)
+        url = "https://www.tiktok.com/@cyran_michal"
     )
 )

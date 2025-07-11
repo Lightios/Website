@@ -37,7 +37,8 @@ fun SkillCard(
     Card(
         modifier = modifier,
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceContainer
+            containerColor = MaterialTheme.colorScheme.surfaceContainer,
+            contentColor = MaterialTheme.colorScheme.onSurface,
         ),
         shape = RoundedCornerShape(16.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
@@ -64,7 +65,6 @@ fun SkillCard(
             Text(
                 text = skill.name,
                 style = MaterialTheme.typography.titleMedium,
-                color = Color.White,
                 modifier = Modifier
                     .weight(1f)
                     .padding(end = 8.dp)

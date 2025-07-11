@@ -95,7 +95,7 @@ fun ProjectCard(
             Text(
                 text = project.name,
                 style = MaterialTheme.typography.titleMedium,
-                color = Color.White
+                color = MaterialTheme.colorScheme.onSurface
             )
 
             Text(

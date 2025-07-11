@@ -72,6 +72,7 @@
     <string name="academic_project">Akademickie</string>
     <string name="tools_project">Narzędzia</string>
     <string name="practice_project">Projekty dla praktyki</string>
+    <string name="personal_project">Osobiste</string>
     <string name="project_overview">Opis projektu</string>
 
     <string name="screenshots">Zrzuty ekranu</string>
@@ -100,6 +101,16 @@
     <string name="projects_tic-tac-toe_description">Prosta gra w kółko i krzyżyk, którą można zagrać ze znajomym na Discordzie</string>
     <string name="projects_crypto-tracker_shortDescription">Aplikacja śledząca kursy kryptowalut</string>
     <string name="projects_crypto-tracker_description">Aplikacja śledząca kursy kryptowalut. Umożliwia dodawanie kryptowalut do śledzenia, a także wyświetla ich aktualne kursy wraz z wykresem zmian w ciągu ostatnich 24 godzin.</string>
+    <string name="projects_tutor_website_shortDescription">Strona z ofertą korepetycji, które prowadzę</string>
+    <string name="projects_tutor_website_description">Strona opracowana przeze mnie dotycząca mojej oferty korepetycji z matematyki i informatyki. Zawiera wszelkie szczegóły dotyczące lekcji, stawek, opinii i kontaktu ze mną. Strona została wykonana w pełni z użyciem Jetpack Compose.</string>
+    <string name="projects_mobile_remote_shortDescription">Zestaw 2 aplikacji - klienta i serwera, który przydaje się podczas oglądania filmów</string>
+    <string name="projects_mobile_remote_description">Zestaw 2 aplikacji - klienta i serwera, który przydaje się podczas oglądania filmów. Aplikacja serwerowa jest uruchamiana na komputerze, a klient na telefonie. Dzięki temu można sterować odtwarzaniem filmów z poziomu telefonu, np. pauzować, przewijać do przodu lub do tyłu, zmieniać głośność i wyciszać dźwięk, będąc oddalonym od komputera.</string>
+    <string name="projects_todo_list_shortDescription">Klasyczna mobilna aplikacja z zadaniami do zrobienia</string>
+    <string name="projects_todo_list_description">Klasyczna mobilna aplikacja z zadaniami do zrobienia. Umożlwia tworzenie, edycję i usuwanie zadań. Zadania posiadają swój priorytet oraz datę wykonania. Całość jest zapisywana offline na urządzeniu</string>
+    <string name="projects_screenshot_processor_shortDescription">Aplikacja ułatwiająca moją pracę nad aplikacją Valorant Lineups</string>
+    <string name="projects_screenshot_processor_description">Aplikacja ułatwiająca moją pracę nad aplikacją Valorant Lineups. Umożliwia ona szybkie zapisywanie screenshotów z gry w folderach, zgodnie z moją własną strukturą danych pod tę aplikację. Posiada listę umiejętności dla każdego agenta, spis map oraz typ screeshotów.</string>
+    <string name="projects_website_shortDescription">Moja strona portfolio</string>
+    <string name="projects_website_description">Moja strona portfolio, na której możesz znaleźć moje projekty, umiejętności i doświadczenie. Jest to strona stworzona w pełni z użyciem Jetpack Compose.</string>
 
     <!-- EXPERIENCE -->
     <string name="experience_title">Doświadczenie zawodowe</string>
@@ -225,6 +236,12 @@
     <string name="district">Powiatowy</string>
 
     <string name="n_achievements">Osiągnięcia: %1$s</string>
+
+    <!-- SOCIAL MEDIA -->
+
+    <string name="social_media_title">Social Media</string>
+    <string name="social_media_subtitle">Możesz mnie znaleźć na różnych platformach społecznościowych, gdzie dzielę się moimi animacjami matematycznymi.</string>
+
 
     <!-- Time -->
     <string name="january">Styczeń</string>
