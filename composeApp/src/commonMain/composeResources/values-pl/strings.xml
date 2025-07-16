@@ -77,38 +77,51 @@
 
     <string name="screenshots">Zrzuty ekranu</string>
 
-    <string name="projects_master-system_description">Ta aplikacja do zarządzania turniejami została opracowana na zlecenie, aby ułatwić rozgrywki według algorytmu specyficznego dla klienta. Aplikacja zapewnia przyjazny interfejs do wprowadzania wyników meczów, automatycznie paruje drużyny na kolejną rundę na podstawie algorytmu, oblicza punkty i generuje kompleksowe podsumowania PDF postępów turnieju. Dodatkowo tworzy wykresy, aby wizualnie przedstawić logikę i wyniki algorytmu. Aplikacja jest przetłumaczona na cztery języki za pomocą modułu gettext w Pythonie, co zapewnia dostępność dla zróżnicowanej grupy użytkowników. Ten projekt pokazuje moją zdolność do dostarczania dostosowanych, wielojęzycznych rozwiązań programowych, które spełniają specyficzne wymagania klienta i usprawniają zarządzanie złożonymi strukturami turniejowymi.</string>
-    <string name="projects_master-system_shortDescription">Aplikacja do zarządzania turniejami z niestandardowym algorytmem z wieloma funkcjami</string>
-    <string name="projects_vl_description">Valorant Lineups jest aplikacją mobilną stworzona dla graczy Valoranta, aby usprawnić ich strategie w grze. Aplikacja oferuje szeroką kolekcję lineupów, umożliwiając graczom wykonywanie zaawansowanych technik bez konieczności rozległego zapamiętywania. Dostarczając wskazówki w czasie rzeczywistym i szczegółowe instrukcje, Valorant Lineups usprawnia proces uczenia się i umożliwia graczom osiągnięcie najlepszych wyników, poprawiając zarówno wyniki indywidualne, jak i zespołowe.</string>
-    <string name="projects_vl_shortDescription">Aplikacja mobilna dla graczy Valoranta do sprawdzania lineupów podczas gry</string>
-    <string name="projects_demiurg_shortDescription">Kreator i interpretator gier tekstowych umożliwiający projektowanie i granie w interaktywne narracje.</string>
-    <string name="projects_demiurg_description">Demiurg to kompleksowa aplikacja opracowana w ramach kursu Inżynierii Oprogramowania, stworzona przez zespół pięciu osób. Projekt obejmuje solidny kreator i interpretator gier tekstowych, pozwalający użytkownikom projektować złożone światy gier z zaawansowanymi mechanikami, takimi jak nieliniowe zadania i dynamiczne fabuły. Kreator umożliwia użytkownikom tworzenie szczegółowych interaktywnych narracji, podczas gdy interpretator zapewnia immersyjne doświadczenie podczas grania w te gry. Ten projekt pokazuje nasze wspólne wysiłki i biegłość w programowaniu, podkreślając naszą zdolność do dostarczania zaawansowanych narzędzi do wyrażania kreatywności.</string>
-    <string name="projects_daymath_description">DayMath to kompleksowa aplikacja edukacyjna, którą opracowałem samodzielnie podczas studiów na uniwersytecie, skierowana do uczniów polskich szkół podstawowych i średnich. Aplikacja ma na celu poprawę nauki matematyki poprzez różnorodne interaktywne funkcje, w tym quizy matematyczne, szczegółowe tekstowe wyjaśnienia różnych tematów oraz animacje wizualizujące i wyjaśniające złożone problemy. Te narzędzia współpracują ze sobą, aby zapewnić angażujące i skuteczne doświadczenie edukacyjne. Chociaż aplikacja jest nadal w fazie rozwoju i nie została oficjalnie wydana, reprezentuje moje zaangażowanie w poprawę edukacji poprzez technologię oraz moje ciągłe wysiłki w celu udoskonalenia i rozszerzenia jej możliwości.</string>
+    <string name="projects_master-system_description">Ta aplikacja do zarządzania turniejami została opracowana na zlecenie, aby ułatwić rozgrywki według algorytmu specyficznego dla klienta. Aplikacja zapewnia przyjazny interfejs do wprowadzania wyników meczów, automatycznie paruje drużyny na kolejną rundę na podstawie algorytmu, oblicza punkty i generuje podsumowania rozgrywek w postaci pliku PDF. Aplikacja wykonuje także grafy, które reprezentują logikę algorytmu parowania drużyn. Aplikacja jest przetłumaczona na cztery języki za pomocą modułu gettext w Pythonie, co zapewnia dostępność dla zróżnicowanej grupy użytkowników. Ten projekt pokazuje moją zdolność do dostarczania dostosowanych, wielojęzycznych rozwiązań programowych, które spełniają specyficzne wymagania klienta i usprawniają zarządzanie złożonymi strukturami turniejowymi.</string>
+    <string name="projects_master-system_shortDescription">Aplikacja do zarządzania turniejami z niestandardowym algorytmem</string>
+    <string name="projects_vl_description">Valorant Lineups jest aplikacją mobilną dla graczy Valoranta, która pomaga im podczas rozgrywki. Aplikacja oferuje szeroką kolekcję lineupów, umożliwiając graczom wykonywanie zaawansowanych technik bez konieczności wcześniejszego zapamiętywania specyficznych ustawień na mapie. Dzięki aplikacji gracze mogą osiągać lepsze rezultaty w grze i zdobywać wyższe rangi. Była to pierwsza aplikacja tego typu do Valoranta dostępna na sklepie Play, osiągnęła sukecs w postaci ponad 100 tysięcy pobrań. Ten projekt podkreśla moje umiejętności w dostarczaniu innowacyjnych i skutecznych projektów.</string>
+    <string name="projects_vl_shortDescription">Valorant Lineups jest aplikacją mobilną dla graczy Valoranta, która pomaga im podczas rozgrywki</string>
+    <string name="projects_demiurg_shortDescription">Demiurg to aplikacja opracowana w ramach kursu Inżynierii Oprogramowania, stworzona przez zespół pięciu osób.</string>
+    <string name="projects_demiurg_description">Demiurg to aplikacja opracowana w ramach kursu Inżynierii Oprogramowania, stworzona przez zespół pięciu osób. Projekt składa się z dwóch osobnych aplikacji: kreatora i interpretatora gier tekstowych. Kreator pozwala użytkownikom projektować złożone światy gier z mechanikami takimi jak nieliniowe zadania. Umożliwia tworzenie szczegółowych interaktywnych narracji, podczas gdy interpretator zapewnia immersyjne doświadczenie podczas grania. Ten projekt pokazuje moją umiejętność do pracy w zespole, jak i tworzenie niezależnych, ale jednocześnie kooperujących programów.</string>
+    <string name="projects_daymath_description">DayMath to aplikacja edukacyjna, skierowana do uczniów polskich szkół podstawowych i średnich. Aplikacja ma na celu usprawnienie nauki matematyki poprzez różnorodne interaktywne funkcje, w tym quizy matematyczne, szczegółowe tekstowe wyjaśnienia różnych tematów oraz animacje wizualizujące i wyjaśniające złożone problemy. Te narzędzia współpracują ze sobą, aby zapewnić angażujące i skuteczne doświadczenie edukacyjne. Jest to mój najbardziej zaawansowany projekt, który łączy wiele technologii. Sama aplikacja jest wykonana w Kotlinie, jednak teksty do zadań wymagały użycia LaTeXa, a ten z kolei jest dobrze wspierany w Pythonie. Aplikacja łączy się także z Firebasem, gdzie zapisywane są postępy użytkoników w nauce. Ten projekt podkreśla moje zaangażowanie w rozwój mojej działalności korepetytora oraz łączy moje umiejętności informatyczne, matematyczne, edukacyjne oraz lingwistyczne.</string>
     <string name="projects_daymath_shortDescription">Aplikacja edukacyjna dla polskich uczniów, zawierająca quizy matematyczne, wyjaśnienia i animacje.</string>
-    <string name="projects_movie-ai_shortDescription">Aplikacja desktopowa rekomendująca filmy na podstawie ocen użytkownika, rozwijana na kursie podstaw sztucznej inteligencji z kolegą.</string>
+
+    <string name="projects_movie-ai_shortDescription">Aplikacja desktopowa rekomendująca filmy na podstawie ocen użytkownika, rozwijana na kursie podstaw sztucznej inteligencji. Stworzyłem ją we współpracy z kolegą.</string>
     <string name="projects_movie-ai_description">System Rekomendacji Filmów to aplikacja desktopowa stworzona we współpracy z kolegą w ramach kursu Podstaw Sztucznej Inteligencji. Ta aplikacja umożliwia użytkownikom ocenianie filmów, które obejrzeli, i wykorzystuje algorytmy AI do rekomendowania nowych filmów dostosowanych do ich preferencji. Analizując oceny użytkowników i stosując zaawansowane techniki rekomendacji, system dostarcza spersonalizowane propozycje filmów, poprawiając doświadczenie użytkownika związanego z oglądaniem. Ten projekt podkreśla nasze praktyczne zastosowanie zasad AI i naszą zdolność do tworzenia inteligentnych rozwiązań programowych zorientowanych na użytkownika.</string>
+
     <string name="projects_generator-tabliczek_shortDescription">Aplikacja generująca tabliczki z numerami pokoi oraz nazwiskami</string>
     <string name="projects_generator-tabliczek_description">Aplikacja ta została stworzona we współpracy z kolegą na zaliczenie ćwiczeń z programowania w C#. Generuje ona tabliczki z numerami pokoi oraz nazwiskami, które mogą być wydrukowane i zawieszone obok drzwi pokoi. Aplikacja umożliwia wybór czcionki, loga oraz koloru tekstu. Pozwala także na zapisywanie projektu między sesjami.</string>
+
     <string name="projects_scheduler_shortDescription">Aplikacja do generowania grafiku zajęć zintegrowana z Discordem.</string>
     <string name="projects_scheduler_description">Aplikacja ta została stworzona dla ułatwienia organizacji moich korepetycji. W prosty sposób umożliwia mi dopisywanie nowych zajęć w grafiku. Aplikacja jest zintegrowana z Discordem, dzięki czemu mogę automatycznie wysyłać powiadomienia o nowych zajęciach na mój serwer. Automatycznie też pobiera obecny dzień roku i generuje grafik na najbliższy tydzień, dając możliwość ustawienia dnia, od którego będzie się zaczynał (np. dzisiaj lub jutro). Umożliwia także: <br/>-ustawienie godziny początkowej i końcowej <br/>-wybór motywu <br/>-klasyfikację poszczególnych zajęć (ćwiczenia, wykłady, korepetycje (zdalne lub stacjonarne), zdarzenia jednorazowe itp.<br/>-wypisywanie dat.</string>
+
     <string name="projects_binary-clock_shortDescription">Zegar binarny z wykorzystaniem Compose Multiplatform</string>
     <string name="projects_binary-clock_description">Zegar binarny z wykorzystaniem Compose Multiplatform</string>
+
     <string name="projects_subtitles-shifter_shortDescription">Prosty skrypt umożliwiający przesunięcie napisów w plikach .srt</string>
     <string name="projects_subtitles-shifter_description">Prosty skrypt umożliwiający przesunięcie napisów w plikach .srt. Został stworzony na moją indywidualną potrzebę, bym mógł przesunąć napisy, które nie pasowały do wersji filmu (były opóźnione o kilka sekund w przód lub tył).</string>
+
     <string name="projects_youtube-downloader_shortDescription">Wielowątkowy skrypt, który umożliwia pobranie piosenek z serwisu YouTube</string>
     <string name="projects_youtube-downloader_description">Dzięki tej aplikacji można pobrać playlistę ze Spotify, za pośrednictwem YouTube'a. Wymaga od użytkownika wyeksportowania playlisty do pliku .csv za pośrednictwem aplikacji Exportify, a następnie pobiera w osobnych wątkach piosenki z YouTube'a, wyszukując je po nazwie i autorze oraz zapisuje je w przejrzysty sposób - tworzy foldery z wykonawcami, a każdą piosenkę podpisuje jej tytułem.</string>
+
     <string name="projects_tic-tac-toe_shortDescription">Prosta gra w kółko i krzyżyk, którą można zagrać ze znajomym na Discordzie</string>
     <string name="projects_tic-tac-toe_description">Prosta gra w kółko i krzyżyk, którą można zagrać ze znajomym na Discordzie</string>
+
     <string name="projects_crypto-tracker_shortDescription">Aplikacja śledząca kursy kryptowalut</string>
     <string name="projects_crypto-tracker_description">Aplikacja śledząca kursy kryptowalut. Umożliwia dodawanie kryptowalut do śledzenia, a także wyświetla ich aktualne kursy wraz z wykresem zmian w ciągu ostatnich 24 godzin.</string>
+
     <string name="projects_tutor_website_shortDescription">Strona z ofertą korepetycji, które prowadzę</string>
     <string name="projects_tutor_website_description">Strona opracowana przeze mnie dotycząca mojej oferty korepetycji z matematyki i informatyki. Zawiera wszelkie szczegóły dotyczące lekcji, stawek, opinii i kontaktu ze mną. Strona została wykonana w pełni z użyciem Jetpack Compose.</string>
+
     <string name="projects_mobile_remote_shortDescription">Zestaw 2 aplikacji - klienta i serwera, który przydaje się podczas oglądania filmów</string>
     <string name="projects_mobile_remote_description">Zestaw 2 aplikacji - klienta i serwera, który przydaje się podczas oglądania filmów. Aplikacja serwerowa jest uruchamiana na komputerze, a klient na telefonie. Dzięki temu można sterować odtwarzaniem filmów z poziomu telefonu, np. pauzować, przewijać do przodu lub do tyłu, zmieniać głośność i wyciszać dźwięk, będąc oddalonym od komputera.</string>
+
     <string name="projects_todo_list_shortDescription">Klasyczna mobilna aplikacja z zadaniami do zrobienia</string>
     <string name="projects_todo_list_description">Klasyczna mobilna aplikacja z zadaniami do zrobienia. Umożlwia tworzenie, edycję i usuwanie zadań. Zadania posiadają swój priorytet oraz datę wykonania. Całość jest zapisywana offline na urządzeniu</string>
+
     <string name="projects_screenshot_processor_shortDescription">Aplikacja ułatwiająca moją pracę nad aplikacją Valorant Lineups</string>
     <string name="projects_screenshot_processor_description">Aplikacja ułatwiająca moją pracę nad aplikacją Valorant Lineups. Umożliwia ona szybkie zapisywanie screenshotów z gry w folderach, zgodnie z moją własną strukturą danych pod tę aplikację. Posiada listę umiejętności dla każdego agenta, spis map oraz typ screeshotów.</string>
+
     <string name="projects_website_shortDescription">Moja strona portfolio</string>
     <string name="projects_website_description">Moja strona portfolio, na której możesz znaleźć moje projekty, umiejętności i doświadczenie. Jest to strona stworzona w pełni z użyciem Jetpack Compose.</string>
 
@@ -117,9 +130,13 @@
     <string name="experience_subtitle">Zbiór moich doświadczeń zawodowych, w tym korepetycji i tworzenia aplikacji.</string>
 
     <string name="experience_tutor_title">Korepetytor matematyki</string>
-    <string name="experience_tutor_description">Teaching mathematics to students</string>
+    <string name="experience_tutor_responsibility_1">Prowadzenie prywatnych lekcji 1 na 1 z uczniami</string>
+    <string name="experience_tutor_responsibility_2">Przygotowanie uczniów do matury i egzaminów ósmoklasisty</string>
+    <string name="experience_tutor_responsibility_3">Przygotowywanie materiałów do nauki, wykorzystując LaTeX i Manim</string>
+
     <string name="experience_app_developer_title">Developer aplikacji</string>
-    <string name="experience_app_developer_description">Tworzenie własnych komercyjncych aplikacji</string>
+    <string name="experience_app_developer_responsibility_1">Tworzenie własnych aplikacji mobilnych na Androida</string>
+    <string name="experience_app_developer_responsibility_2">Rozwój aplikacji w oparciu o potrzeby użytkowników</string>
 
     <string name="students_taught">Uczniowie</string>
     <string name="rating">Ocena</string>
