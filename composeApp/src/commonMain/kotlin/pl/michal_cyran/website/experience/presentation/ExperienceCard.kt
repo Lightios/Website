@@ -1,6 +1,10 @@
 package pl.michal_cyran.website.experience.presentation
 
+import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.background
+import androidx.compose.foundation.hoverable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.interaction.collectIsHoveredAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -18,9 +22,12 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -39,8 +46,21 @@ fun ExperienceCard(
     experience: Experience,
     modifier: Modifier = Modifier
 ) {
+    val interactionSource = remember { MutableInteractionSource() }
+    val isHovered by interactionSource.collectIsHoveredAsState()
+    val scale by animateFloatAsState(
+        targetValue = if (isHovered) 1.05f else 1f,
+        label = "CardScale"
+    )
+
     Card(
-        modifier = modifier,
+        modifier = modifier
+            .graphicsLayer(
+                scaleX = scale,
+                scaleY = scale
+            ).hoverable(
+                interactionSource
+            ),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceContainer,
             contentColor = MaterialTheme.colorScheme.onSurface
@@ -108,13 +128,26 @@ fun ExperienceCard(
 
             Spacer(modifier = Modifier.height(20.dp))
 
-            // Description
-            Text(
-                text = stringResource(experience.description),
-                fontSize = 16.sp,
-                color = Color(0xFF94A3B8),
-                lineHeight = 24.sp
-            )
+            for (responsibility in experience.responsibilities) {
+                Row(
+                    modifier = Modifier.fillMaxWidth().padding(vertical = 6.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    Box(
+                        modifier = Modifier
+                            .size(8.dp)
+                            .background(Color(0xFF06B6D4), shape = RoundedCornerShape(4.dp))
+                    )
+
+                    Text(
+                        text = stringResource(responsibility),
+                        fontSize = 16.sp,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        lineHeight = 24.sp
+                    )
+                }
+            }
 
             if (experience.technologies.isNotEmpty()) {
                 Spacer(modifier = Modifier.height(20.dp))

@@ -10,9 +10,12 @@ import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.apps_published
 import website.composeapp.generated.resources.calculate
 import website.composeapp.generated.resources.commercial
-import website.composeapp.generated.resources.experience_app_developer_description
+import website.composeapp.generated.resources.experience_app_developer_responsibility_1
+import website.composeapp.generated.resources.experience_app_developer_responsibility_2
 import website.composeapp.generated.resources.experience_app_developer_title
-import website.composeapp.generated.resources.experience_tutor_description
+import website.composeapp.generated.resources.experience_tutor_responsibility_1
+import website.composeapp.generated.resources.experience_tutor_responsibility_2
+import website.composeapp.generated.resources.experience_tutor_responsibility_3
 import website.composeapp.generated.resources.experience_tutor_title
 import website.composeapp.generated.resources.home
 import website.composeapp.generated.resources.kotlin
@@ -28,7 +31,11 @@ import website.composeapp.generated.resources.total_downloads
 val experiences = listOf(
     Experience(
         title = Res.string.experience_tutor_title,
-        description = Res.string.experience_tutor_description,
+        responsibilities = listOf(
+            Res.string.experience_tutor_responsibility_1,
+            Res.string.experience_tutor_responsibility_2,
+            Res.string.experience_tutor_responsibility_3,
+        ),
         icon = Res.drawable.calculate,
         iconColor = Color.White,
         iconBackground = Color(0xFF3B82F6),
@@ -45,7 +52,10 @@ val experiences = listOf(
     ),
     Experience(
         title = Res.string.experience_app_developer_title,
-        description = Res.string.experience_app_developer_description,
+        responsibilities = listOf(
+            Res.string.experience_app_developer_responsibility_1,
+            Res.string.experience_app_developer_responsibility_2,
+        ),
         icon = Res.drawable.logo_dev,
         iconColor = Color.White,
         iconBackground = Color(0xFF10B981),

@@ -65,7 +65,6 @@ fun MainScreen(
     navController: NavHostController = rememberNavController()
 ) {
     val scrollState = rememberScrollState()
-    val listState = rememberLazyListState()
     var showMenu by remember { mutableStateOf(false) }
     var selectedProjectName by remember { mutableStateOf("") }
 
@@ -86,7 +85,6 @@ fun MainScreen(
                 title = {
                     TopBar(
                         darkTheme = darkTheme,
-                        listState = listState,
                         onToggleTheme = onToggleTheme,
                         onHomeNavigate = {
                             navController.navigate(Screen.Start.name) {

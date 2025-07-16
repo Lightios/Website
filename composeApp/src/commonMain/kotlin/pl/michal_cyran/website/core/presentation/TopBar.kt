@@ -20,19 +20,25 @@ import pl.michal_cyran.website.core.presentation.composables.ScreenButton
 import website.composeapp.generated.resources.Res
 import website.composeapp.generated.resources.achievements
 import website.composeapp.generated.resources.dark_mode
+import website.composeapp.generated.resources.deployed_code
 import website.composeapp.generated.resources.education
 import website.composeapp.generated.resources.experience
+import website.composeapp.generated.resources.home
 import website.composeapp.generated.resources.light_mode
 import website.composeapp.generated.resources.main
+import website.composeapp.generated.resources.person_play
 import website.composeapp.generated.resources.projects
+import website.composeapp.generated.resources.school
 import website.composeapp.generated.resources.skills
+import website.composeapp.generated.resources.smart_display
 import website.composeapp.generated.resources.social_media
+import website.composeapp.generated.resources.trophy
+import website.composeapp.generated.resources.work_history
 
 @Composable
 fun TopBar(
     darkTheme: Boolean,
     onToggleTheme: () -> Unit,
-    listState: LazyListState,
     onHomeNavigate: () -> Unit,
     onSkillsNavigate: () -> Unit,
     onEducationNavigate: () -> Unit,
@@ -43,7 +49,7 @@ fun TopBar(
     modifier: Modifier = Modifier
 ) {
     Row(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
             .padding(horizontal = 120.dp),
         verticalAlignment = Alignment.CenterVertically,
@@ -74,12 +80,12 @@ fun TopBar(
             modifier = Modifier.weight(1f)
         )
 
-        ScreenButton(Res.string.main, onHomeNavigate)
-        ScreenButton(Res.string.skills, onSkillsNavigate)
-        ScreenButton(Res.string.education, onEducationNavigate)
-        ScreenButton(Res.string.experience, onExperienceNavigate)
-        ScreenButton(Res.string.projects, onProjectsNavigate)
-        ScreenButton(Res.string.achievements, onAchievementsNavigate)
-        ScreenButton(Res.string.social_media, onSocialMediaNavigate)
+        ScreenButton(Res.string.main, icon=Res.drawable.home, onHomeNavigate, )
+        ScreenButton(Res.string.skills, icon=Res.drawable.person_play, onSkillsNavigate)
+        ScreenButton(Res.string.education, icon=Res.drawable.school, onEducationNavigate)
+        ScreenButton(Res.string.experience, icon=Res.drawable.work_history, onExperienceNavigate)
+        ScreenButton(Res.string.projects, icon=Res.drawable.deployed_code, onProjectsNavigate)
+        ScreenButton(Res.string.achievements, icon=Res.drawable.trophy, onAchievementsNavigate)
+        ScreenButton(Res.string.social_media, icon=Res.drawable.smart_display, onSocialMediaNavigate)
     }
 }
