@@ -283,11 +283,11 @@ val projects = listOf(
         type = ProjectType.OTHER,
         links = listOf(
             ProjectLink(
-                to = "",
+                to = "https://github.com/Lightios/MobileRemoteClient",
                 type = ProjectLinkType.GITHUB,
             ),
             ProjectLink(
-                to = "",
+                to = "https://github.com/Lightios/MobileRemoteServer",
                 type = ProjectLinkType.GITHUB,
             ),
         ),
@@ -303,7 +303,7 @@ val projects = listOf(
         type = ProjectType.MOBILE_APPLICATION,
         links = listOf(
             ProjectLink(
-                to = "",
+                to = "https://github.com/Lightios/ToDoList",
                 type = ProjectLinkType.GITHUB,
             ),
         ),
@@ -319,7 +319,7 @@ val projects = listOf(
         type = ProjectType.DESKTOP_APPLICATION,
         links = listOf(
             ProjectLink(
-                to = "",
+                to = "https://github.com/Lightios/ScreenshotProcessor",
                 type = ProjectLinkType.GITHUB,
             ),
         ),
@@ -335,7 +335,7 @@ val projects = listOf(
         type = ProjectType.WEB_APPLICATION,
         links = listOf(
             ProjectLink(
-                to = "",
+                to = "https://github.com/Lightios/Website",
                 type = ProjectLinkType.GITHUB,
             ),
         ),
