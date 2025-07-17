@@ -1,7 +1,11 @@
 package pl.michal_cyran.website.projects.presentation
 
+import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.hoverable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.interaction.collectIsHoveredAsState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -28,6 +32,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
@@ -133,12 +138,29 @@ fun ProjectDetailsScreen(
             project.skills.forEach { slug ->
                 val skill = skillsBySlug[slug]!!
 
+                val interactionSource = remember { MutableInteractionSource() }
+                val isHovered by interactionSource.collectIsHoveredAsState()
+                val scale by animateFloatAsState(
+                    targetValue = if (isHovered) 1.05f else 1f,
+                    label = "CardScale"
+                )
+                val color = if (isHovered) {
+                    MaterialTheme.colorScheme.primaryContainer
+                } else {
+                    MaterialTheme.colorScheme.surfaceContainer
+                }
                 Card(
                     modifier = Modifier
                         .weight(1f)
-                        .padding(8.dp),
+                        .padding(8.dp)
+                        .graphicsLayer(
+                            scaleX = scale,
+                            scaleY = scale
+                        ).hoverable(
+                            interactionSource
+                        ),
                     colors = CardDefaults.cardColors(
-                        containerColor = MaterialTheme.colorScheme.surfaceContainer
+                        containerColor = color
                     ),
                     shape = MaterialTheme.shapes.large
                 ) {
